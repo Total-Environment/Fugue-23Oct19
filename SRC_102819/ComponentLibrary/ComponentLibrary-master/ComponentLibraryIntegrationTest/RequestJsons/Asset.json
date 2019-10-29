@@ -1,0 +1,64 @@
+﻿{
+    "group": "Machines",
+    "headers": [
+        {
+            "name": "Classification",
+            "key": "classification",
+            "columns": [
+                {
+                    "key": "material_level_1",
+                    "name": "Material Level 1",
+                    "value": "Primary"
+                },
+                {
+                    "key": "material_level_2",
+                    "name": "Material Level 2",
+                    "value": "Machines"
+                }
+            ]
+        },
+        {
+            "name": "General",
+            "key": "general",
+            "columns": [
+                {
+                    "key": "hsm_code",
+                    "name": "HSM Code",
+                    "value": "HYD33"
+                },
+                {
+                    "key": "material_code",
+                    "name": "Material Code",
+                    "value": "MCH000099"
+                },
+                {
+                    "key": "can_be_used_as_an_asset",
+                    "name": "Can be Used as an Asset",
+                    "value": true
+                }
+            ]
+        },
+        {
+            "name": "Specifications",
+            "key": "specifications",
+            "columns": [
+                {
+                    "key": "application_area",
+                    "name": "Application Area",
+                    "value": "Topmost Floor"
+                }
+            ]
+        },
+        {
+            "name": "Maintenance",
+            "key": "maintenance",
+            "columns": [
+                {
+                    "key": "some_column",
+                    "name": "Some Column",
+                    "value": "Some value"
+                }
+            ]
+        }
+    ]
+}

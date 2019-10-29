@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<items>
+  <item>
+    <excel columnName="Header Details" type="string" />
+    <json objectName="headerDetails" />
+  </item>
+
+  <item>
+    <excel columnName="General" type="string" />
+    <json objectName="general" />
+  </item>
+  <item>
+    <excel columnName="Purchase" type="string" />
+    <json objectName="purchase" />
+  </item>
+  <item>
+    <excel columnName="Planning" type="string" />
+    <json objectName="planning" />
+  </item>
+  <item>
+    <excel columnName="Quality" type="string" />
+    <json objectName="quality" />
+  </item>
+  <item>
+    <excel columnName="Vendor &amp; Brands" type="string" />
+    <json objectName="vendorAndBrands" />
+  </item>
+  <item>
+    <excel columnName="System Logs" type="string" />
+    <json objectName="systemLogs" />
+  </item>
+  <item>
+    <excel columnName="Specification" type="string" />
+    <json objectName="specification" />
+  </item>
+
+  <item>
+    <excel columnName="VariationNo" type="string" />
+    <json objectName="variationNumber" />
+  </item>
+  <item>
+    <excel columnName="Material Name" type="string" />
+    <json objectName="materialName" />
+  </item>
+
+  <item>
+    <excel columnName="Shade No" type="array-int" />
+    <json objectName="shadeNumber" />
+  </item>
+  <item>
+    <excel columnName="Shade Description" type="string" />
+    <json objectName="shadeDescription" />
+  </item>
+  <item>
+    <excel columnName="Material Level" type="string" />
+    <json objectName="materialLevel" />
+  </item>
+  <item>
+    <excel columnName="Material Group" type="string" />
+    <json objectName="materialGroup" />
+  </item>
+  <item>
+    <excel columnName="Material Category" type="string" />
+    <json objectName="materialCategory" />
+  </item>
+  <item>
+    <excel columnName="Material Type" type="string" />
+    <json objectName="materialType" />
+  </item>
+  <item>
+    <excel columnName="Material Class" type="string" />
+    <json objectName="materialClass" />
+  </item>
+  <item>
+    <excel columnName="Image" type="staticFile" />
+    <json objectName="imageUrl" />
+  </item>
+  <item>
+    <excel columnName="Short Description" type="string" />
+    <json objectName="shortDescription" />
+  </item>
+  <item>
+    <excel columnName="Shelf Life" type="dimension" />
+    <json objectName="shelfLife" />
+  </item>
+  <item>
+    <excel columnName="Unit Of Measurement" type="unit" />
+    <json objectName="unitOfMeasurement" />
+  </item>
+  <item>
+    <excel columnName="Is Active" type="bool" />
+    <json objectName="isActive" />
+  </item>
+  <item>
+    <excel columnName="Domestic/Import" type="string" />
+    <json objectName="domesticOrImport" />
+  </item>
+  <item>
+    <excel columnName="Source of Origin" type="string" />
+    <json objectName="sourceOfOrigin" />
+  </item>
+  <item>
+    <excel columnName="Country of Origin" type="string" />
+    <json objectName="countryOfOrigin" />
+  </item>
+  <item>
+    <excel columnName="Currency" type="unit" />
+    <json objectName="currency" />
+  </item>
+  <item>
+    <excel columnName="Budget Price/UOM" type="int" />
+    <json objectName="budgetPricePerUom" />
+  </item>
+  <item>
+    <excel columnName="Wt. Avg  Price/UOM" type="int" />
+    <json objectName="weightedAveragePricePerUom" />
+  </item>
+  <item>
+    <excel columnName="Curr Price/UOM" type="double" />
+    <json objectName="currentPricePerUom" />
+  </item>
+
+  <item>
+    <excel columnName="Quantity Evaluation Method" type="staticFile" documentType="checklist" />
+    <json objectName="quantityEvaluationMethod" />
+  </item>
+  <item>
+    <excel columnName="PO Terms &amp; Conditions" type="staticFile" />
+    <json objectName="poTermsAndConditions" />
+  </item>
+  <item>
+    <excel columnName="PO Lead Time (Days)" type="dimension" brandCode="double" />
+    <json objectName="poLeadTime" />
+  </item>
+  <item>
+    <excel columnName="Delivery Lead Time (Days)" type="dimension" brandCode="double" />
+    <json objectName="deliveryLeadTime" />
+  </item>
+  <item>
+    <excel columnName="Safety Stock" type="string" />
+    <json objectName="safetyStock" />
+  </item>
+  <item>
+    <excel columnName="Re Order Quantity" type="string" />
+    <json objectName="reorderQuantity" />
+  </item>
+  <item>
+    <excel columnName="Min Order Quantity" type="string" />
+    <json objectName="minimumOrderQuantity" />
+  </item>
+  <item>
+    <excel columnName="Stock Levels" type="string" />
+    <json objectName="stockLevels" />
+  </item>
+  <item>
+    <excel columnName="Package Type" type="string" />
+    <json objectName="packageType" />
+  </item>
+  <item>
+    <excel columnName="Package Wt" type="string" />
+    <json objectName="packageWeight" />
+  </item>
+  <item>
+    <excel columnName="Package Quantity" type="string" />
+    <json objectName="packageQuantity" />
+  </item>
+  <item>
+    <excel columnName="Ship Mode " type="string" />
+    <json objectName="shipMode" />
+  </item>
+  <item>
+    <excel columnName="Maintain Lot #" type="bool" />
+    <json objectName="shouldMaintainLotNumber" />
+  </item>
+  <item>
+    <excel columnName="Is Hybrid" type="bool" />
+    <json objectName="isHybrid" />
+  </item>
+  <item>
+    <excel columnName="Auto Issue" type="bool" />
+    <json objectName="isAutoIssue" />
+  </item>
+  <item>
+    <excel columnName="Not Part of Demand" type="bool" />
+    <json objectName="isNotPartOfDemand" />
+  </item>
+  <item>
+    <excel columnName="Governing Standard" type="array-string" />
+    <json objectName="governingStandard" />
+  </item>
+  <item>
+    <excel columnName="Storage Location" type="string" />
+    <json objectName="storageLocation" />
+  </item>
+  <item>
+    <excel columnName="Storage Method Documents" type="staticFile" />
+    <json objectName="storageMethodDocuments" />
+  </item>
+  <item>
+    <excel columnName="Quality Check List" type="staticFile" />
+    <json objectName="qualityCheckList" />
+  </item>
+  <item>
+    <excel columnName="Approved Vendor" type="array-string" />
+    <json objectName="approvedVendor" />
+  </item>
+  <item>
+    <excel columnName="Approved Manufacturer" type="array-string" />
+    <json objectName="approvedManufacturer" />
+  </item>
+  <item>
+    <excel columnName="Approved Brand / Series" type="array-string" />
+    <json objectName="approvedBrandOrSeries" />
+  </item>
+  <item>
+    <excel columnName="Supplier Code / Part Number" type="string" />
+    <json objectName="supplierCodeOrPartNumber" />
+  </item>
+  <item>
+    <excel columnName="Alternate Brands" type="array-string" />
+    <json objectName="alternateBrands" />
+  </item>
+  <item>
+    <excel columnName="CreatedDate" type="date" />
+    <json objectName="createDate" />
+  </item>
+  <item>
+    <excel columnName="CreatedUser" type="string" />
+    <json objectName="createdUser" />
+  </item>
+  <item>
+    <excel columnName="AmendedDate" type="date" />
+    <json objectName="amendedDate" />
+  </item>
+  <item>
+    <excel columnName="AmendedUser" type="string" />
+    <json objectName="amendedUser" />
+  </item>
+  <item>
+    <excel columnName="SpecSheetID" type="staticFile" />
+    <json objectName="specificationSheetId" />
+  </item>
+  <item>
+    <excel columnName="Finish" type="string" />
+    <json objectName="finish" />
+  </item>
+  <item>
+    <excel columnName="Treatment" type="string" />
+    <json objectName="treatment" />
+  </item>
+  <item>
+    <excel columnName="Shape" type="string" />
+    <json objectName="shape" />
+  </item>
+  <item>
+    <excel columnName="Length (mm)" type="dimension" brandCode="double" />
+    <json objectName="length" />
+  </item>
+  <item>
+    <excel columnName="Width (mm)" type="dimension" brandCode="double" />
+    <json objectName="width" />
+  </item>
+  <item>
+    <excel columnName="Height (mm)" type="dimension" brandCode="double" />
+    <json objectName="height" />
+  </item>
+  <item>
+    <excel columnName="Thickness/Depth (mm)" type="dimension" brandCode="double" />
+    <json objectName="thicknessOrDepth" />
+  </item>
+  <item>
+    <excel columnName="No. of Perforations" type="int" />
+    <json objectName="numberOfPerforations" />
+  </item>
+  <item>
+    <excel columnName="Grade/Method" type="string" />
+    <json objectName="gradeOrMethod" />
+  </item>
+  <item>
+    <excel columnName="Usage Class" type="string" />
+    <json objectName="usageClass" />
+  </item>
+  <item>
+    <excel columnName="Application" type="string" />
+    <json objectName="application" />
+  </item>
+  <item>
+    <excel columnName="Strength (N/mm2)" type="dimension" brandCode="double" />
+    <json objectName="strength" />
+  </item>
+  <item>
+    <excel columnName="Silt Content (%)" type="dimension" brandCode="range" />
+    <json objectName="siltContent" />
+  </item>
+  <item>
+    <excel columnName="Specific Gravity (Air Dry)" type="dimension" brandCode="double" />
+    <json objectName="specificGravity" />
+  </item>
+  <item>
+    <excel columnName="Sieve Size (mm)" type="dimension" brandCode="range" />
+    <json objectName="sieveSize" />
+  </item>
+</items>

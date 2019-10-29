@@ -1,0 +1,73 @@
+.filterDialog {
+  position: absolute;
+  width: 70%;
+  right: 5%;
+  height: 70%;
+  bottom: 25%;
+  margin-top: -300px;
+  border: 1px solid #ccc;
+  background-color: white ;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 1rem;
+  overflow: auto;
+}
+.column input {
+  border-radius: 5px;
+}
+
+.column {
+  padding: 10px 20px;
+}
+
+.columnTitle {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.apply, .clear{
+  position: relative;
+  float: right;
+}
+
+.header {
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.columnValue {
+  margin: 0;
+}
+
+.close {
+  flex-basis: 24px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.title {
+  flex: 1;
+  position: relative;
+  padding-top: 10px;
+}
+
+.header {
+  display: flex;
+}
+
+.button {
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.actionItems {
+  padding:20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

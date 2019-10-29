@@ -1,0 +1,84 @@
+.sort {
+  position: relative;
+  float: right;
+}
+.expanded {
+  position: absolute;
+  right: 100%;
+  top: -50px;
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  z-index: 10;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2)
+}
+.list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.column {
+  padding: 10px;
+  display: block;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  text-transform: uppercase;
+  border-bottom: solid 1px #eee;
+}
+
+.column:hover, .selected {
+  background: #aa989c;
+  color: #fff;
+}
+
+.ascending:after {
+  content: "↑";
+  float: right;
+}
+.descending:after {
+  content: "↓";
+  float: right;
+}
+
+.list li:last-child button {
+  border-bottom: none;
+}
+.title {
+  margin-left: 10px;
+}
+
+.sortButton {
+  composes: unstyledButton from '../../css-common/forms.css';
+  composes: column;
+  border-bottom: none;
+  text-transform: uppercase;
+}
+.sortIcon {
+  margin: 0 0 0 10px;
+  width: 15px;
+  height: 15px;
+}
+.sortButton:hover .sortIcon {
+  stroke: #fff;
+}
+
+.sortButtonExpanded {
+  background: #aa989c;
+  color: #fff;
+}
+.sortButtonExpanded .sortIcon {
+  stroke: #fff;
+}
+.sortButtonExpanded:before {
+  content: "▶";
+  color: #eee;
+  position: absolute;
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+}

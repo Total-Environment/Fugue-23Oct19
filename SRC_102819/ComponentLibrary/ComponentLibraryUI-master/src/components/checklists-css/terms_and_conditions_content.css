@@ -1,0 +1,22 @@
+
+.contentTable {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.contentTable tr td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+}
+
+.contentTable tr td:first-child {
+    border: 1px solid black;
+}
+
+.contentTable tr td {
+    padding: 15px;
+    border: 1px solid black;
+}

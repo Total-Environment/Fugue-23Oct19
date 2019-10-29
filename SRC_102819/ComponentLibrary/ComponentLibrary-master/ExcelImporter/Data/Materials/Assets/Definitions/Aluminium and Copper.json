@@ -1,0 +1,62 @@
+{
+  "headers": [
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "Months"
+          },
+          "name": "Expected Life",
+          "key": "expected_life",
+          "isRequired": false,
+          "isSearchable": false
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "%"
+          },
+          "name": "Depreciation Terms",
+          "key": "depreciation_terms",
+          "isRequired": false,
+          "isSearchable": false
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Maintenance Frequency",
+          "key": "maintenance_frequency",
+          "isRequired": false,
+          "isSearchable": false
+        },
+        {
+          "dataType": {
+            "name": "StaticFile",
+            "subType": ""
+          },
+          "name": "Maintenance Checklist",
+          "key": "maintenance_checklist",
+          "isRequired": false,
+          "isSearchable": false
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Critical Spares",
+          "key": "critical_spares",
+          "isRequired": false,
+          "isSearchable": false
+        }
+      ],
+      "name": "Maintenance",
+      "key": "maintenance"
+    }
+  ],
+  "name": "Aluminium and Copper",
+  "code": "MAL"
+}

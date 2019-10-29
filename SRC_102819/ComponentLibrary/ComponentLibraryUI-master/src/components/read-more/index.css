@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none;
+  outline: none;
+  composes: primary from "../../css-common/colors.css";
+}
+
+.link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.breakWord {
+  white-space: normal;
+  word-break: break-word;
+}

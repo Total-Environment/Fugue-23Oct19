@@ -1,0 +1,20 @@
+{
+  "name": "ComponentLibraryUI",
+  "version": "1.0.[buildNumber]",
+  "description": "Frontend app for Component Library",
+  "scripts": {
+    "start": "node server"
+  },
+  "engines": {
+    "node": "6.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:TotalEnvironmentProj/CompoenentLibraryUI.git"
+  },
+  "author": "ThoughtWorks",
+  "license": "ISC",
+  "dependencies": {
+    "express": "~4.14.0"
+  }
+}

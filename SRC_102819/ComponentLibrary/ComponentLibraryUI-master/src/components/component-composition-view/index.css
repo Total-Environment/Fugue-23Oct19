@@ -1,0 +1,40 @@
+.columnsRow {
+  composes: row from 'flexboxgrid';
+  margin: 0;
+  padding: 0 0 10px 0;
+}
+
+.columnForComposition {
+  composes: col-sm-2 from 'flexboxgrid';
+  flex-basis: 10%;
+  max-width: 10%;
+  padding: 7px 14px;
+}
+
+.columnTitleForComposition {
+  composes: bold from "../../css-common/typography.css";
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.columnValue {
+  margin: 0;
+}
+
+.totalCostContainer {
+  margin: 7px 14px;
+  padding: 5px;
+  display: inline-block;
+  float: right;
+  border: solid 1px #aaa;
+}
+
+.error {
+  float: right;
+  margin: 10px 10px 10px 0;
+  padding: 7px 14px;
+  color: #FC511F;
+}
+.number {
+  text-align: right;
+}

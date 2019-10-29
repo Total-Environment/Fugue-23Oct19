@@ -1,0 +1,68 @@
+﻿{
+    "Group": "Some Material",
+    "Headers": [
+        {
+            "name": "Classification",
+            "key": "classification",
+            "columns": [
+                {
+                    "name": "Material Level 1",
+                    "key": "material_level_1",
+                    "value": "Primary"
+                },
+                {
+                    "name": "Material Level 2",
+                    "key": "material_level_2",
+                    "value": "Some Material"
+                }
+            ]
+        },
+        {
+            "name": "General",
+            "key": "general",
+            "columns": [
+                {
+                    "name": "Material Name",
+                    "key": "material_name",
+                    "value": "Test"
+                },
+                {
+                    "name": "Short Description",
+                    "key": "short_description",
+                    "value": "Test Short Description"
+                },
+                {
+                    "name": "HSM Code",
+                    "key": "hsm_code",
+                    "value": "HSM Code"
+                },
+                {
+                    "name": "Material Code",
+                    "key": "material_code",
+                    "value": "SME020001"
+                },
+                {
+                    "name": "Image",
+                    "key": "image",
+                    "value": [
+                        {
+                            "Id": "id",
+                            "Name": "Test.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Specifications",
+            "key": "specifications",
+            "columns": [
+                {
+                    "name": "Application Area",
+                    "key": "application_area",
+                    "value": "Topmost Floor"
+                }
+            ]
+        }
+    ]
+}

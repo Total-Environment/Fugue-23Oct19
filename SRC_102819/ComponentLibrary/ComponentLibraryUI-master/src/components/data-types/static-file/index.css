@@ -1,0 +1,72 @@
+.columnTitle {
+  composes: bold from "../../../css-common/typography.css";
+  margin-bottom: 6px;
+}
+
+.columnValue {
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+}
+
+.link {
+  composes: primary from "../../../css-common/colors.css";
+}
+
+.file {
+  position: relative;
+  text-align: right;
+  -moz-opacity:0 ;
+  filter:alpha(opacity: 0);
+  opacity: 0;
+  z-index: 2;
+}
+
+.fakeFile {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  z-index: 1;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  composes: input from '../../../css-common/forms.css';
+
+}
+
+.delete {
+  composes: button from '../../../css-common/forms.css';
+  margin-left: 6px;
+  border-radius: 9999px;
+  padding: 0;
+  flex-basis: 24px;
+  min-width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.singleData {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  word-break: break-all;
+}
+
+.fileInput {
+  flex: 1;
+  position: relative;
+}
+
+.addFile {
+  flex: 1;
+  position: relative;
+}

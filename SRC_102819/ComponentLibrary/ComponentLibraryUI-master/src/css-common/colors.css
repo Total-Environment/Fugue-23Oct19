@@ -1,0 +1,37 @@
+.inverse {
+  color: #fff;
+  background-color: #584444;
+}
+
+.primary {
+  color: #FC511F;
+  stroke: #FC511F;
+}
+
+.primaryBg {
+  background-color: #FC511F;
+}
+
+.dark {
+  color: #404040;
+}
+
+.dark-light {
+  color: #414042;
+}
+
+body {
+  color: #404040;
+}
+
+.textColor {
+  color: #404040;
+}
+
+.danger {
+  color: #ff5c70;
+}
+
+.success {
+  color: #27804f;
+}

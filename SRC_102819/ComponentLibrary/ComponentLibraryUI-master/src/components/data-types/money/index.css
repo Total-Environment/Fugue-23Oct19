@@ -1,0 +1,13 @@
+.input {
+  composes: input from '../../../css-common/forms.css';
+  max-width: 48px;
+  margin-right: 12px;
+}
+
+.currency {
+  composes: select from '../../../css-common/forms.css';
+}
+
+.inputWrap {
+  display: flex;
+}

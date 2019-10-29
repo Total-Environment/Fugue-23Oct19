@@ -1,0 +1,19 @@
+﻿{
+  "name": "Clay",
+  "code": "CLY1",
+  "headers": [
+    {
+      "name": "Classification",
+      "columns": [
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Application Area",
+          "isSearchable": true
+        }
+      ]
+    }
+  ]
+}

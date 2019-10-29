@@ -1,0 +1,51 @@
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.header {
+  display: table-row;
+  padding: 12px;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
+  /*composes: bold from '../../css-common/typography.css'; This thing is not working for some reason :( */
+}
+
+.header th:first-child, .row td:first-child{
+  padding-left:20px;
+}
+
+.header th:last-child, .row td:last-child{
+  padding-right:20px;
+}
+
+.header th {
+  background: #AA989C;
+  color: #fff;
+  border-bottom: solid 1px #ccc;
+  position: relative;
+  padding: 10px 5px;
+}
+.row {
+  background: #fdfdfd;
+}
+.row:nth-child(even) {
+  background: #f9f7f8;
+}
+
+.row td {
+  padding: 12px 6px;
+}
+
+.number {
+  text-align: right;
+}
+
+.text {
+  text-align: left;
+}
+
+.sortable {
+  cursor: pointer;
+}

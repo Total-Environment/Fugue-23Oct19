@@ -1,0 +1,127 @@
+﻿{
+  "name": "Clay",
+  "code": "CLY1",
+  "headers": [
+    {
+      "name": "Classification",
+      "columns": [
+        {
+          "name": "Service Level 1",
+          "dataType": {
+            "name": "Constant",
+            "subType": "TestService"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Planning",
+      "columns": [
+        {
+          "name": "SO Lead Time in Days",
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Vendor Mobilisation Time in Days",
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Minimum Order Quantity",
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "Quality",
+      "columns": [
+        {
+          "name": "Governing Standard",
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Quality Checklist",
+          "dataType": {
+            "name": "CheckList",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Safety Requirements",
+          "dataType": {
+            "name": "StaticFile",
+            "subType": ""
+          }
+        }
+      ]
+    },
+    {
+      "name": "Purchase",
+      "columns": [
+        {
+          "name": "Method of Measurement",
+          "dataType": {
+            "name": "StaticFile",
+            "subType": ""
+          }
+        },
+        {
+          "name": "General SO Terms & Conditions",
+          "dataType": {
+            "name": "CheckList",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Special SO Terms & Conditions",
+          "dataType": {
+            "name": "CheckList",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Last Purchase Rate",
+          "dataType": {
+            "name": "Money",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Weighted Average Purchase Rate",
+          "dataType": {
+            "name": "Money",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Procurement Rate Threshold %",
+          "dataType": {
+            "name": "Unit",
+            "subType": "%"
+          }
+        },
+        {
+          "name": "Approved Vendors",
+          "dataType": {
+            "name": "Array",
+            "subType": {
+              "name": "String",
+              "subType": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

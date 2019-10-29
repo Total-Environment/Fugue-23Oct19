@@ -1,0 +1,51 @@
+﻿{
+  "HeaderConfiguration": [
+    {
+      "Key": "A",
+      "Value": "Test Object"
+    },
+    {
+      "Key": "B",
+      "Value": "Test Method"
+    },
+    {
+      "Key": "C",
+      "Value": "Value 1"
+    },
+    {
+      "Key": "D",
+      "Value": "Value 2"
+    },
+    {
+      "Key": "E",
+      "Value": "Unit of Measurement"
+    },
+    {
+      "Key": "F",
+      "Value": "Mandatory"
+    },
+    {
+      "Key": "G",
+      "Value": "Acceptance Criteria"
+    },
+    {
+      "Key": "H",
+      "Value": "MTC Value"
+    },
+    {
+      "Key": "I",
+      "Value": "Test Value"
+    },
+    {
+      "Key": "J",
+      "Value": "Source of Test Value"
+    },
+    {
+      "Key": "K",
+      "Value": "Pass/Fail"
+    }
+  ],
+  "NullColumnReference": "A",
+  "DataRowIndex": 11,
+  "TitleCellReference": "B1"
+}

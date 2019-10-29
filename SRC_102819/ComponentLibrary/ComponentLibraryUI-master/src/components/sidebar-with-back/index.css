@@ -1,0 +1,37 @@
+.back {
+  position: relative;
+  float: left;
+  bottom: -7rem;
+  right: -1rem;
+  margin: 0;
+  height: 3.5rem;
+  width: 3.5rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  line-height: 2.3rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+
+.sidebar {
+  float: left;
+  width: 188px;
+  white-space: nowrap;
+}
+
+.shortLogo{
+  height: 48px;
+  width: 38px;
+  position: relative;
+  top: 0.5rem;
+  left: -2.5rem;
+  fill: black;
+}
+
+.backArrow{
+  stroke: #b3b2b2;
+  margin-left: -1px;
+  margin-bottom: 7px;;
+}

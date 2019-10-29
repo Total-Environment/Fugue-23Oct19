@@ -1,0 +1,112 @@
+.material {
+  display: block;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.header {
+  padding: 10px 0;
+  background: #fff;
+  z-index: 11;
+  display: flex;
+}
+
+.left, .right {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.left {
+  display: flex;
+  align-items: flex-start;
+  padding-right: 10px;
+}
+
+.right {
+  padding-left: 10px;
+}
+
+.headerImage {
+  background-size: cover;
+  width: 100px;
+  height: 65px;
+  background-position: center;
+}
+
+.titleAndStatus {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.headerAffixed {
+  box-shadow: 0 6px 6px -5px #ccc
+}
+
+.affixContainer {
+  min-height: 81px;
+}
+
+.columnsRow {
+  /*composes: row from 'flexboxgrid';*/
+}
+
+.title {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.add {
+  float: right;
+  text-decoration: none;
+  color: inherit;
+}
+
+:global(.rc-collapse-item) .arrow {
+  width: 12px;
+  vertical-align: middle;
+  transform: rotate(-90deg);
+  transition: transform 200ms;
+}
+
+:global(.rc-collapse-item-active) .arrow {
+  transform: rotate(0deg);
+  transition: transform 200ms;
+}
+
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 80%;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.approved {
+  composes: label;
+  background-color: #8bc63e;
+}
+
+.inactive {
+  composes: label;
+  background-color: grey;
+}
+
+.not-approved {
+  composes: label;
+  background-color: #ad391F;
+}
+
+.under-development {
+  composes: label;
+  background-color: #5bb2ef;
+}
+
+.status {
+  padding-bottom: 16px;
+}

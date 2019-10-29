@@ -1,0 +1,37 @@
+﻿{
+  "ServiceColumnMapping": {
+    "general": {
+      "short_description": "short_description",
+      "unit_of_measure": "unit_of_measure"
+    },
+    "classification": {
+      "sfg_level_1": "service_level_1",
+      "sfg_level_2": "service_level_2",
+      "sfg_level_3": "service_level_3",
+      "sfg_level_4": "service_level_4",
+      "sfg_level_5": "service_level_5",
+      "sfg_level_6": "service_level_6",
+      "sfg_level_7": "service_level_7"
+    },
+    "purchase": {
+      "method_of_measurement": "method_of_measurement",
+      "general_so_terms": "general_so_terms",
+      "special_so_terms": "special_so_terms"
+    },
+    "quality": {
+      "governing_standard": "governing_standard",
+      "quality_checklist": "quality_checklist",
+      "method_statement": "method_statement",
+      "safety_requirements": "safety_requirements"
+    }
+  },
+  "GroupCodeMapping": {
+    "Flooring | Dado | Counter": "GFL",
+    "Masonry & Plaster": "GMP",
+    "Building Protection": "GBP",
+    "Concreting": "GCC",
+    "Water Supply": "GWS",
+    "HVAC": "GHV",
+    "Sanitary Fixtures": "GFX"
+  }
+}

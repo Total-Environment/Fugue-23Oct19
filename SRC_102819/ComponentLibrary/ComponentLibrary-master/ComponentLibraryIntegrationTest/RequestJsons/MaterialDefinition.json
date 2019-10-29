@@ -1,0 +1,39 @@
+﻿{
+  "name": "Clay",
+  "code": "CLY1",
+  "headers": [
+    {
+      "name": "Classification",
+      "columns": [
+        {
+          "dataType": {
+            "name": "Constant",
+            "subType": "Primary"
+          },
+          "name": "Material Level 1",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Constant",
+            "subType": "Clay Material"
+          },
+          "name": "Material Level 2",
+          "isSearchable": true
+        }
+      ]
+    },
+    {
+      "name": "Purchase",
+      "columns": [
+        {
+          "dataType": {
+            "name": "Brand",
+            "subType": "BCY"
+          },
+          "name": "Approved Brands" 
+        }
+      ] 
+    }
+  ]
+}

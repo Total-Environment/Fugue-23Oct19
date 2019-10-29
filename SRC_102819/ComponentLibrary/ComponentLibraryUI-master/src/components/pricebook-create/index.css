@@ -1,0 +1,155 @@
+.dialog {
+  position: absolute;
+  width: 85%;
+  left: 70%;
+  right: auto;
+  margin-left: -300px;
+  height: 600px;
+  top: 90%;
+  bottom: auto;
+  margin-top: -300px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 1rem;
+  overflow: auto;
+  transform: translate(-50%, -50%) !important;
+}
+
+
+.columnsRow {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  position: relative;
+  flex: 1;
+}
+
+.columnTitle {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.columnValue {
+  margin: 0;
+}
+
+.borderBottom {
+  border-bottom: solid 1px #ddd;
+}
+
+.column {
+  flex-basis: 14.285%;
+  max-width: 14.285%;
+  padding: 10px 20px;
+}
+
+.listContainer {
+  margin: 0px;
+  padding: 0px;
+}
+
+.basicInfo {
+  width: 150px;
+  padding: 10px;
+}
+
+.action {
+  padding: 1rem 0;
+  text-align: right;
+}
+
+.input{
+  width: 100%;
+  padding: .6rem;
+  height: 2.6rem;
+  border: solid 1px #ccc;
+
+}
+
+.dateContainer {
+  float: left;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  height: 20px;
+  width: 110px;
+}
+
+.sortDate {
+  background: transparent;
+  color: #ffffff;
+  outline: none;
+  border: none;
+  width:80px;
+  vertical-align: middle;
+  font-weight: 700;
+}
+
+.input, .select {
+  width: 100%;
+  padding: .6rem;
+  height: 2.6rem;
+  border: solid 1px #ccc;
+}
+
+.input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input:focus, .select:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ccc;
+  outline: none;
+}
+
+
+.closeBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+  alignment: right;
+}
+
+
+.closeBtnContainer {
+  margin: 0;
+  padding: 10px 0 10px 0;
+  float: right;
+}
+
+.mainPageContainer {
+  margin: 0;
+  padding: 40px 0 10px 0;
+}
+
+.columnsRow .columnsRow {
+  padding: 0;
+}
+
+.horizontalRuleStyle {
+  margin: 0;
+  padding: 1px 27px 12px 22px;
+}
+
+.radioButton {
+  padding: 9px 9px 9px 0;
+  position: absolute;
+  top: 43px;
+  left: 0;
+}
+
+.radioButton input {
+  vertical-align: middle;
+}
+
+.coefficientInput {
+  width: 60px;
+  margin-right: 5px;
+}

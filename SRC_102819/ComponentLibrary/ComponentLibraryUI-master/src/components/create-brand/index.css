@@ -1,0 +1,12 @@
+.action {
+  padding: 1rem 19px 1rem 0;
+  text-align: right;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.requiredMarker {
+  text-decoration: none !important;
+  color: #e03927;
+}

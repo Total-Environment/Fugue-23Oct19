@@ -1,0 +1,66 @@
+.header{
+  padding: 18px 0;
+  background: #fff;
+  z-index: 11;
+}
+
+.action {
+  padding: 1rem 19px 1rem 0;
+  text-align: right;
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.tagItem {
+  display: inline-block;
+  width: 100%;
+}
+
+
+.headerAffixed {
+  box-shadow: 0 6px 6px -5px #ccc;
+  position: sticky;
+  top: 10px;
+}
+
+.edit a {
+  border: none;
+  color: #fff;
+  padding: 0 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  float: right;
+  text-transform: capitalize;
+}
+.edit a:hover {
+  text-decoration: underline;
+}
+.expand{
+  float: right;
+}
+
+.title{
+  display: block;
+  font-weight: 900;
+  margin-bottom: -20px;
+}
+
+.backToComponent{
+  text-decoration:none;
+  margin:0 0 20px 0;
+  display:inline-block;
+  font-size:1rem;
+  /*composes: primary from '../../css-common/colors.css'*/
+}
+
+.titleHeader{
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.addNewButton {
+  composes: button from '../../css-common/forms.css';
+  margin-left: 0;
+}

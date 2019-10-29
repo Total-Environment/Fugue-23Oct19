@@ -1,0 +1,124 @@
+[
+  {
+    "rate": {
+      "controlBaseRate": {
+        "value": 60,
+        "currency": "USD"
+      },
+      "landedRate": {
+        "value": 117,
+        "currency": "USD"
+      },
+      "coefficients": [
+        {
+          "name": "Custom Duties",
+          "value": {
+            "value": 3,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Location variance",
+          "value": {
+            "value": 4,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Market Flucuation",
+          "factor": "0.2"
+        },
+        {
+          "name": "Freight",
+          "value": {
+            "value": 7,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Insurance Considered By Customs",
+          "value": {
+            "value": 2,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Clearning Charges By Customs",
+          "value": {
+            "value": 5,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Tax Variance",
+          "factor": "0.4"
+        }
+      ]
+    },
+    "typeOfPurchase": "IMPORT",
+    "location": "Hyderabad",
+    "id": "MNF000171",
+    "appliedOn": "2016-12-13T00:00:00Z"
+  },
+  {
+    "rate": {
+      "controlBaseRate": {
+        "value": 60,
+        "currency": "USD"
+      },
+      "landedRate": {
+        "value": 117,
+        "currency": "USD"
+      },
+      "coefficients": [
+        {
+          "name": "Custom Duties",
+          "value": {
+            "value": 3,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Location variance",
+          "value": {
+            "value": 4,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Market Flucuation",
+          "factor": "0.2"
+        },
+        {
+          "name": "Freight",
+          "value": {
+            "value": 7,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Insurance Considered By Customs",
+          "value": {
+            "value": 2,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Clearning Charges By Customs",
+          "value": {
+            "value": 5,
+            "currency": "USD"
+          }
+        },
+        {
+          "name": "Tax Variance",
+          "factor": "0.4"
+        }
+      ]
+    },
+    "typeOfPurchase": "IMPORT",
+    "location": "Hyderabad",
+    "id": "MNF000171",
+    "appliedOn": "2016-12-13T00:00:00Z"
+  }
+]

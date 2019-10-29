@@ -1,0 +1,12 @@
+﻿{
+  "AppliedOn": "2019-06-15T17:30:00.0000000Z",
+  "TypeOfPurchase": "Domestic Interstate",
+  "Id": "MCLT0001",
+  "Location": "Hyderabad",
+  "ControlBaseRate": {
+    "Value": "70.0",
+    "Currency": "INR"
+  },
+  "LocationVariance": 40,
+  "MarketFluctuation":30
+}

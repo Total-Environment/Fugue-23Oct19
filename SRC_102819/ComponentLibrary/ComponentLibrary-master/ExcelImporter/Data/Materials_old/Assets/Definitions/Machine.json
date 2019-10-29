@@ -1,0 +1,46 @@
+﻿{
+  "code": "MCH",
+  "name": "Machines",
+  "headers": [
+    {
+      "name": "Maintenance",
+      "columns": [
+        {
+          "name": "Expected Life",
+          "dataType": {
+            "name": "Unit",
+            "subType": "Months"
+          }
+        },
+        {
+          "name": "Depreciation Terms",
+          "dataType": {
+            "name": "Unit",
+            "subType": "%"
+          }
+        },
+        {
+          "name": "Maintenance Frequency",
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Maintenance Checklist",
+          "dataType": {
+            "name": "StaticFile",
+            "subType": ""
+          }
+        },
+        {
+          "name": "Critical Spares",
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          }
+        }
+      ]
+    }
+  ]
+}

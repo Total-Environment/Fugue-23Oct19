@@ -1,0 +1,306 @@
+﻿{
+  "insert": "dependencyDefinition",
+  "documents": [
+    {
+      "_id": "585273e1790f5818b04e9211",
+      "ColumnList": [
+        "Material Level 1",
+        "Material Level 2",
+        "Material Level 3",
+        "Material Level 4",
+        "Material Level 5",
+        "Material Level 6",
+        "Material Level 7"
+      ],
+      "DependentBlocks": [
+        {
+          "Data": [
+            "Secondary",
+            "Synthetic Flooring",
+            "Laminate Flooring",
+            "Flooring",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Synthetic Flooring",
+            "Laminate Flooring",
+            "Skirting",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Synthetic Flooring",
+            "Laminate Flooring",
+            "Beading",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Synthetic Flooring",
+            "Laminate Flooring",
+            "Reducer",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Synthetic Flooring",
+            "Solid Surface",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Synthetic Flooring",
+            "Engineered Stone",
+            "Quartz",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Synthetic Flooring",
+            "Carpet Tiles",
+            null,
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Helmet",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Helmet Refill",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Safety Belt",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Construction Site Safety",
+            "Safety Net",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Shoes",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Gloves",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Gum Boots",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Construction Site Safety",
+            "Safety Rope",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Ear Plugs",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Ear Muffs",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Jacket",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Mask",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Construction Site Safety",
+            "Barrication Tape",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Goggles",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Fall Arrestor",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Shoulder Pad",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Apron",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Welding Shield",
+            null,
+            null,
+            null
+          ]
+        },
+        {
+          "Data": [
+            "Secondary",
+            "Safety",
+            "Personal Protective Equipment",
+            "Face Shield",
+            null,
+            null,
+            null
+          ]
+        }
+      ],
+      "Name": "classifications"
+    }
+  ] 
+}

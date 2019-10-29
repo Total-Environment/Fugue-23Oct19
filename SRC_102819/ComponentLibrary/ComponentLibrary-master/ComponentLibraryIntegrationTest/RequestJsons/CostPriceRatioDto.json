@@ -1,0 +1,77 @@
+﻿{
+  "CprCoefficient": {
+    "Columns": [
+      {
+        "key": "coefficient1",
+        "name": "Coefficient 1",
+        "value": {
+          "type": "%",
+          "value": "10.1"
+        }
+      },
+      {
+        "key": "coefficient2",
+        "name": "Coefficient 2",
+        "value": {
+          "type": "%",
+          "value": "20.2"
+        }
+      },
+      {
+        "key": "coefficient3",
+        "name": "Coefficient 3",
+        "value": {
+          "type": "%",
+          "value": "30.3"
+        }
+      },
+      {
+        "key": "coefficient4",
+        "name": "Coefficient 4",
+        "value": {
+          "type": "%",
+          "value": "40.4"
+        }
+      },
+      {
+        "key": "coefficient5",
+        "name": "Coefficient 5",
+        "value": {
+          "type": "%",
+          "value": "50.5"
+        }
+      },
+      {
+        "key": "coefficient6",
+        "name": "Coefficient 6",
+        "value": {
+          "type": "%",
+          "value": "60.6"
+        }
+      },
+      {
+        "key": "coefficient7",
+        "name": "Coefficient 7",
+        "value": {
+          "type": "%",
+          "value": "70.7"
+        }
+      },
+      {
+        "key": "coefficient8",
+        "name": "Profit Margin",
+        "value": {
+          "type": "%",
+          "value": "80.8"
+        }
+      }
+    ]
+  },
+  "componentType": "Material",
+  "code": "MCLT0101",
+  "projectCode": null,
+  "appliedFrom": "2017-06-24 00:00:00.000Z",
+  "level1": null,
+  "level2": null,
+  "level3": null
+}

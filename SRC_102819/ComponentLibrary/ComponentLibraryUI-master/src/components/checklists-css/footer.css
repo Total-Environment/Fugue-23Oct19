@@ -1,0 +1,37 @@
+.footerTable {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.footerTable tr {
+    border: 1px solid black;
+}
+
+.footerTable tr td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.footerTable tr:first-child td:nth-child(1) {
+    text-align: center;
+    color: #FF0000;
+}
+
+.footerTable tr:first-child td:nth-child(3) {
+    color: #FF0000;
+}
+
+.footerTable tr td:nth-child(1) {
+    width: 35%
+}
+
+.footerTable tr td:nth-child(2) {
+    width: 30%
+}
+
+.footerTable tr td:nth-child(3) {
+    width: 35%
+}

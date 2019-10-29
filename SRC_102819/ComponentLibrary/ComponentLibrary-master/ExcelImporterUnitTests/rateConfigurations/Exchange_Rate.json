@@ -1,0 +1,18 @@
+﻿{
+  "HeaderConfiguration": [
+    {
+      "Key": "A",
+      "Value": "FromCurrency"
+    },
+    {
+      "Key": "B",
+      "Value": "ConversionRate"
+    },
+    {
+      "Key": "C",
+      "Value": "CurrencyFluctuationCoefficient"
+    }
+  ],
+  "NullColumnReference": "A",
+  "DataRowIndex": 3
+}

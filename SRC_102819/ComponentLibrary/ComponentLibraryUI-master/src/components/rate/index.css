@@ -1,0 +1,197 @@
+.rate :global(.rc-collapse-item) .arrow {
+    width: 12px;
+    vertical-align: middle;
+    transform: rotate(-90deg);
+    transition: transform 200ms;
+}
+
+.rate :global(.rc-collapse-item-active) .arrow {
+    transform: rotate(0deg);
+    transition: transform 200ms;
+}
+
+.rate table.table {
+  width: 80%;
+}
+
+.rate table.table th {
+  padding: 15px;
+  text-align: center;
+}
+
+.rate table.table th, .rate table.table td {
+  padding: 15px;
+  text-align: center;
+}
+
+.rate table col:nth-child(1){
+  width: 40%
+}
+
+.rate table col:nth-child(2){
+  width: 30%
+}
+
+.rate table col:nth-child(3){
+  width: 30%
+}
+
+.rate > :global(.rc-collapse-item) > :global(.rc-collapse-header) {
+  border-bottom: none !important;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+}
+
+.columnsRow {
+  composes: row from 'flexboxgrid';
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  display: table-row;
+  padding: 12px;
+}
+
+.tableHeader th {
+  background-color: #FC511F;
+  color: #fff;
+  font-weight: normal;
+  border-bottom: solid 1px #ccc;
+  position: relative;
+  padding: 24px 6px;
+}
+
+.tableRow:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.tableRow td {
+  padding: 12px 6px;
+  max-width:150px;
+  min-width:100px;
+}
+
+.back {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+  composes: primary from '../../css-common/colors.css';
+}
+
+.errorMessage {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.title {
+  margin-left: 12px;
+}
+
+.rateLocation {
+  background: #fff;
+  padding: 20px;
+  margin: 0;
+  text-transform: uppercase;
+  composes: bold from '../../css-common/typography.css';
+  border-bottom: solid 1px #eee;
+}
+
+.row, .column {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.row:last-child, .column:last-child {
+  padding-bottom: 5px;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.header {
+  composes: bold from '../../css-common/typography.css'
+}
+
+.errorMessage {
+  margin-left: 20px;
+}
+.inputColumn{
+  width: 95%;
+}
+.inputFactorCoefficient{
+  composes: right;
+  width:60%;
+  display: inline-block;
+}
+.inputSumCoefficient{
+  composes: right;
+  width:60%;
+  display: inline-block;
+}
+.inputCurrency{
+  width:35px;
+  display: inline-block;
+  margin-left:5px;
+}
+
+.createRateRow{
+  background-color: #e6e6e6;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+  flex-basis: 14.285%;
+  max-width: 14.285%;
+  padding: 10px 20px;
+}
+
+.columnTitle {
+  composes: bold from "../../css-common/typography.css";
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.columnValue {
+  margin: 0;
+}
+
+.columnsRow {
+  composes: row from 'flexboxgrid';
+  margin: 0;
+  padding: 10px 0;
+}
+
+.addNewForm:global(.rc-collapse) > :global(.rc-collapse-item) > :global(.rc-collapse-header) {
+  border:none;
+  background:white;
+  color: orange;
+  margin-bottom: 20px;
+}
+.floatRight{
+  float:right;
+}
+
+.button{
+  composes: button from '../../css-common/forms.css';
+}
+
+.buttonContainer{
+  margin-bottom:10px;
+  text-align: right;
+}

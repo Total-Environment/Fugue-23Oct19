@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props" Condition="Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4012FD7-1A58-4E2B-81C4-1F709652E73D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TE.ComponentLibrary.ComponentLibrary.UnitTests</RootNamespace>
+    <AssemblyName>ComponentLibraryUnitTests</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <LangVersion>7</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.3.3.3\lib\net45\Castle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentAssertions, Version=4.15.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.15.0\lib\net45\FluentAssertions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FluentAssertions.Core, Version=4.15.0.0, Culture=neutral, PublicKeyToken=33f2691a05b67b6a, processorArchitecture=MSIL">
+      <HintPath>..\packages\FluentAssertions.4.15.0\lib\net45\FluentAssertions.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+     <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.OData.dll</HintPath>
+     <Private>True</Private>
+   </Reference>
+    <Reference Include="Microsoft.Data.Services.Client">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.Services.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.WindowsAzure.Storage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.3.0\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.3.0\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.3.0\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Moq, Version=4.5.23.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.5.23\lib\net45\Moq.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NotificationEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NotificationEngine.1.0.21-dev\lib\net462\NotificationEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="SendGrid, Version=9.5.1.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sendgrid.9.5.1\lib\net452\SendGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.1.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.1.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.0.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TE.Shared.CloudServiceFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\TE.Shared.CloudServiceFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="TELogger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Logging.1.0.16\lib\TELogger.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.assert, Version=2.2.0.3402, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.assert.2.2.0-beta3-build3402\lib\netstandard1.0\xunit.assert.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.core, Version=2.2.0.3402, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.core.2.2.0-beta3-build3402\lib\net45\xunit.core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="xunit.execution.desktop, Version=2.2.0.3402, Culture=neutral, PublicKeyToken=8d05b1bb7a6fdb6c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xunit.extensibility.execution.2.2.0-beta3-build3402\lib\net45\xunit.execution.desktop.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppService\ColumnDataBuilderTests.cs" />
+    <Compile Include="AppService\ColumnDataValidatorTests.cs" />
+    <Compile Include="AppService\CostPriceRatioBuilderFactoryTests.cs" />
+    <Compile Include="AppService\CostPriceRatioFilterFactoryTests.cs" />
+    <Compile Include="AppService\CostPriceRatioFilterTests.cs" />
+    <Compile Include="AppService\CostPriceRatioServiceTests.cs" />
+    <Compile Include="AppService\CostPriceRatioValidatorFactoryTests.cs" />
+    <Compile Include="AppService\MaterialCostPriceRatioBuilderTests.cs" />
+    <Compile Include="AppService\MaterialCostPriceRatioFilterTests.cs" />
+    <Compile Include="AppService\PriceServiceTests.cs" />
+    <Compile Include="AppService\SemiFinishedGoodCostPriceRatioValidatorTests.cs" />
+    <Compile Include="AppService\PackageCostPriceRatioValidatorTests.cs" />
+    <Compile Include="AppService\ServiceCostPriceRatioValidatorTests.cs" />
+    <Compile Include="AppService\MaterialCostPriceRatioValidatorTests.cs" />
+    <Compile Include="AppService\SemiFinishedGoodCostPriceRatioBuilderTests.cs" />
+    <Compile Include="AppService\PackageCostPriceRatioBuilderTests.cs" />
+    <Compile Include="AppService\SemiFinishedGoodCoefficientBuilderTests.cs" />
+    <Compile Include="AppService\ServiceCoefficientBuilderTests.cs" />
+    <Compile Include="AppService\MaterialCoefficientBuilderTests.cs" />
+    <Compile Include="AppService\AssetCoefficientBuilderTests.cs" />
+    <Compile Include="AppService\ComponentCoefficientBuilderFactoryTests.cs" />
+    <Compile Include="AppService\ComponentCoefficientValidatorFactoryTests.cs" />
+    <Compile Include="AppService\SemiFinishedGoodCoefficientValidatorTests.cs" />
+    <Compile Include="AppService\ServiceCoefficientValidatorTests.cs" />
+    <Compile Include="AppService\MaterialCoefficientValidatorTests.cs" />
+    <Compile Include="AppService\AssetCoefficientValidatorTests.cs" />
+    <Compile Include="AppService\DependencyValidatorTests.cs" />
+    <Compile Include="AppService\FilterCriteriaBuilderTests.cs" />
+    <Compile Include="AppService\MaterialBuilderTests.cs" />
+    <Compile Include="AppService\BrandCodeGeneratorTests.cs" />
+    <Compile Include="AppService\MaterialCodeGeneratorTests.cs" />
+    <Compile Include="AppService\MaterialServiceTests.cs" />
+    <Compile Include="AppService\MaterialValidatorTests.cs" />
+    <Compile Include="AppService\CompositeComponentBuilderTests.cs" />
+    <Compile Include="AppService\CompositeComponentDataBuilderTests.cs" />
+    <Compile Include="AppService\CompositeComponentServiceTests.cs" />
+    <Compile Include="AppService\CompositeComponentValidatorTests.cs" />
+    <Compile Include="AppService\ServiceCostPriceRatioBuilderTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\DependencyDefinitionCompressedDtoTests.cs" />
+    <Compile Include="ControllerAdaptersTests\MaterialDataTypeDtoAdaptorTests.cs" />
+    <Compile Include="ControllerAdaptersTests\MaterialDocumentDtoAdaptorTests.cs" />
+    <Compile Include="ControllerAdaptersTests\MaterialDtoAdapterTests.cs" />
+    <Compile Include="ControllerAdaptersTests\CompositeComponentDtoTests.cs" />
+    <Compile Include="ControllerAdaptersTests\ServiceDtoAdapterTests.cs" />
+    <Compile Include="ControllerPortTests\CostPriceRatioControllerTests.cs" />
+    <Compile Include="ControllerPortTests\CostPriceRatioDefinitionControllerTests.cs" />
+    <Compile Include="ControllerPortTests\MaterialControllerTests.cs" />
+    <Compile Include="ControllerPortTests\CompositeComponentControllerTests.cs" />
+    <Compile Include="ControllerPortTests\PriceControllerTests.cs" />
+    <Compile Include="ControllerPortTests\ProjectControllerTests.cs" />
+    <Compile Include="DomainTests\BrandDefinitionTests.cs" />
+    <Compile Include="DomainTests\ComponentTests.cs" />
+    <Compile Include="DomainTests\CostPriceRatioTests.cs" />
+    <Compile Include="DomainTests\CPRCoefficientTests.cs" />
+    <Compile Include="DomainTests\DataTypes\ArrayDataTypeTests.cs" />
+    <Compile Include="DomainTests\DataTypes\AutogeneratedDataTypeTests.cs" />
+    <Compile Include="DomainTests\DataTypes\BooleanDataTypeTests.cs" />
+    <Compile Include="DomainTests\ColumnDataTests.cs" />
+    <Compile Include="DomainTests\ColumnDefinitionTests.cs" />
+    <Compile Include="DomainTests\DataTypes\BrandDataTypeTests.cs" />
+    <Compile Include="DomainTests\DataTypes\ConstantDataTypeTests.cs" />
+    <Compile Include="DomainTests\DateDataTypeTests.cs" />
+    <Compile Include="DomainTests\DependencyRuleDefinitionTests.cs" />
+    <Compile Include="DomainTests\HeaderDataTests.cs" />
+    <Compile Include="DomainTests\HeaderDefinitionTests.cs" />
+    <Compile Include="DomainTests\DataTypes\IntDataTypeTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\DocumentControllerTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\DocumentRepositoryTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\MasterDataRepositoryTests.cs" />
+    <Compile Include="DomainTests\MasterDataListTests.cs" />
+    <Compile Include="DomainTests\DataTypes\MasterDataTypeTests.cs" />
+    <Compile Include="DomainTests\MasterDataValueTests.cs" />
+    <Compile Include="DomainTests\AssetDefinitionTests.cs" />
+    <Compile Include="ControllerPortTests\BrandDefinitionControllerTests.cs" />
+    <Compile Include="ControllerPortTests\AssetDefinitionControllerTests.cs" />
+    <Compile Include="DomainTests\SimpleDataTypeFactoryTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\MaterialRateDaoTests.cs" />
+    <Compile Include="RepositoryPortTests\AssetDefinitionRepositoryTests.cs" />
+    <Compile Include="RepositoryPortTests\BrandDefinitionRepositoryTests.cs" />
+    <Compile Include="DataAdaptorsTests\MaterialDaoTests.cs" />
+    <Compile Include="RateMasters\Domain\ServiceRateTests.cs" />
+    <Compile Include="RateMasters\Domain\ServiceRateMasterTests.cs" />
+    <Compile Include="RateMasters\Domain\PercentageCoefficient.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\ServiceRateDtoTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\RentalRateControllerTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\ServiceRateControllerTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\RentalRateRepositoryTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\ServiceRateRepositoryTests.cs" />
+    <Compile Include="DomainTests\ServiceClassificationDefinitionTests.cs" />
+    <Compile Include="DomainTests\ServiceDefinitionTests.cs" />
+    <Compile Include="DomainTests\ServiceTests.cs" />
+    <Compile Include="RepositoryPortTests\CostPriceRatioRepositoryTests.cs" />
+    <Compile Include="RepositoryPortTests\ProjectRepositoryTests.cs" />
+    <Compile Include="RepositoryPortTests\SemiFinishedGoodRepositoryClassTests.cs" />
+    <Compile Include="ControllerPortTests\ClassficationDefinitionControllerTests.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Controller\ServiceControllerTests.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Controller\ServiceDefinitionControllerTests.cs" />
+    <Compile Include="DataAdaptorsTests\ServiceClassificationDefinitionDaoTests.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\Dao\ServiceDaoTests.cs" />
+    <Compile Include="RepositoryPortTests\ClassificationDefinitionRepositoryTests.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\ServiceDefinitionRepositoryTests.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\ServiceRepositoryTests.cs" />
+    <Compile Include="DomainTests\MaterialTests.cs" />
+    <Compile Include="DomainTests\MaterialDefinitionTests.cs" />
+    <Compile Include="DomainTests\DataTypes\CheckListDataTypeTests.cs" />
+    <Compile Include="DomainTests\DataTypes\MoneyDataTypeTests.cs" />
+    <Compile Include="DomainTests\DataTypes\MoneyTests.cs" />
+    <Compile Include="DomainTests\DataTypes\RangeDataTypeTests.cs" />
+    <Compile Include="DomainTests\DataTypes\RangeValueTests.cs" />
+    <Compile Include="DomainTests\DataTypes\StaticFileDataTypeTests.cs" />
+    <Compile Include="DomainTests\DataTypes\StringDataTypeTests.cs" />
+    <Compile Include="DomainTests\DataTypes\DecimalDataTypeTests.cs" />
+    <Compile Include="DomainTests\Units\StaticFileTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\MasterDataListControllerTests.cs" />
+    <Compile Include="DomainTests\CheckListTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\CheckListControllerTests.cs" />
+    <Compile Include="ControllerPortTests\OldMaterialControllerTests.cs" />
+    <Compile Include="ControllerPortTests\MaterialDefinitionControllerTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\StaticFileControllerTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\CheckListRepositoryTest.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\CounterRepositoryTests.cs" />
+    <Compile Include="RepositoryPortTests\MaterialRepositoryTests.cs" />
+    <Compile Include="RepositoryPortTests\MaterialDefinitionRepositoryTests.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\StaticFileRepositoryTests.cs" />
+    <Compile Include="DomainTests\DataTypes\UnitDataTypeTests.cs" />
+    <Compile Include="RateMasters\Domain\ExchangeRateTests.cs" />
+    <Compile Include="RateMasters\Domain\MaterialRateMasterTests.cs" />
+    <Compile Include="RateMasters\Core\BankTests.cs" />
+    <Compile Include="RateMasters\Core\MoneyTests.cs" />
+    <Compile Include="RateMasters\Domain\MaterialRateTests.cs" />
+    <Compile Include="RateMasters\Domain\SumCoefficientTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\MaterialRateDtoTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\MoneyDtoTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\ExchangeRateControllerIntegrationTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\ExchangeRateControllerTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\MaterialRateControllerTests.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\CoefficientDaoTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\ExchangeRateRepositoryTests.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\MaterialRateRepositoryTests.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\CompositeComponentSapSyncerTests.cs" />
+    <Compile Include="TestHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComponentLibrary\ComponentLibrary.csproj">
+      <Project>{4e068f14-459b-45d6-ab73-f24bd6226be8}</Project>
+      <Name>ComponentLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExcelImporterUnitTests\ExcelImporterUnitTests.csproj">
+      <Project>{40405232-5C33-40FA-A135-FE3E5ABCE1F0}</Project>
+      <Name>ExcelImporterUnitTests</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ComponentMasters\Domain\" />
+    <Folder Include="ServiceMasters\Domain\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="../BuildAutomation/MsBuild/XUnitBuild.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\xunit.runner.visualstudio.2.1.0\build\net20\xunit.runner.visualstudio.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

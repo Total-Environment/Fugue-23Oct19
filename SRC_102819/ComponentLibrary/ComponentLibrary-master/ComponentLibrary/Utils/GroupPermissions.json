@@ -1,0 +1,434 @@
+﻿[
+  {
+    "Group": { "Name": "CL Operations team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Procurement team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Project Design team" },
+    "Permissions": [
+      { "Name": "View Mateiral properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Project Operations team" },
+    "Permissions": [
+      { "Name": "View Mateiral properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "eDesign Architecture team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Accounts and Finance team" },
+    "Permissions": [
+      { "Name": "View Mateiral properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Setup Exchange Rate version and View Exchange rate history" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Corporate Project Management office" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Component Curation team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Component Master Data Management team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "Create Material properties" },
+      { "Name": "Edit Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "Create Service properties" },
+      { "Name": "Edit Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "Create SFG" },
+      { "Name": "View Package properties" },
+      { "Name": "Create Package" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Asset Master Data Management team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "Setup Material Rental Rate versions" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Rate Master Data Management team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "Setup Material Rate versions" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "Create Service properties" },
+      { "Name": "Edit Service properties" },
+      { "Name": "Setup Service Rate versions" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" },
+      { "Name": "Service Bulk Rates Edit" },
+      { "Name": "Material Bulk Rates Edit" }
+    ]
+  },
+  {
+    "Group": { "Name": "eDesign Commercial Management Team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "Setup CRP Version" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "eDesign Price Controller" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "Setup CRP Version" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Setup Exchange Rate version and View Exchange rate history" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Rate Commercial controller" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "Setup Material Rate versions" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "Setup Service Rate versions" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "Create SFG" },
+      { "Name": "Edit SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "Create Package" },
+      { "Name": "Edit Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Setup Exchange Rate version and View Exchange rate history" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" },
+      { "Name": "Service Bulk Rates Edit" },
+      { "Name": "Material Bulk Rates Edit" }
+    ]
+  },
+  {
+    "Group": { "Name": "Estimation team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "Create SFG" },
+      { "Name": "Edit SFG properties" },
+      { "Name": "Edit SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "Create Package" },
+      { "Name": "Edit Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Setup Exchange Rate version and View Exchange rate history" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Project Planning team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "eDesign Operations" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Fugue Application" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Business Artists Group" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "System Admin" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Setup Exchange Rate version and View Exchange rate history" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Senior Management" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "BIM Team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "eDesign Revit Family Management Team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "eDesign Marketing Team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "Referential Master Data Management Team" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" }
+    ]
+  },
+  {
+    "Group": { "Name": "CLAdmin" },
+    "Permissions": [
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "View CPR values" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Edit Material properties" },
+      { "Name": "Setup CRP Version" },
+      { "Name": "Create Material properties" },
+      { "Name": "Create Service properties" },
+      { "Name": "Setup Material Rate versions" },
+      { "Name": "Setup Material Rental Rate versions" },
+      { "Name": "Setup Service Rate versions" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "Edit Service properties" },
+      { "Name": "Edit SFG properties" },
+      { "Name": "Create SFG" },
+      { "Name": "Create Package" },
+      { "Name": "Edit Package properties" },
+      { "Name": "Setup Exchange Rate version and View Exchange rate history" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" },
+      { "Name": "Service Bulk Rates Edit" },
+      { "Name": "Material Bulk Rates Edit" }
+    ]
+  }
+]

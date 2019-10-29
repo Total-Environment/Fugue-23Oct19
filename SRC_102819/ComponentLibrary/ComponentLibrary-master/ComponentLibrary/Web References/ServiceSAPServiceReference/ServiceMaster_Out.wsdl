@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p1="http://total-environment/PI/ServiceMaster" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="ServiceMaster_Out" targetNamespace="http://total-environment/PI/ServiceMaster" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_ServiceMaster_Out" />
+  <wsdl:types>
+    <xsd:schema xmlns="http://total-environment/PI/ServiceMaster" targetNamespace="http://total-environment/PI/ServiceMaster" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="ServiceMasterReq" type="p1:ServiceMasterReq" />
+      <xsd:element name="ServiceMasterRes" type="p1:ServiceMasterRes" />
+      <xsd:complexType name="ServiceMasterRes">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">85ef76317e7311e5c74d00000041000a</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">fc16efa379e611e4c15a00ff224f13bb</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="ASNUM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">cdc13568746a11e4c7d400ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Activity Number</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="EAN11" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">fc16efa279e611e4ca6c00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>International Article Number (EAN/UPC)</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="USERF1_TXT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">cdc13569746a11e4b2e700ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>User-Defined Field</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETCODE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">cdc1356a746a11e4c1df00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Return Code</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MESSAGE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">cdc1356b746a11e4a62b00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Return Message</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="ServiceMasterReq">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">4740b0f167c111e78a11000000fbbd1e</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c198058779e611e484b100ff224f13bb</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="SERVICENUMBER" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a87148745b11e482a800ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Activity Number</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MATL_GROUP" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c198058479e611e4aa3f00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Material Group</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="BASE_UOM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a87149745b11e491bc00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Base Unit of Measure</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SERV_CAT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a8714a745b11e4ba5e00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Service Category</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="P_STATUS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a8714b745b11e486dd00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>General Purchasing Status for Service</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="VALID_FROM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a8714c745b11e4b83600ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Validity Date for "Purchasing" Status</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="VAL_CLASS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a8714d745b11e49dc500ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Valuation Class</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SERV_TYPE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a8714e745b11e497f300ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Short Description of Service Type</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="SHORT_TEXT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a8714f745b11e4860b00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Service Short Text</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="CHANGE_ID" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">e8a87150745b11e499df00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Control Selection of Text in Service Master</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="EAN11" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c198058579e611e4ae2c00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>International Article Number (EAN/UPC)</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="USERF1_TXT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c198058679e611e4c2f600ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>User-Defined Field</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="TAXTARIFFCODE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">470e595467c111e7b67100155d01f505</xsd:appinfo>
+                    <xsd:documentation>SAC CODE</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="TAXIM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">470e595567c111e7a8f500155d01f505</xsd:appinfo>
+                    <xsd:documentation>Tax Indicator for Service (Purchasing)</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item1">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">843d95817e7311e5b7fd0060733a37a2</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="TDLINE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c198058879e611e4855b00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Text Line</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ServiceMasterReq">
+    <wsdl:documentation />
+    <wsdl:part name="ServiceMasterReq" element="p1:ServiceMasterReq" />
+  </wsdl:message>
+  <wsdl:message name="ServiceMasterRes">
+    <wsdl:documentation />
+    <wsdl:part name="ServiceMasterRes" element="p1:ServiceMasterRes" />
+  </wsdl:message>
+  <wsdl:portType name="ServiceMaster_Out">
+    <wsdl:documentation />
+    <wsdl:operation name="ServiceMaster_Out">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_ServiceMaster_Out" />
+      </wsp:Policy>
+      <wsdl:input message="p1:ServiceMasterReq" />
+      <wsdl:output message="p1:ServiceMasterRes" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiceMaster_OutBinding" type="p1:ServiceMaster_Out">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="ServiceMaster_Out">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceMaster_OutService">
+    <wsdl:port name="HTTP_Port" binding="p1:ServiceMaster_OutBinding">
+      <address location="http://sapquality.total-environment.com:50100/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_FUGUE_QAS&amp;receiverParty=&amp;receiverService=&amp;interface=ServiceMaster_Out&amp;interfaceNamespace=http%3A%2F%2Ftotal-environment%2FPI%2FServiceMaster" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:ServiceMaster_OutBinding">
+      <address location="https://sapquality.total-environment.com:50101/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_FUGUE_QAS&amp;receiverParty=&amp;receiverService=&amp;interface=ServiceMaster_Out&amp;interfaceNamespace=http%3A%2F%2Ftotal-environment%2FPI%2FServiceMaster" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

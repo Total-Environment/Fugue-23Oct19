@@ -1,0 +1,18 @@
+﻿{
+  "Purchase": {
+    "Approved Brands": [
+      {
+        "Brand Code": "BFX00001",
+        "Manufacturer's Name": "Parryware",
+        "Brand/Series": "Orissa 580",
+        "Manufacturer's Code": "C0117",
+        "Country of Manufacture": "India",
+        "Status": "Active",
+        "Approved Vendors": "3633, 4084, 1090"
+      }
+    ]
+  }, 
+  "Specifications": {
+    "Application Area": "Topmost Floor"
+  }
+}

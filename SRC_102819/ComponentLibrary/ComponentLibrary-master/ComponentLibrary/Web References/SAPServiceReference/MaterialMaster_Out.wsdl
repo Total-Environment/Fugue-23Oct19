@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:p1="http://total-environment/PI/MaterialMaster" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" name="MaterialMaster_Out" targetNamespace="http://total-environment/PI/MaterialMaster" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation />
+  <wsp:UsingPolicy wsdl:required="true" />
+  <wsp:Policy wsu:Id="OP_MaterialMaster_Out" />
+  <wsdl:types>
+    <xsd:schema xmlns="http://total-environment/PI/MaterialMaster" targetNamespace="http://total-environment/PI/MaterialMaster" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <xsd:element name="MaterialMasterReq" type="p1:MaterialMasterReq" />
+      <xsd:element name="MaterialMasterRes" type="p1:MaterialMasterRes" />
+      <xsd:complexType name="MaterialMasterRes">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">ed900b1e7e6b11e58ab100000041000a</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">cee002d2e29211e4c7eb00ff224f13bb</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="MATNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c0dd544abb0211e3c222000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Material Number</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="WERKS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c0dd544bbb0211e3cf60000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Plant</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="RETCODE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c0dd544cbb0211e3bdb9000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Return Code</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MESSAGE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c0dd544dbb0211e39b72000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Return Message</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FUGUE_ID" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">cee002d1e29211e4b8b500ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Fugue Reference ID</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+      <xsd:complexType name="MaterialMasterReq">
+        <xsd:annotation>
+          <xsd:appinfo source="http://sap.com/xi/VersionID">877a657e67d311e791c5000000fbbd1e</xsd:appinfo>
+        </xsd:annotation>
+        <xsd:sequence>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">c35071fa696611e481f800ff224f13bb</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="MATNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9dfbb0211e398d1000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Material Number</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="F_MATNR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">c34de8ef696611e49f7800ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Fugue Material Number</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MBRSH" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e0bb0211e39f27000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Industry sector</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MTART" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e1bb0211e3a779000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Material Type</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="WERKS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e2bb0211e39582000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Plant</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="EXTN_WERKS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">f71c914631ec11e5b7820060733a37a2</xsd:appinfo>
+                    <xsd:documentation>Plant</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="LGORT" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e3bb0211e392ce000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Storage Location</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MAKTX" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e4bb0211e395e5000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Material Description (Short Text</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MEINS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e5bb0211e3b776000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Base Unit of Measure</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="MATKL" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e6bb0211e3a8cd000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Material Group</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="EKGRP" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e7bb0211e3aeb3000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Purchasing Group</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="EXTENSION" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">583fe9e8bb0211e3ae5c000b6adfcc55</xsd:appinfo>
+                    <xsd:documentation>Material Extension</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="BKLAS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a50839e4e29211e4b04f00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Valuation Class</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="VPRSV" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a50839e5e29211e4a4fc00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Price Control Indicator</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="STPRS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a50839e6e29211e4b1e300ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Standard price</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="PEINH" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a50839e7e29211e4ca8500ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Price Unit</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="WAERS" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a50839e8e29211e4ce5800ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Currency Key</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="VERPR" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a50839e9e29211e48f5b00ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Moving Average Price/Periodic Unit Price</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="LVORM" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">a50839eae29211e4976300ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Flag Material for Deletion at Client Level</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="FUGUE_ID" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">b87f8e1415b011e59092406186f2e6f0</xsd:appinfo>
+                    <xsd:documentation>Fugue Reference ID</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="STUEC" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">876c5be367d311e78abd00155d01f505</xsd:appinfo>
+                    <xsd:documentation>HSN/SAC_CODE</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+                <xsd:element minOccurs="0" name="TAXIM" type="xsd:string" />
+                <xsd:element minOccurs="0" name="TAXKM" type="xsd:string" />
+                <xsd:element minOccurs="0" name="MEINS1" type="xsd:string" />
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element minOccurs="0" maxOccurs="unbounded" name="item1">
+            <xsd:annotation>
+              <xsd:appinfo source="http://sap.com/xi/TextID">a50839ebe29211e4925600ff224f13bb</xsd:appinfo>
+            </xsd:annotation>
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element minOccurs="0" name="TDLINE" type="xsd:string">
+                  <xsd:annotation>
+                    <xsd:appinfo source="http://sap.com/xi/TextID">9cb3796a696811e4b05300ff224f13bb</xsd:appinfo>
+                    <xsd:documentation>Text Line</xsd:documentation>
+                  </xsd:annotation>
+                </xsd:element>
+              </xsd:sequence>
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:sequence>
+      </xsd:complexType>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="MaterialMasterReq">
+    <wsdl:documentation />
+    <wsdl:part name="MaterialMasterReq" element="p1:MaterialMasterReq" />
+  </wsdl:message>
+  <wsdl:message name="MaterialMasterRes">
+    <wsdl:documentation />
+    <wsdl:part name="MaterialMasterRes" element="p1:MaterialMasterRes" />
+  </wsdl:message>
+  <wsdl:portType name="MaterialMaster_Out">
+    <wsdl:documentation />
+    <wsdl:operation name="MaterialMaster_Out">
+      <wsdl:documentation />
+      <wsp:Policy>
+        <wsp:PolicyReference URI="#OP_MaterialMaster_Out" />
+      </wsp:Policy>
+      <wsdl:input message="p1:MaterialMasterReq" />
+      <wsdl:output message="p1:MaterialMasterRes" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MaterialMaster_OutBinding" type="p1:MaterialMaster_Out">
+    <binding transport="http://schemas.xmlsoap.org/soap/http" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    <wsdl:operation name="MaterialMaster_Out">
+      <operation soapAction="http://sap.com/xi/WebService/soap1.1" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      <wsdl:input>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:input>
+      <wsdl:output>
+        <body use="literal" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MaterialMaster_OutService">
+    <wsdl:port name="HTTP_Port" binding="p1:MaterialMaster_OutBinding">
+      <address location="http://sapquality.total-environment.com:50100/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_FUGUE_QAS&amp;receiverParty=&amp;receiverService=&amp;interface=MaterialMaster_Out&amp;interfaceNamespace=http%3A%2F%2Ftotal-environment%2FPI%2FMaterialMaster" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+    <wsdl:port name="HTTPS_Port" binding="p1:MaterialMaster_OutBinding">
+      <address location="https://sapquality.total-environment.com:50101/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_FUGUE_QAS&amp;receiverParty=&amp;receiverService=&amp;interface=MaterialMaster_Out&amp;interfaceNamespace=http%3A%2F%2Ftotal-environment%2FPI%2FMaterialMaster" xmlns="http://schemas.xmlsoap.org/wsdl/soap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,43 @@
+.keyword {
+  composes: primary from '../../css-common/colors.css';
+}
+
+.count {
+  composes: regular from '../../css-common/typography.css';
+  margin: 10px 0 20px 0;
+}
+
+.bold {
+  composes: bold from '../../css-common/typography.css';
+}
+
+.search {
+  margin-top: 30px;
+}
+.title {
+  margin: 0 10px 0 0;
+}
+
+.filter {
+  composes: button from '../../css-common/forms.css';
+  float: right;
+  display: inline-block;
+}
+
+.filtersApplied {
+  composes: button from '../../css-common/forms.css';
+  float: right;
+  border-bottom-color: #FC511F;
+  border-top-color: #FC511F;
+  display: inline-block;
+}
+
+.icon {
+  display: block;
+  vertical-align: middle;
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  padding: 0.05rem;
+}

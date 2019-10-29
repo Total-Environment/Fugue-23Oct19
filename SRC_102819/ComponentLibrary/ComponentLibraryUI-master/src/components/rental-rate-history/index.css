@@ -1,0 +1,167 @@
+.rateHistory {
+  margin-top: 30px;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+}
+
+.text {
+  text-align: left;
+}
+
+.number {
+  text-align: right;
+}
+
+.tableRow td {
+  padding: 12px 6px;
+  max-width:150px;
+  min-width:100px;
+}
+
+.back {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+  composes: primary from '../../css-common/colors.css';
+}
+
+.errorMessage {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.title {
+  background:#fff;
+  composes: title from '../../css-common/typography.css';
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.header {
+  composes: bold from '../../css-common/typography.css'
+}
+
+.errorMessage {
+  margin-left: 20px;
+}
+.input{
+  composes: input from '../../css-common/forms.css';
+}
+.inputFactorCoefficient{
+  composes: input from '../../css-common/forms.css';
+  composes: right;
+  width:60%;
+  display: inline-block;
+  margin-right: 5px;
+}
+.inputSumCoefficient{
+  composes: input from '../../css-common/forms.css';
+  composes: right;
+  width:60%;
+  display: inline-block;
+}
+.inputCurrency{
+  composes: input from '../../css-common/forms.css';
+  width:35px;
+  display: inline-block;
+  margin-left:5px;
+}
+
+.createRateRow{
+  background-color: #e6e6e6;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+  flex-basis: 14.285%;
+  max-width: 14.285%;
+  padding: 10px 20px;
+}
+
+.columnTitle {
+  composes: bold from "../../css-common/typography.css";
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.columnValue {
+  margin: 0;
+}
+
+.columnsRow {
+  composes: row from 'flexboxgrid';
+  margin: 0 -20px;
+  padding: 10px 0;
+}
+
+.currencyContainer{
+  composes: currencyContainer from '../rate-history/index.css';
+}
+
+.moneyValue{
+  composes: moneyValue from '../rate-history/index.css';
+}
+
+.moneyCurrency{
+  composes: moneyCurrency from '../rate-history/index.css';
+}
+
+.backToComponent{
+  composes: backToComponent from '../rate-history/index.css';
+}
+
+.button {
+  padding: .7rem;
+  border: solid 1px #ccc;
+  width: 10rem;
+  background: transparent;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1rem;
+  margin-right: 10px;
+  transform: translateX(-100%);
+  text-transform: uppercase;
+}
+
+.filter {
+  composes: button;
+  float: right;
+  display: inline-block;
+}
+
+.filtersApplied {
+  composes: button;
+  float: right;
+  border-bottom-color: #FC511F;
+  border-top-color: #FC511F;
+  display: inline-block;
+}
+
+.icon {
+  display: block;
+  vertical-align: middle;
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  padding: 0.05rem;
+}
+

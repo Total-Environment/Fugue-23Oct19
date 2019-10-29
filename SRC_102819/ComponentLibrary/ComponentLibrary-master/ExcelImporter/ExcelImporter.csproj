@@ -1,0 +1,868 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74EDDC45-88F6-4501-8CAB-ED4B7E43C749}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TE.ComponentLibrary.ExcelImporter</RootNamespace>
+    <AssemblyName>ExcelImporter</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Logging.1.0.17\lib\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.Services.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.13.8.999, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.13.8\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory.Platform, Version=3.13.8.999, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.13.8\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.WindowsAzure.Storage.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.3.0\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.3.0\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.3.0\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\mongocsharpdriver.2.3.0\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=105.2.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.105.2.3\lib\net46\RestSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.1.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TE.Shared.CloudServiceFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\TE.Shared.CloudServiceFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="TELogger, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Logging.1.0.17\lib\TELogger.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Code\CompositeComponents\Packages\PackageClassificationDefinitionImporter.cs" />
+    <Compile Include="Code\CompositeComponents\Packages\PackageDefinitionImporter.cs" />
+    <Compile Include="Code\CPRs\CostPriceRatioDefinitionImporter.cs" />
+    <Compile Include="Code\Excels\ExtendedImage.cs" />
+    <Compile Include="Code\IConfiguration.cs" />
+    <Compile Include="Code\Rates\UniversalMaterialRateMasterImporter.cs" />
+    <Compile Include="Code\Rates\UniversalServiceRateMasterImporter.cs" />
+    <Compile Include="Code\CompositeComponents\SFGs\SfgClassificationDefinitionImporter.cs" />
+    <Compile Include="Code\Brands\BrandJsonExporter.cs" />
+    <Compile Include="Code\Brands\BrandConverter.cs" />
+    <Compile Include="Code\Brands\BrandDocumentLogger.cs" />
+    <Compile Include="Code\Brands\BrandImporter.cs" />
+    <Compile Include="Code\Components\Materials\AssetDefinitionImporter.cs" />
+    <Compile Include="Code\Checklists\CheckListConigurationReader.cs" />
+    <Compile Include="Code\Documents\FileVerifier.cs" />
+    <Compile Include="Code\Excels\Header.cs" />
+    <Compile Include="Code\Rates\ExchangeRateImporter.cs" />
+    <Compile Include="Code\Checklists\CheckListImporter.cs" />
+    <Compile Include="Code\Documents\FileReader.cs" />
+    <Compile Include="Code\Documents\IFileVerifier.cs" />
+    <Compile Include="Code\Documents\IFileReader.cs" />
+    <Compile Include="Code\Components\DependencyImporter.cs" />
+    <Compile Include="Code\Excels\IConverter.cs" />
+    <Compile Include="Code\Excels\IDocumentLogger.cs" />
+    <Compile Include="Code\MasterData\MasterDataImporter.cs" />
+    <Compile Include="Code\Components\Services\ServiceClassificationDefinitionImporter.cs" />
+    <Compile Include="Code\CompositeComponents\SFGs\SfgDefinitionImporter.cs" />
+    <Compile Include="Code\Components\Services\ServiceDefinitionImporter.cs" />
+    <Compile Include="Code\Components\Materials\MaterialDefinitionImporter.cs" />
+    <Compile Include="Code\Documents\StaticFileInformation.cs" />
+    <Compile Include="Code\Excels\TabularDataParserBuilder.cs" />
+    <Compile Include="Code\IJsonExporter.cs" />
+    <Compile Include="Code\Excels\ImportRecord.cs" />
+    <Compile Include="Code\Excels\ImportRecordParser.cs" />
+    <Compile Include="Code\Excels\TabularDataParser.cs" />
+    <Compile Include="Code\Excels\TabularDataLoadConfiguration.cs" />
+    <Compile Include="Code\Components\ComponentDocumentLogger.cs" />
+    <Compile Include="Code\Configuration.cs" />
+    <Compile Include="Code\Excels\CustomCell.cs" />
+    <Compile Include="Code\Excels\ExcelExporter.cs" />
+    <Compile Include="Code\Excels\ExcelReader.cs" />
+    <Compile Include="Code\Excels\ITabularDataParser.cs" />
+    <Compile Include="Code\Excels\ICustomCell.cs" />
+    <Compile Include="Code\Excels\IExcelReader.cs" />
+    <Compile Include="Code\Excels\ImageExtractor.cs" />
+    <Compile Include="Code\Excels\OnNewUrl.cs" />
+    <Compile Include="Code\Components\ComponentJsonExporter.cs" />
+    <Compile Include="Code\Components\ComponentConverter.cs" />
+    <Compile Include="Code\Excels\TypeOfData.cs" />
+    <Compile Include="Code\Excels\NoTabularDataParser.cs" />
+    <Compile Include="Code\Documents\StaticFileImporter.cs" />
+    <Compile Include="Code\MasterData\MasterDataJson.cs" />
+    <Compile Include="Code\MasterData\MasterDataListJson.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Code\Rates\RentalRatesImporter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Data\Rates\Excels\RateMaster.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Checklists\Configurations\InspectionCheckList.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Checklists\Configurations\QuantityEvaluationMethod.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\masterData-recentOld.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\materialClassifications.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Cement Products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Aluminium and Copper.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Amenities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Artefacts.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Construction Chemical.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Electrical.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Fenestration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Fire Fighting System.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Flora.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Furnishing.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Furniture.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Glass Products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Hardware.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Home Automation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Home Entertainment.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\HVAC.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Kitchen.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Lights and Light Fixtures.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Plastic and Polymer.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Plumbing Fixture and Fitting.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Power Supply,Quality,Backup.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Reticulated Gas.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Safety.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Sanitary Fixtures.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Steel Products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Stone.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Vertical Transportation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Water Supply.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Wood.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\1.Generic Definition.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Checklists\Configurations\SpecificationSheet.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Synthetic Flooring.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Services\serviceClassifications.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Services\Definitions\1.Generic Definition.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Amenities.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Artefacts.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Checklists\Configurations\QualityCheckList.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Rates\Excels\ServiceRateMaster.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Clay.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Manufactured Board.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Machines.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Assets\Excels\Machines.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Assets\Excels\IT.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Assets\Excels\FormworkAndScaffolding.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Assets\Excels\Vehicles.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Rates\Excels\RentalRates.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Brands\Definitions\Brand.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\SFGs\sfgClassifications.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Packages\packageClassifications.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\CPRs\Definitions\CostPriceRatioDefinition.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Checklists\Configurations\GeneralWOTerms.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Checklists\Configurations\SpecialWOTerms.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Assets\Definitions\Aluminium and Copper.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Data\Checklists\Configurations\GeneralPOTerms.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Checklists\Configurations\GeneralSOTerms.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Checklists\Configurations\SpecialPOTerms.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Checklists\Configurations\SpecialSOTerms.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Data\masterData.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Data\masterData-old.json" />
+    <None Include="Data\Materials\Assets\Definitions\Amenities.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Artefacts.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Cement Products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Clay.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Construction Chemical.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Electrical.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Fenestration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Fire Fighting System.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Plumbing Fixture and Fitting.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Flora.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Formwork.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Furnishing.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Furniture.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Glass Products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Hardware.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Home Automation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Home Entertainment.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\HVAC.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\IT.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Kitchen.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Lights and Light Fixtures.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Machines.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Manufactured Board.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Plastic and Polymer.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Power Supply,Quality,Backup.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Reticulated Gas.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Safety.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Sanitary Fixtures.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Steel Products.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Stone.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Synthetic Flooring.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Vehicles.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Vertical Transportation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Water Supply.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Materials\Assets\Definitions\Wood.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Data\Materials\Definitions\Formwork.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\IT.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Definitions\Vehicles.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Hardware.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Fire Fighting.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Aluminium &amp; Copper.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Cement Products.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Clay Materials.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Construction Chemicals.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\ELectrical.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Fenestration.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Flora.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Formwork &amp; Scaffolding.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Furnishing.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Furniture.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Glass Products.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Home Automation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Home Entertainment.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\HVAC.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Iron and Steel Products.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Kitchen.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Lights &amp; Light Fixtures.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Machines.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Manufactured Board.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Plastic and Polymer.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Plumbing Fixture &amp; Accessory.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Power Quality and backup.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Reticulated Gas.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Safety.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Sanitary Fixture.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Stone.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Synthetic Flooring.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Vehicles.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Vertical Transportation.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Water Supply.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Materials\Excels\Wood.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Data\Materials_old\Assets\Definitions\1.GenericAssets.json" />
+    <None Include="Data\Materials_old\Assets\Definitions\Machine.json" />
+    <None Include="Data\Materials_old\Assets\Excels\Assets-MachineData.xlsx" />
+    <None Include="Data\Materials_old\Definitions\1.GenericMaterials.json" />
+    <None Include="Data\Materials_old\Definitions\Aluminium and Copper.json" />
+    <None Include="Data\Materials_old\Definitions\Amenities.json" />
+    <None Include="Data\Materials_old\Definitions\Artefacts.json" />
+    <None Include="Data\Materials_old\Definitions\Cement Products.json" />
+    <None Include="Data\Materials_old\Definitions\Clay Materials.json" />
+    <None Include="Data\Materials_old\Definitions\Construction Chemical.json" />
+    <None Include="Data\Materials_old\Definitions\Electrical.json" />
+    <None Include="Data\Materials_old\Definitions\Fenestration.json" />
+    <None Include="Data\Materials_old\Definitions\Fire Fighting System.json" />
+    <None Include="Data\Materials_old\Definitions\Flora.json" />
+    <None Include="Data\Materials_old\Definitions\Furnishing.json" />
+    <None Include="Data\Materials_old\Definitions\Furniture.json" />
+    <None Include="Data\Materials_old\Definitions\Glass.json" />
+    <None Include="Data\Materials_old\Definitions\Hardware.json" />
+    <None Include="Data\Materials_old\Definitions\Home Automation.json" />
+    <None Include="Data\Materials_old\Definitions\Home Entertainment.json" />
+    <None Include="Data\Materials_old\Definitions\HVAC.json" />
+    <None Include="Data\Materials_old\Definitions\Kitchen.json" />
+    <None Include="Data\Materials_old\Definitions\Light and Light Fixture.json" />
+    <None Include="Data\Materials_old\Definitions\Machine.json" />
+    <None Include="Data\Materials_old\Definitions\Manufactured Board.json" />
+    <None Include="Data\Materials_old\Definitions\Plastics and Polymers.json" />
+    <None Include="Data\Materials_old\Definitions\Plumbing Fixture and Fitting.json" />
+    <None Include="Data\Materials_old\Definitions\Power Supply Quality And Backup.json" />
+    <None Include="Data\Materials_old\Definitions\Reticulated Gas.json" />
+    <None Include="Data\Materials_old\Definitions\Safety.json" />
+    <None Include="Data\Materials_old\Definitions\Sanitary Fixtures.json" />
+    <None Include="Data\Materials_old\Definitions\Steel Products.json" />
+    <None Include="Data\Materials_old\Definitions\Stone.json" />
+    <None Include="Data\Materials_old\Definitions\SyntheticFlooring.json" />
+    <None Include="Data\Materials_old\Definitions\Vertical Transportation.json" />
+    <None Include="Data\Materials_old\Definitions\Water Supply.json" />
+    <None Include="Data\Materials_old\Definitions\Wood.json" />
+    <None Include="Data\Materials_old\Excels\Materials-AluminiumAndCopperData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-AmenitiesData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-ArtefactsData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-CementProductsData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-ClayMaterialsData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-ConstructionChemicalData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-ElectricalData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-FenestrationData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-FireFightingSystemData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-FloraData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-FurnishingData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-FurnitureData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-GlassData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-HardwareData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-HomeAutomationData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-HomeEntertainmentData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-HVACData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-KitchenData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-LightAndLightFixtureData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-ManufacturedBoardData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-PlasticsAndPolymersData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-PlumbingFixtureAndFittingData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-PowerSupplyQualityAndBackupData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-ReticulatedGasData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-SafetyData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-SanitaryFixtureData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-SteelData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-StoneData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-SyntheticData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-VerticalTransportationData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-WaterSupplyData.xlsx" />
+    <None Include="Data\Materials_old\Excels\Materials-WoodData.xlsx" />
+    <None Include="Data\Materials_old\materialClassifications.json" />
+    <None Include="Data\Packages\ClassificationDefinitions\HVAC.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Building Protection.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Cabinetry.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Central Vacuum.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Coating.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Concrete.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Earthwork.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Electrical.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\False Ceiling and Partitions.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Fenestration.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Flooring.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Formwork.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Home Automation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\HVAC.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Kitchen.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Landscaping.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Lighting.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Power Supply, Quality and Back up.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Quality and Testing.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Rebar.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Rental Services.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Reticulated Gas.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Sanitary Fixtures.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Setting Out.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Sewerage.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Specialized Fabrication.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Specialized Works.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Steel Fabrication.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Vertical Transportation.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Water Bodies.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Definitions\Water Supply.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Data\Services\Excels\SM - Building Protection.xlsx" />
+    <None Include="Data\Services\Excels\SM - Cabinetry.xlsx" />
+    <None Include="Data\Services\Excels\SM - Coating.xlsx" />
+    <None Include="Data\Services\Excels\SM - Concrete - V02.xlsx" />
+    <None Include="Data\Services\Excels\SM - Earthwork.xlsx" />
+    <None Include="Data\Services\Excels\SM - Electrical.xlsx" />
+    <None Include="Data\Services\Excels\SM - False Ceiling.xlsx" />
+    <None Include="Data\Services\Excels\SM - Fenestration.xlsx" />
+    <None Include="Data\Services\Excels\SM - Flooring - V02.xlsx" />
+    <None Include="Data\Services\Excels\SM - Formwork - V02.xlsx" />
+    <None Include="Data\Services\Excels\SM - Home Automation.xlsx" />
+    <None Include="Data\Services\Excels\SM - HVAC.xlsx" />
+    <None Include="Data\Services\Excels\SM - Kitchen Works.xlsx" />
+    <None Include="Data\Services\Excels\SM - Landscaping.xlsx" />
+    <None Include="Data\Services\Excels\SM - Lighting.xlsx" />
+    <None Include="Data\Services\Excels\SM - Masonry &amp; Plaster.xlsx" />
+    <None Include="Data\Services\Excels\SM - Power supply, quaity &amp; back up.xlsx" />
+    <None Include="Data\Services\Excels\SM - Quality &amp; testing.xlsx" />
+    <None Include="Data\Services\Excels\SM - Rebar - V03.xlsx" />
+    <None Include="Data\Services\Excels\SM - Rental Services.xlsx" />
+    <None Include="Data\Services\Excels\SM - Reticulated Gas.xlsx" />
+    <None Include="Data\Services\Excels\SM - Setting Out.xlsx" />
+    <None Include="Data\Services\Excels\SM - Sewerage.xlsx" />
+    <None Include="Data\Services\Excels\SM - Specialized Fabrication.xlsx" />
+    <None Include="Data\Services\Excels\SM - Specialized Works.xlsx" />
+    <None Include="Data\Services\Excels\SM - Steel Fabrication.xlsx" />
+    <None Include="Data\Services\Excels\SM - Vertical Transportation.xlsx" />
+    <None Include="Data\Services\Excels\SM - Water Supply.xlsx" />
+    <None Include="Data\Services\Excels\SM - Waterbodies.xlsx" />
+    <None Include="Data\Services\Excels\SM -Central Vacuum.xlsx" />
+    <None Include="Data\Services\Excels\SM -Sanitary Fixtures.xlsx" />
+    <None Include="Data\Services_old\ClassificationDefinitions\Flooring.xlsx" />
+    <None Include="Data\Services_old\Definitions\1.GenericServices.json" />
+    <None Include="Data\Services_old\Definitions\Flooring.json" />
+    <None Include="Data\Services_old\Definitions\Masonry.json" />
+    <None Include="Data\Services_old\Excels\Flooring.xlsx" />
+    <None Include="Data\Services_old\Excels\Masonry.xlsx" />
+    <None Include="Data\Services_old\serviceClassifications.json" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Data\Rates\Configurations\Exchange_Rate.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Rates\Configurations\Universal_Material_Rate_Master.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Services\Definitions\Masonry.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Rates\Configurations\Universal_Service_Rate_Master.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\SFGs\Definitions\1.Generic Definition.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\SFGs\Mappings\sfgmapping.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Packages\Mappings\packagemapping.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Packages\Definitions\1.Generic Definition.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Data\SFGs\ClassificationDefinitions\Flooring.xlsx">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComponentLibrary\ComponentLibrary.csproj">
+      <Project>{4e068f14-459b-45d6-ab73-f24bd6226be8}</Project>
+      <Name>ComponentLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RestWebClient\RestWebClient.csproj">
+      <Project>{15E0399C-B26C-4582-9B96-673EEB5D4208}</Project>
+      <Name>RestWebClient</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Services_new\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

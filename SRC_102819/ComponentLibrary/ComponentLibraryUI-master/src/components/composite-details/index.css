@@ -1,0 +1,86 @@
+.component :global(.rc-collapse-content) {
+  background: transparent;
+}
+
+.component > :global(.rc-collapse-item) > :global(.rc-collapse-content) :global(.rc-collapse-header) {
+  border: none;
+  background: none;
+}
+
+.component :global(.rc-collapse-item-active) > :global(.rc-collapse-header) {
+  margin-bottom: 0;
+}
+
+.component > :global(.rc-collapse-item) > :global(.rc-collapse-content) :global(.rc-collapse-header) :global(.arrow) {
+  stroke: #FC511F;
+}
+.actionButtons {
+  float: right;
+  margin-top: 10px;
+}
+.component > :global(.rc-collapse-item) > :global(.rc-collapse-content) :global(.rc-collapse-content) {
+  background: linear-gradient(90deg, #f9f7f8 14.285%, #fdfdfd 14.285%, #fdfdfd 100%);
+}
+
+.addCompositionBtn {
+  margin: 0px 14px;
+  font-size: 25px;
+  font-weight: 700;
+  float: right;
+}
+
+.center {
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+  background: #f9f7f8;
+}
+
+.searchClose {
+  flex-basis: 24px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.searchCloseBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.searchTitle {
+  flex: 1;
+  position: relative;
+  padding-top: 10px;
+}
+
+.searchHeader {
+  display: flex;
+}
+
+.dialog {
+  position: absolute;
+  width: 85%;
+  left: 25%;
+  right: auto;
+  margin-left: -300px;
+  height: 720px;
+  top: 40%;
+  bottom: auto;
+  margin-top: -300px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+.addCompositionButton {
+  composes: button from "../../css-common/forms.css";
+}
+
+.addAnotherComposition {
+  padding-left: 20px;
+}

@@ -1,0 +1,104 @@
+.service {
+  display: block;
+  margin-top: 20px;
+  background-color: #ffffff;
+}
+
+.columnsRow {
+  composes: row from 'flexboxgrid';
+}
+
+.header {
+  background: #fff;
+  padding: 10px 0;
+  z-index: 11;
+  display: flex;
+}
+
+.titleAndStatus {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.left, .right {
+  max-width: 50%;
+  flex-basis: 50%;
+}
+
+.left {
+  display: flex;
+  align-items: flex-start;
+  padding-right: 10px;
+}
+
+.headerAffixed {
+  box-shadow: 0 6px 6px -5px #ccc
+}
+
+.right {
+  padding-left: 10px;
+}
+
+.add {
+  float: right;
+  text-decoration: none;
+  color: inherit;
+}
+
+.affixContainer {
+  min-height: 80px;
+}
+
+:global(.rc-collapse-item) .arrow {
+  width: 12px;
+  vertical-align: middle;
+  transform: rotate(-90deg);
+  transition: transform 200ms;
+}
+
+:global(.rc-collapse-item-active) .arrow {
+  transform: rotate(0deg);
+  transition: transform 200ms;
+}
+
+.label {
+  display: inline;
+  padding: .2em .6em .3em;
+  font-size: 80%;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.approved {
+  composes: label;
+  background-color: #8bc63e;
+}
+
+.title {
+  composes: title from '../../css-common/typography.css';
+}
+
+
+.inactive {
+  composes: label;
+  background-color: grey;
+}
+
+.not-approved {
+  composes: label;
+  background-color: #ad391F;
+}
+
+.under-development {
+  composes: label;
+  background-color: #5bb2ef;
+}
+
+.status {
+  padding-bottom: 16px;
+}

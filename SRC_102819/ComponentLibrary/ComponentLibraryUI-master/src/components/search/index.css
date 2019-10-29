@@ -1,0 +1,68 @@
+.input {
+  width: 150px;
+  transition: width 200ms linear;
+  background: transparent;
+  padding-left: 12px;
+  height: 40px;
+  border: solid 1px transparent;
+  border-bottom-color: #584444;
+}
+
+.inputFocused {
+  outline: none;
+  width: 200px;
+  transition: width 200ms linear;
+  border-color: #584444;
+}
+
+.searchBar {
+  text-align: right;
+  margin-right: 40px;
+  right: 24px;
+  height: 40px;
+  display: inline-block;
+  float: right;
+}
+
+.form {
+  display: inline-block;
+  background: #fff;
+  transition: background 200ms linear;
+  height: 40px;
+}
+
+.focusedForm {
+  transition: background 200ms linear;
+}
+
+.form .icon {
+  border: none;
+  background: none;
+  font-size: 24px;
+  vertical-align: middle;
+  fill: #584444;
+  margin-top: 6px;
+  margin-right: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.form .iconFocused {
+  fill: #fff;
+}
+
+.iconContainer {
+  cursor: pointer;
+  float: right;
+  height: 40px;
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: solid 1px transparent;
+  border-bottom-color: #584444;
+  background: #fff;
+}
+.iconContainer.iconContainerFocused {
+  border-color: #584444;
+  background-color: #584444;
+}

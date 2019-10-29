@@ -1,0 +1,48 @@
+﻿{
+    "group": "Clay Material",
+    "headers": [
+        {
+            "name": "Classification",
+            "key": "classification",
+            "columns": [
+                {
+                    "key": "material_level_1",
+                    "name": "Material Level 1",
+                    "value": "Primary"
+                },
+                {
+                    "key": "material_level_2",
+                    "name": "Material Level 2",
+                    "value": "Clay Material"
+                }
+            ]
+        },
+        {
+            "name": "General",
+            "key": "general",
+            "columns": [
+                {
+                    "key": "hsm_code",
+                    "name": "HSM Code",
+                    "value": "HSM Code"
+                },
+                {
+                    "key": "material_code",
+                    "name": "Material Code",
+                    "value": null
+                }
+            ]
+        },
+        {
+            "name": "Specifications",
+            "key": "specifications",
+            "columns": [
+                {
+                    "key": "application_area",
+                    "name": "Application Area",
+                    "value": "Topmost Floor"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ComponentLibrary</id>
+    <version>2.0.[buildNumber]</version>
+    <title>Component Library</title>
+    <authors>Total Environment</authors>
+    <owners>Total Environment</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Total environment component library.</description>
+    <copyright>Copyright 2016</copyright>
+  </metadata>
+</package>

@@ -1,0 +1,17 @@
+﻿{
+  "TypeOfPurchase": "Domestic Interstate",
+  "Id": "MCLT0101",
+  "Location": "Hyderabad",
+  "InsuranceCharges": 5.0,
+  "FreightCharges": 4,
+  "BasicCustomsDuty": 5,
+  "ClearanceCharges": 3,
+  "ControlBaseRate": {
+    "Value": "70.0",
+    "Currency": "INR"
+  },
+  "TaxVariance": 2,
+  "LocationVariance": 6,
+  "MarketFluctuation": 4,
+  "appliedOn": "2020-12-12T12:00:00Z"
+}

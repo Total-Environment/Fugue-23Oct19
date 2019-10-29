@@ -1,0 +1,46 @@
+.columnTitle {
+  composes: bold from "../../../css-common/typography.css";
+  margin-bottom: 6px;
+}
+
+.columnValue {
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+}
+
+.link {
+  composes: primary from "../../../css-common/colors.css";
+}
+
+.singleData {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  word-break: break-all;
+}
+
+.delete {
+  composes: button from '../../../css-common/forms.css';
+  margin-left: 6px;
+  border-radius: 9999px;
+  padding: 0;
+  flex-basis: 24px;
+  min-width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.addFile {
+  flex: 1;
+  position: relative;
+}

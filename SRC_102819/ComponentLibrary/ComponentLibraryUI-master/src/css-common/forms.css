@@ -1,0 +1,97 @@
+.input, .select {
+  width: 100%;
+  padding: .6rem;
+  height: 2.6rem;
+  border: solid 1px #ccc;
+}
+
+.input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input:focus, .select:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ccc;
+  outline: none;
+}
+
+.error {
+  border: solid 1px #ff8e97;
+}
+.error:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ff8e97;
+  outline: none;
+}
+
+.helpText {
+  margin-top: .5rem;
+  visibility: hidden;
+}
+
+.helpTextError {
+  color: #dd4b39;
+  visibility: visible;
+}
+
+.button {
+  padding: .7rem;
+  border: solid 1px #ccc;
+  width: 10rem;
+  background: transparent;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.button:hover {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ccc;
+}
+.button:focus {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ccc;
+  outline: none;
+}
+.button:active {
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px #ccc;
+  border-style: inset;
+}
+.button:disabled {
+  cursor: not-allowed;
+}
+.floatingAction:hover {
+  text-decoration: none;
+}
+.floatingAction {
+  composes: button;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  margin: 0;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 9999px;
+  text-decoration: none;
+  line-height: 2.3rem;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #FC511F;
+  color: #fff;
+}
+
+.unstyledButton {
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.roundedButton {
+  composes: button;
+  border-radius: 9999px;
+  width: 4rem;
+  height: 4rem;
+}

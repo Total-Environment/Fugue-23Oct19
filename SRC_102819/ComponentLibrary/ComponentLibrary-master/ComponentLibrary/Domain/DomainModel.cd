@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.AssetDefinition" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\AssetDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.BetterKeyNotFoundException" Collapsed="true">
+    <Position X="13.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\BetterKeyNotFoundException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Brand" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAACABAAIAACAAAAEAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\Brand.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.BrandDefinition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\BrandDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.CheckList" Collapsed="true">
+    <Position X="22.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACBAAAEkAAAEAEgAAAAAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\CheckList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.ClassificationDefinition" Collapsed="true">
+    <Position X="13.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAhAAAAAAAgAAAAgAAAAAAAAAAAAIAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\ClassificationDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.ColumnData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAACAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\ColumnData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.ColumnDefinition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIIAAAIIAAAQAAAAAAAUgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ColumnDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Component" Collapsed="true">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAACAECAIAAAGAAACDBAAICACAAAAAAABAAAAAAAAAE=</HashCode>
+      <FileName>Domain\Component.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.ComponentCoefficient" Collapsed="true">
+    <Position X="22.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAQgAAAAAAgACQAAEAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ComponentCoefficient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.ComponentComposition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ComponentComposition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.ComponentDefinition" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAAAACAQgAAQACAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ComponentDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.CompositeComponent" Collapsed="true">
+    <Position X="12" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAFAAAAAgAEIAGAAgAIBACAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>Domain\CompositeComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.CompositeComponentDefinition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAgAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\CompositeComponentDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.CompositeComponentMapping" Collapsed="true">
+    <Position X="15.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAgAAAAAAAAAASAAAAQAAABAA=</HashCode>
+      <FileName>Domain\CompositeComponentMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.CostPriceRatio" Collapsed="true">
+    <Position X="19" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQIAAAAABgAAAAAAAAIAABAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\CostPriceRatio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.CostPriceRatioDefinition" Collapsed="true">
+    <Position X="20.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\CostPriceRatioDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.CostPriceRatioList" Collapsed="true">
+    <Position X="22.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\CostPriceRatioList.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.CPRCoefficient" Collapsed="true">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\CPRCoefficient.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DependencyDefinition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAEAAAAAACAAAAAAAAAAAQAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DependencyDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DependentBlock" Collapsed="true">
+    <Position X="17.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DependentBlock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Entry" Collapsed="true">
+    <Position X="19" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAIAAAQAAAAAAIAAAAAAAAAgAAA=</HashCode>
+      <FileName>Domain\Entry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Column" Collapsed="true">
+    <Position X="17.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAQAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Header.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Header" Collapsed="true">
+    <Position X="20.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAQAAAAAAAQAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\Header.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.HeaderColumnData" Collapsed="true">
+    <Position X="22.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAEAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\HeaderColumnData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.HeaderData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIQAAAAAAAAQACADBAIQACAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\HeaderData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.HeaderDefinition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAQAAAAACAAQACAAAAAQAAAAAAAAAAAAAAQgAAAA=</HashCode>
+      <FileName>Domain\HeaderDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Keys" Collapsed="true">
+    <Position X="15.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Keys.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.MasterDataList" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAAAAAABAAAQAAAAAQAAAAAAgAAAAACA=</HashCode>
+      <FileName>Domain\MasterDataList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.MasterDataValue" Collapsed="true">
+    <Position X="20.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\MasterDataValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Material" Collapsed="true">
+    <Position X="7.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Material.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.MaterialDefinition" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\MaterialDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.MaterialRateSearchResult" Collapsed="true">
+    <Position X="22.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Domain\MaterialRateSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.NullColumnData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\NullColumnData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Project" Collapsed="true">
+    <Position X="15.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAAIIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Project.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Service" Collapsed="true">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAEAAAAAAAAAAAAAAAAEAABBA=</HashCode>
+      <FileName>Domain\Service.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.ServiceDefinition" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ServiceDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.ServiceRateSearchResult" Collapsed="true">
+    <Position X="20.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ServiceRateSearchResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.SimpleColumnDefinition" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="22.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgIIAAAIIAAAQAAAAAAAUgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\SimpleColumnDefinition.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.StaticFile" Collapsed="true">
+    <Position X="10.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEgAAAAAQAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\StaticFile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.Table" Collapsed="true">
+    <Position X="15.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\Table.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.TextCell" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABgAAAAAAAAAAAAIAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\TextCell.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.WastagePercentage" Collapsed="true">
+    <Position X="22.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\WastagePercentage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.RepositoryPort.CodePrefixTypeMapping" Collapsed="true">
+    <Position X="15.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Domain\CodePrefixTypeMapping.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.ArrayDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\ArrayDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.AutogeneratedDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAgAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAiAA=</HashCode>
+      <FileName>Domain\DataTypes\AutogeneratedDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.BooleanDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="15.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\BooleanDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.BrandDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAgAAAAAACAAAAAAAAAAAABAAAAAAAgABABAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\BrandDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.CheckListDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\CheckListDataType.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_repository" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.CheckListValue" Collapsed="true">
+    <Position X="12" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\CheckListValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.ConstantDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\ConstantDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.DateDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\DateDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.DecimalDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\DecimalDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.IntDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\IntDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.MasterDataDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Domain\DataTypes\MasterDataDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.MoneyDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\MoneyDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.MoneyValue" Collapsed="true">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAACACAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\MoneyValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.RangeDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\RangeDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.RangeValue" Collapsed="true">
+    <Position X="19" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAEoAAAAAAAAAAIAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\RangeValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.StaticFileDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\StaticFileDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.StringDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\StringDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.UnitDataType" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\UnitDataType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.UnitValue" Collapsed="true">
+    <Position X="20.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAIAAAQAgAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\UnitValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IBrand" Collapsed="true">
+    <Position X="10.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACABAAAAAAAAAAEAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\IBrand.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IBrandDefinition" Collapsed="true">
+    <Position X="12" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\IBrandDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IBrandDefinitionRepository" Collapsed="true">
+    <Position X="13.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IBrandDefinitionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.ICell" Collapsed="true">
+    <Position X="15.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\ICell.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.ICheckListRepository" Collapsed="true">
+    <Position X="17.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Domain\ICheckListRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IColumnData" Collapsed="true">
+    <Position X="19" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAQAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Domain\IColumnData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IColumnDefinition" Collapsed="true">
+    <Position X="20.75" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAIAAAQAAAAAAAUgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IColumnDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IComponent" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAECAAAAAEAAACDAAAACACAAAAAAABAAAAAAAAAE=</HashCode>
+      <FileName>Domain\IComponent.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IComponentComposition" Collapsed="true">
+    <Position X="22.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IComponentComposition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IComponentDefinition" Collapsed="true">
+    <Position X="1.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAiAAAAAAAAAAAACAAgAAQACAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IComponentDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IComponentDefinitionRepository&lt;T&gt;" Collapsed="true">
+    <Position X="10.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IComponentDefinitionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.ICompositeComponentDefinition" Collapsed="true">
+    <Position X="12" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAgAAQACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ICompositeComponentDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.ICompositeComponentDefinitionRepository&lt;T&gt;" Collapsed="true">
+    <Position X="13.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ICompositeComponentDefinitionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IDataTypeFactory" Collapsed="true">
+    <Position X="15.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IDataTypeFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IDependencyDefinition" Collapsed="true">
+    <Position X="17.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAACAAAAAAAAAAAQAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IDependencyDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IDependencyDefinitionRepository" Collapsed="true">
+    <Position X="19" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Domain\IDependencyDefinitionRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IDocumentRepository" Collapsed="true">
+    <Position X="20.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IDocumentRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IHeaderData" Collapsed="true">
+    <Position X="22.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQACABBAAQAAAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Domain\IHeaderData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IHeaderDefinition" Collapsed="true">
+    <Position X="10.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAQACAAAAAQAAAAAAAAAAAAAAQgAAAA=</HashCode>
+      <FileName>Domain\IHeaderDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IMasterDataList" Collapsed="true">
+    <Position X="12" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAACAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IMasterDataList.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IMasterDataRepository" Collapsed="true">
+    <Position X="13.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAECAAA=</HashCode>
+      <FileName>Domain\IMasterDataRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IMaterial" Collapsed="true">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IMaterialDefinition" Collapsed="true">
+    <Position X="2.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IMaterialDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IService" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IServiceDefinition" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\IServiceDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.ISimpleColumnDefinition" Collapsed="true">
+    <Position X="15.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAIAAAQAAAAAAAUgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ISimpleColumnDefinition.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.ISimpleDataTypeFactory" Collapsed="true">
+    <Position X="17.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\ISimpleDataTypeFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.IStaticFileRepository" Collapsed="true">
+    <Position X="19" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAIA=</HashCode>
+      <FileName>Domain\IStaticFileRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.IDataType" Collapsed="true">
+    <Position X="5.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\IDataType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TE.ComponentLibrary.ComponentLibrary.Domain.DataTypes.ISimpleDataType" Collapsed="true">
+    <Position X="5.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\DataTypes\ISimpleDataType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TE.ComponentLibrary.ComponentLibrary.Domain.SortOrder" Collapsed="true">
+    <Position X="10.25" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Domain\SortOrder.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

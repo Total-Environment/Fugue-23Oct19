@@ -1,0 +1,23 @@
+.contentTable {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.contentTable thead {
+    border: 1px solid black;
+}
+
+.contentTable tr {
+    border: 1px solid black;
+}
+
+.contentTable tr td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.contentTable thead th {
+    border: 1px solid black;
+    padding: 10px;
+}

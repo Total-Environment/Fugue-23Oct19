@@ -1,0 +1,68 @@
+.qem {
+    margin: 100px auto;
+    width: 960px;
+}
+
+.qem table.contentTable tbody tr td:first-child {
+    text-align: center;
+}
+
+.qemHeaderTable {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+.qemHeaderTable tr {
+    border: 1px solid black;
+}
+
+.qemHeaderTable tr td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.qemLogo {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.qemHeaderTable tr:first-child td:nth-child(2) {
+    text-align: center;
+    font-size: 17px;
+}
+
+.qemHeaderTable tr:nth-child(3) {
+    color: #FF0000;
+}
+
+.qemHeaderTable tr:nth-child(4) td:nth-child(3) {
+    color: #FF0000;
+}
+
+.qemHeaderTable tr td:nth-child(1) {
+    width: 20%
+}
+
+.qemHeaderTable tr td:nth-child(2) {
+    width: 15%
+}
+
+.qemHeaderTable tr td:nth-child(3) {
+    width: 30%
+}
+
+.qemHeaderTable tr td:nth-child(4) {
+    width: 8%
+}
+
+.qemHeaderTable tr td:nth-child(5) {
+    width: 9%
+}
+
+.qemHeaderTable tr td:nth-child(6) {
+    width: 18%
+}

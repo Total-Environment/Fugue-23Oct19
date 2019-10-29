@@ -1,0 +1,167 @@
+.rateHistory {
+   margin-top: 30px;
+ }
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  display: table-row;
+  padding: 12px;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
+}
+
+.tableHeader th {
+  background: #AA989C;
+  color: #fff;
+  font-weight: normal;
+  border-bottom: solid 1px #ccc;
+  position: relative;
+  padding: 10px 5px;
+}
+.tableRow {
+  background: #fdfdfd;
+}
+.tableRow:nth-child(even) {
+  background: #f9f7f8;
+}
+
+.tableHeader th:first-child, .tableRow td:first-child{
+   padding-left:20px;
+ }
+
+.tableHeader th:last-child, .tableRow td:last-child{
+   padding-right:20px;
+ }
+
+.text {
+  text-align: left;
+}
+
+.number {
+  text-align: right;
+}
+
+.tableRow td {
+  padding: 12px 6px;
+  max-width:150px;
+  min-width:100px;
+}
+
+.back {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+  composes: primary from '../../css-common/colors.css';
+}
+
+.errorMessage {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.title {
+  background:#fff;
+  composes: title from '../../css-common/typography.css';
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.header {
+  composes: bold from '../../css-common/typography.css'
+}
+
+.errorMessage {
+  margin-left: 20px;
+}
+
+.currencyContainer{
+  display:flex;
+}
+
+.moneyValue{
+  display:block;
+  flex:1;
+  margin-right: 3px;
+}
+
+.moneyCurrency{
+  display:block;
+  flex-basis: 30px;
+  min-width:30px;
+  text-align:left;
+  text-transform: uppercase;
+}
+
+.backToComponent{
+  text-decoration:none;
+  margin:0 0 20px 0;
+  display:inline-block;
+  font-size:1rem;
+  composes: primary from '../../css-common/colors.css'
+}
+
+.backToComponent:hover {
+  text-decoration: underline;
+}
+
+.button {
+  padding: .7rem;
+  border: solid 1px #ccc;
+  width: 10rem;
+  background: transparent;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 1rem;
+  margin-right: 10px;
+  transform: translateX(-100%);
+  text-transform: uppercase;
+}
+
+.filter {
+  composes: button;
+  float: right;
+  display: inline-block;
+}
+
+.filtersApplied {
+  composes: button;
+  float: right;
+  border-bottom-color: #FC511F;
+  border-top-color: #FC511F;
+  display: inline-block;
+}
+
+.icon {
+  display: block;
+  vertical-align: middle;
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  padding: 0.05rem;
+}

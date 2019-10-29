@@ -1,0 +1,25 @@
+.component{
+  display: block;
+  background-color: #ffffff;
+  margin-top: 20px;
+}
+
+.action {
+  padding: 1rem 0;
+  text-align: right;
+}
+
+.title {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+}
+
+.titleAndStatus {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.highlight {
+  composes: primary from '../../css-common/colors.css';
+}

@@ -1,0 +1,28 @@
+.row, .column {
+  padding-top: 5px;
+  padding-bottom: 0;
+}
+
+.row:last-child, .column:last-child {
+  padding-bottom: 5px;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.header {
+  composes: bold from '../../css-common/typography.css'
+}
+
+.errorMessage {
+  margin-left: 20px;
+}
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+  flex-basis: 14.285%;
+  max-width: 14.285%;
+  padding: 0 20px;
+}

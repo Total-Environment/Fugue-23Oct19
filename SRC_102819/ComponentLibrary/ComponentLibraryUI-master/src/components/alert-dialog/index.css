@@ -1,0 +1,37 @@
+:global(.ReactModal__Overlay) {
+  z-index: 100;
+}
+.dialog {
+  position: fixed;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  top: 100px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+}
+
+.content {
+  flex: 1;
+}
+
+.button {
+  composes: roundedButton from '../../css-common/forms.css';
+}
+
+.title {
+  margin: 10px 0 5px 0 ;
+}
+
+.message {
+  margin: 5px 0 10px 0;
+}

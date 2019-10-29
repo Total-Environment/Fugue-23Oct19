@@ -1,0 +1,115 @@
+.sidebar {
+  composes: inverse from "../../css-common/colors.css";
+  width: 188px;
+  transition: width 100ms;
+  white-space: nowrap;
+}
+
+.sidebar .shortLogo {
+  display: none;
+}
+
+.sidebar ul {
+  margin: 0;
+}
+
+.collapsed {
+  width: 60px;
+  transition: width 100ms;
+}
+
+.collapsed .shortLogo {
+  display: block;
+}
+
+.collapsed .logo {
+  display: none;
+}
+
+.links {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.link {
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 60px;
+  position: relative;
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+}
+.link:hover, .links .activeLink {
+  text-decoration: none;
+  background-color: #382D2B;
+  color: rgba(255,255,255,0.8);
+}
+
+.link:hover .icon path, .link:hover .icon text, .activeLink .icon path, .activeLink .icon text{
+  fill: #FC511F;
+}
+
+.icon {
+  display: block;
+  vertical-align: middle;
+  margin: 0 20px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+}
+
+.logo {
+  height: 60px;
+  width: 150px;
+  fill: #fff;
+  margin-left: 10px;
+}
+
+.logoDark {
+  height: 60px;
+  width: 150px;
+  fill: #000;
+  margin-left: 10px;
+}
+
+.shortLogo {
+  height: 48px;
+  width: 38px;
+  fill: #fff;
+  margin-left: 10px;
+  padding-top: 10px;
+}
+
+.logoContainer {
+  height: 60px;
+  display: block;
+}
+
+.ratesNav {
+  padding: 0;
+  list-style: none;
+}
+
+.ratesNav li {
+  text-align: left;
+}
+
+.ratesNavLink {
+  display: block;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: rgba(255,255,255,0.3);
+  text-decoration: none;
+}
+
+.ratesNavLink:hover {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+}

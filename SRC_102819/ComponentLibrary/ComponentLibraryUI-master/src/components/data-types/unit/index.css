@@ -1,0 +1,29 @@
+.columnTitle {
+}
+
+.columnValue {
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+}
+
+.columnTitleWithType {
+  composes: bold from "../../../css-common/typography.css";
+  margin-bottom: 6px;
+}
+
+.input {
+  composes: input from '../../../css-common/forms.css';
+  width: 60px !important; /* this is SO wrong, but there's no other way. CSS modules is a mistake */
+}
+
+.unit {
+  padding-left: 6px;
+}
+
+.error {
+  composes: error from '../../../css-common/forms.css';
+}

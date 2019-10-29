@@ -1,0 +1,18 @@
+.extraInformationContent {
+}
+
+
+.sidebarAndContent {
+}
+
+.content {
+  margin: 0 30px 0 90px;
+  min-height: calc(100vh - 150px);
+}
+
+.footer {
+  clear: both;
+  margin: 20px 0 10px 0;
+  text-align: center;
+}
+

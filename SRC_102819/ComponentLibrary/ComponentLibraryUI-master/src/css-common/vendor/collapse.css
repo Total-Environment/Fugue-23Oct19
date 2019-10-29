@@ -1,0 +1,45 @@
+.rc-collapse-anim-active {
+  -webkit-transition: height 0.2s ease-out;
+  transition: height 0.2s ease-out;
+}
+
+.rc-collapse > .rc-collapse-item > .rc-collapse-header {
+  font-weight: 700;
+  line-height: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-bottom: 1px solid #969696;
+  padding: 10px 0 10px 20px;
+  background: #AA989C;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+.rc-collapse > .rc-collapse-item-active > .rc-collapse-header {
+  border-radius: 4px 4px 0 0;
+}
+
+.rc-collapse > .rc-collapse-item > .rc-collapse-header .arrow {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  width: 12px;
+  transform: rotate(-90deg);
+  transition: transform 200ms;
+  height: auto;
+  stroke: #fff;
+}
+
+.rc-collapse > .rc-collapse-item-active > .rc-collapse-header .arrow {
+  transform: rotate(0deg);
+  transition: transform 200ms;
+}
+
+.rc-collapse-content {
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.rc-collapse-content-inactive {
+  display: none;
+}

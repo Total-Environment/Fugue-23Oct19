@@ -1,0 +1,61 @@
+﻿{
+    "group": "Fenestration",
+    "headers": [
+        {
+            "name": "Classification",
+            "key": "classification",
+            "columns": [
+                {
+                    "key": "material_level_1",
+                    "name": "Material Level 1",
+                    "value": "Primary"
+                },
+                {
+                    "key": "material_level_2",
+                    "name": "Material Level 2",
+                    "value": "Fenestration"
+                }
+            ]
+        },
+        {
+            "name": "General",
+            "key": "general",
+            "columns": [
+                {
+                    "key": "hsm_code",
+                    "name": "HSM Code",
+                    "value": "HYD33"
+                },
+                {
+                    "key": "material_code",
+                    "name": "Material Code",
+                    "value": null
+                },
+                {
+                    "key": "can_be_used_as_an_asset",
+                    "name": "Can be Used as an Asset",
+                    "value": false
+                }
+            ]
+        },
+        {
+            "name": "Specifications",
+            "key": "specifications",
+            "columns": [
+                {
+                    "key": "fenestration_type",
+                    "name": "Fenestration Type",
+                    "value": "Grassy Living Room"
+                },
+                {
+                    "key": "length",
+                    "name": "Length",
+                    "value": {
+                        "Type": "mm",
+                        "Value": 20
+                    }
+                }
+            ]
+        }
+    ]
+}

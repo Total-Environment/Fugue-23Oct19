@@ -1,0 +1,837 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4E068F14-459B-45D6-AB73-F24BD6226BE8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TE.ComponentLibrary.ComponentLibrary</RootNamespace>
+    <AssemblyName>ComponentLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44380</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>disabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <ApplicationInsightsResourceId>/subscriptions/3a45f612-fac1-423f-9fcb-2a80edfd084a/resourcegroups/dangal/providers/microsoft.insights/components/dangal-component-library</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/3a45f612-fac1-423f-9fcb-2a80edfd084a/resourcegroups/dangal/providers/microsoft.insights/components/dangal-component-library</ApplicationInsightsAnnotationResourceId>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\ComponentLibrary.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\ComponentLibrary.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.1.3\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Elmah, Version=1.2.14706.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\elmah.corelibrary.1.2.2\lib\Elmah.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Elmah.Contrib.WebApi, Version=1.0.10.25, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Elmah.Contrib.WebApi.1.0.10.25\lib\net45\Elmah.Contrib.WebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.2.0.6\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.2.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.2.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.2.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.2.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.2.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.2.0\lib\net46\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Azure.ActiveDirectory.GraphClient, Version=2.1.10.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.ActiveDirectory.GraphClient.2.1.1\lib\portable-net4+sl5+win+wpa+wp8\Microsoft.Azure.ActiveDirectory.GraphClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Edm">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.Edm.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.OData.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Data.Services.Client">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.Data.Services.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Clients.ActiveDirectory, Version=3.17.0.27603, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Clients.ActiveDirectory.3.17.0\lib\net45\Microsoft.IdentityModel.Clients.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.ActiveDirectory, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.ActiveDirectory.3.0.1\lib\net45\Microsoft.Owin.Security.ActiveDirectory.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Jwt, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Jwt.3.0.1\lib\net45\Microsoft.Owin.Security.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage, Version=8.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Bson, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Bson.2.3.0\lib\net45\MongoDB.Bson.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.2.3.0\lib\net45\MongoDB.Driver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Core, Version=2.3.0.157, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MongoDB.Driver.Core.2.3.0\lib\net45\MongoDB.Driver.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MongoDB.Driver.Legacy">
+      <HintPath>..\packages\mongocsharpdriver.2.3.0\lib\net45\MongoDB.Driver.Legacy.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NotificationEngine, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NotificationEngine.1.0.22-dev\lib\net462\NotificationEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SendGrid, Version=9.5.1.0, Culture=neutral, PublicKeyToken=4f047e93159395ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\Sendgrid.9.5.1\lib\net452\SendGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="SimpleInjector, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.3.2.2\lib\net45\SimpleInjector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector.Extensions.ExecutionContextScoping, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Extensions.ExecutionContextScoping.3.2.2\lib\net45\SimpleInjector.Extensions.ExecutionContextScoping.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SimpleInjector.Integration.WebApi, Version=3.2.2.0, Culture=neutral, PublicKeyToken=984cb50dea722e99, processorArchitecture=MSIL">
+      <HintPath>..\packages\SimpleInjector.Integration.WebApi.3.2.2\lib\net45\SimpleInjector.Integration.WebApi.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Swashbuckle.Core.5.5.3\lib\net40\Swashbuckle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Collections" />
+    <Reference Include="System.Collections.NonGeneric, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Collections.NonGeneric.4.0.1\lib\net46\System.Collections.NonGeneric.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.ComponentModel.Primitives, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Primitives.4.1.0\lib\net45\System.ComponentModel.Primitives.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.TypeConverter.4.1.0\lib\net462\System.ComponentModel.TypeConverter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.4.0.0\lib\net45\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Dynamic, Version=1.0.6132.35681, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Dynamic.1.0.7\lib\net40\System.Linq.Dynamic.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Spatial">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\System.Spatial.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.1.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.3.0\lib\netstandard1.0\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TE.Shared.CloudServiceFramework, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\CloudServiceFramework.2.0.52-dev\lib\TE.Shared.CloudServiceFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="xunit.core">
+      <HintPath>..\packages\xunit.extensibility.core.2.2.0-beta3-build3402\lib\net45\xunit.core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Net.Http.Formatting">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Readme\Elmah.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppService\ApplicationEvent.cs" />
+    <Compile Include="AppService\CostPriceRatioBuilderFactory.cs" />
+    <Compile Include="AppService\ColumnDataValidator.cs" />
+    <Compile Include="AppService\ColumnDataBuilder.cs" />
+    <Compile Include="AppService\CostPriceRatioFilter.cs" />
+    <Compile Include="AppService\CostPriceRatioFilterFactory.cs" />
+    <Compile Include="AppService\CostPriceRatioValidator.cs" />
+    <Compile Include="AppService\IColumnDataBuilder.cs" />
+    <Compile Include="AppService\IColumnDataValidator.cs" />
+    <Compile Include="AppService\ICostPriceRatioBuilderFactory.cs" />
+    <Compile Include="AppService\ICostPriceRatioFilter.cs" />
+    <Compile Include="AppService\ICostPriceRatioFilterFactory.cs" />
+    <Compile Include="AppService\IPriceService.cs" />
+    <Compile Include="AppService\IValidationService.cs" />
+    <Compile Include="AppService\MaterialCostPriceRatioBuilder.cs" />
+    <Compile Include="AppService\CostPriceRatioService.cs" />
+    <Compile Include="AppService\CostPriceRatioValidatorFactory.cs" />
+    <Compile Include="AppService\ICostPriceRatioBuilder.cs" />
+    <Compile Include="AppService\ICostPriceRatioService.cs" />
+    <Compile Include="AppService\ICostPriceRatioValidator.cs" />
+    <Compile Include="AppService\ICostPriceRatioValidatorFactory.cs" />
+    <Compile Include="AppService\MaterialCostPriceRatioFilter.cs" />
+    <Compile Include="AppService\MaterialCostPriceRatioValidator.cs" />
+    <Compile Include="AppService\PackageCostPriceRatioBuilder.cs" />
+    <Compile Include="AppService\PackageCostPriceRatioValidator.cs" />
+    <Compile Include="AppService\PriceService.cs" />
+    <Compile Include="AppService\SemiFinishedGoodCoefficientBuilder.cs" />
+    <Compile Include="AppService\AssetCoefficientBuilder.cs" />
+    <Compile Include="AppService\BrandCodeGenerator.cs" />
+    <Compile Include="AppService\ComponentCost.cs" />
+    <Compile Include="AppService\IComponentCoefficientBuilderFactory.cs" />
+    <Compile Include="AppService\ComponentCoefficientBuilderFactory.cs" />
+    <Compile Include="AppService\IComponentCoefficientValidatorFactory.cs" />
+    <Compile Include="AppService\ComponentCoefficientValidatorFactory.cs" />
+    <Compile Include="AppService\IComponentCoefficientBuilder.cs" />
+    <Compile Include="AppService\MaterialCoefficientBuilder.cs" />
+    <Compile Include="AppService\ICompositeComponentDataBuilder.cs" />
+    <Compile Include="AppService\CompositeComponentSearchRequest.cs" />
+    <Compile Include="AppService\SemiFinishedGoodCostPriceRatioBuilder.cs" />
+    <Compile Include="AppService\SemiFinishedGoodCostPriceRatioValidator.cs" />
+    <Compile Include="AppService\ServiceCoefficientBuilder.cs" />
+    <Compile Include="AppService\SemiFinishedGoodCoefficientValidator.cs" />
+    <Compile Include="AppService\ServiceCostPriceRatioBuilder.cs" />
+    <Compile Include="AppService\ServiceCostPriceRatioValidator.cs" />
+    <Compile Include="AppService\ServiceRateSearchRequest.cs" />
+    <Compile Include="AppService\IRateSearchRequest.cs" />
+    <Compile Include="AppService\MaterialRateSearchRequest.cs" />
+    <Compile Include="AppService\CounterGenerator.cs" />
+    <Compile Include="AppService\DependencyValidator.cs" />
+    <Compile Include="AppService\FilterCriteriaBuilder.cs" />
+    <Compile Include="AppService\HeaderColumnDataBuilder.cs" />
+    <Compile Include="AppService\IClassificationDefinitionBuilder.cs" />
+    <Compile Include="AppService\ICounterGenerator.cs" />
+    <Compile Include="AppService\IDependencyValidator.cs" />
+    <Compile Include="AppService\IFilterCriteriaBuilder.cs" />
+    <Compile Include="AppService\IMaterialBuilder.cs" />
+    <Compile Include="AppService\IBrandCodeGenerator.cs" />
+    <Compile Include="AppService\IMaterialCodeGenerator.cs" />
+    <Compile Include="AppService\IMaterialService.cs" />
+    <Compile Include="AppService\IHeaderColumnDataValidator.cs" />
+    <Compile Include="AppService\ICompositeComponentValidator.cs" />
+    <Compile Include="AppService\ICompositeComponentService.cs" />
+    <Compile Include="AppService\ISearchRequest.cs" />
+    <Compile Include="AppService\ICompositeComponentBuilder.cs" />
+    <Compile Include="AppService\IComponentCoefficientValidator.cs" />
+    <Compile Include="AppService\MaterialBuilder.cs" />
+    <Compile Include="AppService\MaterialCodeGenerator.cs" />
+    <Compile Include="AppService\AssetCoefficientValidator.cs" />
+    <Compile Include="AppService\ComponentCoefficientValidator.cs" />
+    <Compile Include="AppService\ServiceCoefficientValidator.cs" />
+    <Compile Include="AppService\MaterialCoefficientValidator.cs" />
+    <Compile Include="AppService\CompositeComponentBuilder.cs" />
+    <Compile Include="AppService\CompositeComponentValidator.cs" />
+    <Compile Include="AppService\ServiceSearchRequest.cs" />
+    <Compile Include="AppService\MaterialService.cs" />
+    <Compile Include="AppService\NotificationManager.cs" />
+    <Compile Include="AppService\MaterialSearchRequest.cs" />
+    <Compile Include="AppService\HeaderColumnDataValidator.cs" />
+    <Compile Include="AppService\CompositeComponentService.cs" />
+    <Compile Include="AppService\RateSearchRequest.cs" />
+    <Compile Include="AppService\CompositeComponentDataBuilder.cs" />
+    <Compile Include="AppService\CompositeComponentCost.cs" />
+    <Compile Include="App_Start\ComponentLibraryAuthorizeAttribute.cs" />
+    <Compile Include="App_Start\ValidateModelAttribute.cs" />
+    <Compile Include="App_Start\ValidCompositeComponentConstraint.cs" />
+    <Compile Include="App_Start\RequireHttpsAttribute.cs" />
+    <Compile Include="App_Start\Startup.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="ComponentMasters\Domain\PaginatedAndSortedList.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\ChecklistValueConverter.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\BlockDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\SimpleDataTypeDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\SimpleColumnDefinitionDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\CostPriceRatioDefinitionDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\CompositeComponentDefinitionDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\SimpleDataTypeFactory.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\PaginatedAndSortedListDto.cs" />
+    <Compile Include="AppService\FilterData.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\StaticFileConverter.cs" />
+    <Compile Include="ControllerAdaptors\CompositeComponentDocumentDtoAdaptor.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\BrandDataDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\CdnToken.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\CLAuthDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\CostPriceListDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\CostPriceRatioDefinitionDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ColumnDataTypeDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ComponentDataDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ComponentType.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\CompositeComponentDocumentDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\CostPriceRatioDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\CPRCoefficientDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\HeaderDataTypeDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ListDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\BrandDataTypeDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ComponentCoefficientDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\MaterialDataTypeDto.cs" />
+    <Compile Include="ControllerAdaptors\BrandDataTypeDtoAdaptor.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\BrandDocumentDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ProjectDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ServiceRateSearchResultDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\MaterialRateSearchResultDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ComponentCompositionDto.cs" />
+    <Compile Include="ControllerAdaptors\MaterialDataTypeDtoAdaptor.cs" />
+    <Compile Include="ControllerAdaptors\BrandDocumentDtoAdaptor.cs" />
+    <Compile Include="ControllerAdaptors\MaterialDocumentDtoAdaptor.cs" />
+    <Compile Include="ControllerAdaptors\BrandDtoAdapter.cs" />
+    <Compile Include="ControllerAdaptors\MaterialDtoAdapter.cs" />
+    <Compile Include="ControllerAdaptors\ServiceDtoAdapter.cs" />
+    <Compile Include="AppService\ClassificationDefinitionBuilder.cs" />
+    <Compile Include="ControllerPort\BuildRateResponse.cs" />
+    <Compile Include="ControllerPort\BuildRateResponseRecord.cs" />
+    <Compile Include="ControllerPort\CdnAuthController.cs" />
+    <Compile Include="ControllerPort\CostPriceRatioController.cs" />
+    <Compile Include="ControllerPort\CostPriceRatioDefinitionController.cs" />
+    <Compile Include="ControllerPort\ExternalComponentController.cs" />
+    <Compile Include="ControllerPort\ExternalMaterialController.cs" />
+    <Compile Include="ControllerPort\ExternalValidationController.cs" />
+    <Compile Include="ControllerPort\MaterialController.cs" />
+    <Compile Include="ControllerPort\PriceController.cs" />
+    <Compile Include="ControllerPort\ProjectController.cs" />
+    <Compile Include="ControllerPort\RateEditStatus.cs" />
+    <Compile Include="ControllerPort\CompositeComponentController.cs" />
+    <Compile Include="ControllerAdaptors\CompositeComponentDto.cs" />
+    <Compile Include="ControllerPort\CompositeComponentDefinitionController.cs" />
+    <Compile Include="ControllerPort\CompositeComponentMappingController.cs" />
+    <Compile Include="ControllerPort\UserController.cs" />
+    <Compile Include="DataAdaptors\CompositeComponentDaoSerializer.cs" />
+    <Compile Include="Domain\Brand.cs" />
+    <Compile Include="Domain\CodePrefixTypeMapping.cs" />
+    <Compile Include="Domain\ComponentCoefficient.cs" />
+    <Compile Include="Domain\CostPriceRatio.cs" />
+    <Compile Include="Domain\CostPriceRatioList.cs" />
+    <Compile Include="Domain\CPRCoefficient.cs" />
+    <Compile Include="Domain\Header.cs" />
+    <Compile Include="Domain\HeaderColumnData.cs" />
+    <Compile Include="Domain\ICompositeComponentDefinitionRepository.cs" />
+    <Compile Include="Domain\Keys.cs" />
+    <Compile Include="Domain\IComponentComposition.cs" />
+    <Compile Include="Domain\ComponentPrice.cs" />
+    <Compile Include="Domain\Project.cs" />
+    <Compile Include="Domain\ServiceRateSearchResult.cs" />
+    <Compile Include="Domain\ComponentComposition.cs" />
+    <Compile Include="Domain\CompositeComponentDefinition.cs" />
+    <Compile Include="Domain\ICompositeComponentDefinition.cs" />
+    <Compile Include="Domain\CompositeComponentMapping.cs" />
+    <Compile Include="Domain\CompositeComponent.cs" />
+    <Compile Include="Domain\MaterialRateSearchResult.cs" />
+    <Compile Include="Domain\SimpleColumnDefinition.cs" />
+    <Compile Include="Domain\Component.cs" />
+    <Compile Include="Domain\ComponentDefinition.cs" />
+    <Compile Include="Domain\DataTypes\BrandDataType.cs" />
+    <Compile Include="Domain\DataTypes\IDataType.cs" />
+    <Compile Include="Domain\DataTypes\ISimpleDataType.cs" />
+    <Compile Include="Domain\IBrand.cs" />
+    <Compile Include="Domain\ISimpleColumnDefinition.cs" />
+    <Compile Include="Domain\ISimpleDataTypeFactory.cs" />
+    <Compile Include="Domain\IDocumentRepository.cs" />
+    <Compile Include="Domain\NullColumnData.cs" />
+    <Compile Include="Domain\SortOrder.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\ColumnValueConverter.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\BaseController.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\DocumentController.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\ComponentDefinitionDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\DependencyDefinitionCompressedDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\DocumentDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\MasterDataListDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\ComponentController.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\ComponentDefinitionDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\CheckListDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\ColumnDataDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\DependencyDefinitionDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\HeaderDataDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\MasterDataListDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\ComponentDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\StaticFileDao.cs" />
+    <Compile Include="Domain\DataTypes\ArrayDataType.cs" />
+    <Compile Include="Domain\DataTypes\AutogeneratedDataType.cs" />
+    <Compile Include="Domain\DataTypes\BooleanDataType.cs" />
+    <Compile Include="Domain\DataTypes\CheckListValue.cs" />
+    <Compile Include="Domain\ColumnData.cs" />
+    <Compile Include="Domain\ColumnDefinition.cs" />
+    <Compile Include="Domain\DataTypes\DateDataType.cs" />
+    <Compile Include="Domain\DataTypes\DecimalDataType.cs" />
+    <Compile Include="Domain\DependencyDefinition.cs" />
+    <Compile Include="Domain\DependentBlock.cs" />
+    <Compile Include="Domain\HeaderData.cs" />
+    <Compile Include="Domain\HeaderDefinition.cs" />
+    <Compile Include="Domain\IColumnDefinition.cs" />
+    <Compile Include="Domain\IDependencyDefinition.cs" />
+    <Compile Include="Domain\IDependencyDefinitionRepository.cs" />
+    <Compile Include="Domain\IHeaderDefinition.cs" />
+    <Compile Include="Domain\IColumnData.cs" />
+    <Compile Include="Domain\IHeaderData.cs" />
+    <Compile Include="Domain\IMasterDataList.cs" />
+    <Compile Include="Domain\IMasterDataRepository.cs" />
+    <Compile Include="Domain\IComponent.cs" />
+    <Compile Include="Domain\IComponentDefinition.cs" />
+    <Compile Include="Domain\DataTypes\IntDataType.cs" />
+    <Compile Include="Domain\IStaticFileRepository.cs" />
+    <Compile Include="Domain\MasterDataList.cs" />
+    <Compile Include="Domain\DataTypes\CheckListDataType.cs" />
+    <Compile Include="Domain\DataTypes\MoneyValue.cs" />
+    <Compile Include="Domain\DataTypes\MoneyDataType.cs" />
+    <Compile Include="Domain\DataTypes\RangeDataType.cs" />
+    <Compile Include="Domain\DataTypes\RangeValue.cs" />
+    <Compile Include="Domain\DataTypes\StaticFileDataType.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\DocumentRepository.cs" />
+    <Compile Include="Domain\WastagePercentage.cs" />
+    <Compile Include="ECToken\ECTokenGenerator.cs" />
+    <Compile Include="ExceptionHandling\OopsExceptionHandler.cs" />
+    <Compile Include="ExceptionHandling\TraceExceptionLogger.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Domain\AssetDefinition.cs" />
+    <Compile Include="Domain\BrandDefinition.cs" />
+    <Compile Include="Domain\IMaterialDefinition.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\DependencyDefinitionController.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\DependencyDefinitionDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\DependentBlockDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\IJsonSerializable.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\JsonSerializableConverter.cs" />
+    <Compile Include="Domain\BetterKeyNotFoundException.cs" />
+    <Compile Include="Domain\IMaterial.cs" />
+    <Compile Include="ControllerPort\AssetDefinitionController.cs" />
+    <Compile Include="ControllerPort\BrandDefinitionController.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\AssetDefinitionDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\ColumnDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\HeaderDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\MaterialDataDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\MaterialDocumentDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\BrandDefinitionDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\MaterialSearchDto.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\MaterialDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\DataTypeFactory.cs" />
+    <Compile Include="Domain\IDataTypeFactory.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\DependentBlockDao.cs" />
+    <Compile Include="ControllerAdaptors\UpdateMaterialRateRequest.cs" />
+    <Compile Include="ControllerAdaptors\DTOs\MaterialWithDataTypeDto.cs" />
+    <Compile Include="Domain\IBrandDefinitionRepository.cs" />
+    <Compile Include="ControllerPort\ISapSyncer.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\MongoCollectionExtensions.cs" />
+    <Compile Include="Helpers\ClaimsHelper.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\LandedRateDto.cs" />
+    <Compile Include="RepositoryPort\AssetDefinitionRepository.cs" />
+    <Compile Include="DataAdaptors\BrandDefinitionDao.cs" />
+    <Compile Include="RepositoryPort\BrandDefinitionRepository.cs" />
+    <Compile Include="RepositoryPort\Cache.cs" />
+    <Compile Include="DataAdaptors\AssetDefinitionDao.cs" />
+    <Compile Include="DataAdaptors\ComponentDaoSerializer.cs" />
+    <Compile Include="Domain\IBrandDefinition.cs" />
+    <Compile Include="ControllerPort\SapSyncer.cs" />
+    <Compile Include="DataAdaptors\MaterialDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\DependencyDefinitionRepository.cs" />
+    <Compile Include="RepositoryPort\CodePrefixTypeMappingDao.cs" />
+    <Compile Include="RepositoryPort\CodePrefixTypeMappingRepository.cs" />
+    <Compile Include="RepositoryPort\ComponentCoefficientDao.cs" />
+    <Compile Include="RepositoryPort\ComponentCompositionDao.cs" />
+    <Compile Include="RepositoryPort\ComponentRepository.cs" />
+    <Compile Include="RepositoryPort\CompositeComponentDao.cs" />
+    <Compile Include="RepositoryPort\CostPriceRatioDao.cs" />
+    <Compile Include="Domain\CostPriceRatioDefinition.cs" />
+    <Compile Include="RepositoryPort\CostPriceRatioDefinitionRepository.cs" />
+    <Compile Include="RepositoryPort\CostPriceRatioRepository.cs" />
+    <Compile Include="RepositoryPort\ICodePrefixTypeMappingRepository.cs" />
+    <Compile Include="RepositoryPort\IComponentRepository.cs" />
+    <Compile Include="RepositoryPort\ICostPriceRatioDefinitionRepository.cs" />
+    <Compile Include="RepositoryPort\ICostPriceRatioRepository.cs" />
+    <Compile Include="RepositoryPort\IMaterialRepository.cs" />
+    <Compile Include="RepositoryPort\IProjectRepository.cs" />
+    <Compile Include="RepositoryPort\MongoDBCPRCoefficientSerializer.cs" />
+    <Compile Include="RepositoryPort\PackageDao.cs" />
+    <Compile Include="RepositoryPort\ProjectDao.cs" />
+    <Compile Include="RepositoryPort\ProjectRepository.cs" />
+    <Compile Include="RepositoryPort\SemiFinishedGoodDao.cs" />
+    <Compile Include="RepositoryPort\PackageDefinitionDao.cs" />
+    <Compile Include="RepositoryPort\SemiFinishedGoodDefinitionDao.cs" />
+    <Compile Include="RepositoryPort\CompositeComponentDefinitionRepository.cs" />
+    <Compile Include="RepositoryPort\ICompositeComponentRepository.cs" />
+    <Compile Include="RepositoryPort\ICompositeComponentMappingRepository.cs" />
+    <Compile Include="RepositoryPort\MaterialRepository.cs" />
+    <Compile Include="Domain\DataTypes\UnitValue.cs" />
+    <Compile Include="Domain\DataTypes\ConstantDataType.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\ColumnDefinitionDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\DataTypeDto.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\HeaderDefinitionDto.cs" />
+    <Compile Include="ControllerAdaptors\MaterialDefinitionDao.cs" />
+    <Compile Include="Domain\DataTypes\UnitDataType.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\MasterDataController.cs" />
+    <Compile Include="ControllerPort\OldMaterialController.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\MasterDataRepository.cs" />
+    <Compile Include="Domain\DataTypes\MasterDataDataType.cs" />
+    <Compile Include="Domain\MasterDataValue.cs" />
+    <Compile Include="Domain\Material.cs" />
+    <Compile Include="Domain\MaterialDefinition.cs" />
+    <Compile Include="Domain\DataTypes\StringDataType.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\StaticFileController.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\CounterDao.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\CounterRepository.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\ICounterRepository.cs" />
+    <Compile Include="Domain\IComponentDefinitionRepository.cs" />
+    <Compile Include="ControllerPort\MaterialDefinitionController.cs" />
+    <Compile Include="RepositoryPort\MaterialDefinitionRepository.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\StaticFileRepository.cs" />
+    <Compile Include="RateMasters\Core\IBank.cs" />
+    <Compile Include="RateMasters\Domain\DuplicateResourceException.cs" />
+    <Compile Include="RateMasters\Domain\ExchangeRate.cs" />
+    <Compile Include="RateMasters\Domain\IRentalRate.cs" />
+    <Compile Include="RateMasters\Domain\IRentalRateRepository.cs" />
+    <Compile Include="RateMasters\Domain\PercentageCoefficient.cs" />
+    <Compile Include="RateMasters\Domain\ICoefficient.cs" />
+    <Compile Include="RateMasters\Domain\IComponentRate.cs" />
+    <Compile Include="RateMasters\Domain\IComponentRateService.cs" />
+    <Compile Include="RateMasters\Domain\IComponentRateRepository.cs" />
+    <Compile Include="RateMasters\Domain\IExchangeRateRepository.cs" />
+    <Compile Include="RateMasters\Domain\IServiceRateRepository.cs" />
+    <Compile Include="RateMasters\Domain\IServiceRate.cs" />
+    <Compile Include="RateMasters\Domain\IServiceRateService.cs" />
+    <Compile Include="RateMasters\Domain\IMaterialRateRepository.cs" />
+    <Compile Include="RateMasters\Domain\RentalRate.cs" />
+    <Compile Include="RateMasters\Domain\ServiceRateService.cs" />
+    <Compile Include="RateMasters\Domain\ServiceRate.cs" />
+    <Compile Include="RateMasters\Domain\MaterialRate.cs" />
+    <Compile Include="RateMasters\Domain\MaterialRateService.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="ComponentMasters\Infrastructure\Repository\Dao\Entity.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\IMongoRepository.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\CheckListRepository.cs" />
+    <Compile Include="Domain\ICell.cs" />
+    <Compile Include="Domain\CheckList.cs" />
+    <Compile Include="Domain\Entry.cs" />
+    <Compile Include="Domain\Table.cs" />
+    <Compile Include="Domain\TextCell.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\CheckListController.cs" />
+    <Compile Include="Domain\ICheckListRepository.cs" />
+    <Compile Include="Domain\StaticFile.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\MongoRepository.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Repository\ResourceNotFoundException.cs" />
+    <Compile Include="RateMasters\Core\Bank.cs" />
+    <Compile Include="RateMasters\Core\IExchangeRate.cs" />
+    <Compile Include="RateMasters\Core\Money.cs" />
+    <Compile Include="RateMasters\Domain\SumCoefficient.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\CoefficientDto.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\ExchangeRateDto.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\RentalRateDto.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\ServiceRateDto.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\MaterialRateDto.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\Dto\MoneyDto.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\ExchangeRateController.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\RentalRateController.cs" />
+    <Compile Include="RateMasters\Infrastructure\Controller\ServiceRateController.cs" />
+    <Compile Include="ControllerPort\MaterialRateController.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RateMasters\Domain\IMaterialRate.cs" />
+    <Compile Include="RateMasters\Domain\IMaterialRateService.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\CoefficientDao.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\ComponentRateDao.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\ExchangeRateDao.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\RentalRateDao.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\ServiceRateDao.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\MaterialRateDao.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\Dao\MoneyDao.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\ExchangeRateRepository.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\RentalRateRepository.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\ServiceRateRepository.cs" />
+    <Compile Include="RateMasters\Infrastructure\Repository\MaterialRateRepository.cs" />
+    <Compile Include="RepositoryPort\MongoDBBrandSerializer.cs" />
+    <Compile Include="RepositoryPort\MongoDBDecimalFieldSerializer.cs" />
+    <Compile Include="RepositoryPort\CompositeComponentRepository.cs" />
+    <Compile Include="RepositoryPort\PackageMappingDao.cs" />
+    <Compile Include="RepositoryPort\CompositeComponentMappingDao.cs" />
+    <Compile Include="RepositoryPort\SemiFinishedGoodMappingDao.cs" />
+    <Compile Include="RepositoryPort\CompositeComponentMappingRepository.cs" />
+    <Compile Include="Domain\ClassificationDefinition.cs" />
+    <Compile Include="RepositoryPort\IClassficationDefinitionRepository.cs" />
+    <Compile Include="Domain\IService.cs" />
+    <Compile Include="Domain\IServiceDefinition.cs" />
+    <Compile Include="Domain\Service.cs" />
+    <Compile Include="Domain\ServiceDefinition.cs" />
+    <Compile Include="ComponentMasters\Infrastructure\Controller\Dto\MoneyDto.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Controller\Dto\ServiceDocumentDto.cs" />
+    <Compile Include="ControllerPort\ClassficationDefinitionController.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Controller\Dto\ServiceDto.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Controller\Dto\RateDto.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Controller\Dto\ServiceWithDataTypeDto.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\ICompositeComponentSapSyncer.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\IServiceAndCompoSiteComponentSapSyncer.cs" />
+    <Compile Include="DataAdaptors\ClassificationDefinitionDao.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\IServiceSapSyncer.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\Dao\ServiceDaoSerializer.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\IServiceRepository.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\MongoCollectionHelper.cs" />
+    <Compile Include="RepositoryPort\ClassificationDefinitionRepository.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\Dao\ServiceDefinitionDao.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Controller\ServiceController.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Controller\ServiceDefinitionController.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\Dao\ServiceDao.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\ServiceDefinitionRepository.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\Repository\ServiceRepository.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\ServiceAndCompositeComponentRequest.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\ServiceAndCompositeComponentSapSyncer.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\CompositeComponentSapSyncer.cs" />
+    <Compile Include="ServiceMasters\Infrastructure\ServiceSAPSyncer.cs" />
+    <Compile Include="AppService\ValidationService.cs" />
+    <Compile Include="Utils\Client.cs" />
+    <Compile Include="Utils\ClientPermission.cs" />
+    <Compile Include="Utils\Globals.cs" />
+    <Compile Include="Utils\GraphHelper.cs" />
+    <Compile Include="Utils\Group.cs" />
+    <Compile Include="Utils\GroupHelper.cs" />
+    <Compile Include="Utils\GroupPermission.cs" />
+    <Compile Include="Utils\Permission.cs" />
+    <Compile Include="Utils\PermissionHelper.cs" />
+    <Compile Include="Utils\User.cs" />
+    <Compile Include="Utils\UserHelper.cs" />
+    <Compile Include="Web References\SAPServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\ServiceSAPServiceReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ComponentLibrary.nuspec">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Domain\DomainModel.cd" />
+    <Content Include="ApplicationInsights.config" />
+    <None Include="Properties\PublishProfiles\DeployToFileSystem.pubxml" />
+    <None Include="Properties\PublishProfiles\qaCompLib - Web Deploy.pubxml" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Content Include="Web References\SAPServiceReference\MaterialMasterResItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <EmbeddedResource Include="Utils\GroupPermissions.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Utils\ClientPermissions.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <None Include="Web References\SAPServiceReference\MaterialMaster_Out.wsdl" />
+    <Content Include="Web References\SAPServiceReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\ServiceSAPServiceReference\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </Content>
+    <Content Include="Web References\ServiceSAPServiceReference\ServiceMasterResItem.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </Content>
+    <None Include="Web References\ServiceSAPServiceReference\ServiceMaster_Out.wsdl" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://180.151.39.226:50100/dir/wsdl%3fp=sa/884f48cc83e63247938950f89212c03d">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\ServiceSAPServiceReference\</RelPath>
+      <UpdateFromURL>http://180.151.39.226:50100/dir/wsdl%3fp=sa/884f48cc83e63247938950f89212c03d</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ComponentLibrary_ServiceSAPServiceReference_ServiceMaster_OutService</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="http://180.151.39.226:50100/dir/wsdl%3fp=sa/f221ce6348ee3ad2bd70b1c75a6c596d">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\SAPServiceReference\</RelPath>
+      <UpdateFromURL>http://180.151.39.226:50100/dir/wsdl%3fp=sa/f221ce6348ee3ad2bd70b1c75a6c596d</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>ComponentLibrary_SAPServiceReference_MaterialMaster_OutService</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Infrastructure\Validators\" />
+    <Folder Include="MaterialRateMaster\Infrastructure\DAO\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Import Project="../BuildAutomation/MsBuild/CopyRosyln.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51958</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44380/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

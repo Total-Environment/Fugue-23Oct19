@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TE.ComponentLibrary.ComponentLibrary.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="ComponentLibrary_SAPServiceReference_MaterialMaster_OutService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.39.226:50100/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_FUGUE_QAS&amp;receiverParty=&amp;receiverService=&amp;interface=MaterialMaster_Out&amp;interfaceNamespace=http%3A%2F%2Ftotal-environment%2FPI%2FMaterialMaster</Value>
+    </Setting>
+    <Setting Name="ComponentLibrary_ServiceSAPServiceReference_ServiceMaster_OutService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://180.151.39.226:50100/XISOAPAdapter/MessageServlet?senderParty=&amp;senderService=BS_FUGUE_QAS&amp;receiverParty=&amp;receiverService=&amp;interface=ServiceMaster_Out&amp;interfaceNamespace=http%3A%2F%2Ftotal-environment%2FPI%2FServiceMaster</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

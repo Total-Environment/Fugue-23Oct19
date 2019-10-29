@@ -1,0 +1,17 @@
+.columnTitle {
+  composes: bold from "../../../css-common/typography.css";
+  margin-bottom: 6px;
+}
+
+.columnValue {
+  margin-left: 0;
+  margin-bottom: 24px;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+}
+
+.input {
+  composes: input from '../../../css-common/forms.css';
+}

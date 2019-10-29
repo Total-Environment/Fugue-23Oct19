@@ -1,0 +1,436 @@
+﻿{
+  "headers": [
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "Constant",
+            "subType": "Primary"
+          },
+          "name": "Material Level 1"
+        },
+        {
+          "dataType": {
+            "name": "Constant",
+            "subType": "Clay Material"
+          },
+          "name": "Material Level 2"
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_3"
+          },
+          "name": "Material Level 3"
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_4"
+          },
+          "name": "Material Level 4"
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_5"
+          },
+          "name": "Material Level 5"
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_6"
+          },
+          "name": "Material Level 6"
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_7"
+          },
+          "name": "Material Level 7"
+        }
+      ],
+      "name": "Classification"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Material Name"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Material Code"
+        },
+        {
+          "dataType": {
+            "name": "Array",
+            "subType": {
+              "name": "String",
+              "subType": ""
+            }
+          },
+          "name": "Image"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Short Description"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Shade Number"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Shade Description"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Unit Of Measure"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "HSM Code"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "SAP Code"
+        },
+        {
+          "dataType": {
+            "name": "Boolean",
+            "subType": ""
+          },
+          "name": "Part of eBuild Library"
+        },
+        {
+          "dataType": {
+            "name": "Boolean",
+            "subType": ""
+          },
+          "name": "Generic"
+        },
+        {
+          "dataType": {
+            "name": "Boolean",
+            "subType": ""
+          },
+          "name": "Manufactured"
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "status"
+          },
+          "name": "Material Status"
+        }
+      ],
+      "name": "General"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Quantity Evaluation Method"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "General PO Terms & Conditions"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Special PO Terms & Conditions"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Last Purchase Rate"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Weighted Average Purchase Rate"
+        },
+        {
+          "dataType": {
+            "name": "Decimal",
+            "subType": ""
+          },
+          "name": "Procurement Rate Threshold %"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Approved Manufacturers"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Approved Vendors"
+        }
+      ],
+      "name": "Purchase"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          },
+          "name": "PO Lead Time in Days"
+        },
+        {
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          },
+          "name": "Delivery Lead Time in Days"
+        },
+        {
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          },
+          "name": "Minimum Order Quantity"
+        },
+        {
+          "dataType": {
+            "name": "Boolean",
+            "subType": ""
+          },
+          "name": "Maintain Lot"
+        }
+      ],
+      "name": "Planning"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Governing Standard"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Storage Method"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Inspection Checklist"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Sampling Method"
+        }
+      ],
+      "name": "Quality"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "Date",
+            "subType": ""
+          },
+          "name": "Date Created"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Created By"
+        },
+        {
+          "dataType": {
+            "name": "Date",
+            "subType": ""
+          },
+          "name": "Date Last Amended"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Last Amended By"
+        }
+      ],
+      "name": "System Logs"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Specification Sheet"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Finish"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Treatment"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Shape"
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Length"
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Width"
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Height"
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Thickness"
+        },
+        {
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          },
+          "name": "Number of Perforations"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Grade"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Usage Class"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Application Area"
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "N/mm²"
+          },
+          "name": "Strength"
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "%"
+          },
+          "name": "Silt Content"
+        },
+        {
+          "dataType": {
+            "name": "Decimal",
+            "subType": ""
+          },
+          "name": "Specific Gravity (Air Dry)"
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Sieve Size"
+        }
+      ],
+      "name": "Specifications"
+    }
+  ],
+  "code": "TST",
+  "name": "Clay Material"
+}

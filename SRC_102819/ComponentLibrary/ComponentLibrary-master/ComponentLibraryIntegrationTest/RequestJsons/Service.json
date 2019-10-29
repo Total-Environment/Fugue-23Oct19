@@ -1,0 +1,44 @@
+﻿{
+  "Classification": {
+    "Service Level 1": "TestService",
+    "Service Level 2": "Clay Service"
+  },
+  "General": {
+    "Service Name": "Test",
+    "Short Description": "Test Short Description",
+    "HSM Code": "HSM Code",
+    "Service Code": "TST0001",
+    "Image": {
+      "Id": "id",
+      "Name": "Test.png"
+    }
+  },
+  "Planning": {
+    "SO Lead Time in Days": 10,
+    "Vendor Mobilisation Time in Days": 5,
+    "Minimum Order Quantity": 4
+  },
+  "Quality": {
+    "Governing Standard": "Some standard",
+    "Quality Checklist": null,
+    "Safety Requirements": null
+  },
+  "Purchase": {
+    "Method of Measurement": null,
+    "General SO Terms & Conditions": null,
+    "Special SO Terms & Conditions": null,
+    "Last Purchase Rate": {
+      "Amount": 10,
+      "Currency":  "INR"  
+    },
+    "Weighted Average Purchase Rate": {
+      "Amount": 2,
+      "Currency": "DOLAR"
+    },
+    "Procurement Rate Threshold %": {
+      "Type": "%",
+      "Value":  10  
+    },
+    "Approved Vendors":  ["Vendor1","Vendor2"] 
+  } 
+}

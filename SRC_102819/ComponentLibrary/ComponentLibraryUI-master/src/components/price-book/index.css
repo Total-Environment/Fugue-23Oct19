@@ -1,0 +1,96 @@
+.priceBook {
+  padding-top: 30px;
+}
+
+.row {
+  display: flex;
+}
+.column {
+  flex-basis: 9.09%;
+  max-width: 9.09%;
+  padding: 10px 10px;
+}
+
+.header {
+  background: #AA989C;
+  color: #fff;
+  border-bottom: solid 1px #ccc;
+  composes: row;
+}
+
+.headerColumn {
+  composes: column;
+}
+
+.cprTable {
+  background-image: linear-gradient(90deg, #f9f7f8 9.090%, #fdfdfd 9.090%, #fdfdfd 18.181%, #f9f7f8 18.181%, #f9f7f8 27.272%, #fdfdfd 27.272%, #fdfdfd 36.363%, #f9f7f8 36.363%, #f9f7f8 45.454%, #fdfdfd 45.454%, #fdfdfd 54.545%, #f9f7f8 54.545%, #f9f7f8 63.636%, #fdfdfd 63.636%, #fdfdfd 72.727%, #f9f7f8 72.727%, #f9f7f8 81.818%, #fdfdfd 81.818%, #fdfdfd 90.90%, #f9f7f8 90.90%, #f9f7f8 100%);
+}
+
+.cprTable > .cpr {
+  border-bottom: solid 1px #AA989C;
+}
+.cprTable > .cpr:last-child {
+  border-bottom: none;
+}
+.cprRow{
+  cursor: pointer;
+}
+.cprRow:hover {
+  background: #d4cbcd;
+}
+.cpr .cpr .componentName:after {
+  content: "";
+  display: block;
+  border: dotted 1px #AA989C;
+  border-top: none;
+  border-right: none;
+  width: 10px;
+  height: 20px;
+  margin: -30px 0 0 -13px;
+}
+
+.collapseButton {
+  border-radius: 9999px;
+  background: #AA989C;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  outline: none;
+  position: absolute;
+  margin-left: -20px;
+  z-index: 10;
+}
+
+:global(.rah-static--height-zero) .collapseButton {
+  display: none;
+}
+
+.noCprs {
+  text-align: center;
+  color: #FC511F;
+}
+
+.projectCpr {
+  background: #E4E4E4;
+}
+.projectExceptionLegend {
+  position: relative;
+  padding-left: 20px;
+}
+.projectExceptionLegend:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: solid 1px #999;
+  background: #E4E4E4;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.number {
+  text-align: right;
+}

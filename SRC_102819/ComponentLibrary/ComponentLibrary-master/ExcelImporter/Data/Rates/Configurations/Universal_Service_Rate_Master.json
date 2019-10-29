@@ -1,0 +1,34 @@
+﻿{
+  "HeaderConfiguration": [
+    {
+      "Key": "A",
+      "Value": "ServiceID"
+    },
+    {
+      "Key": "B",
+      "Value": "TypeOfPurchase"
+    },
+    {
+      "Key": "C",
+      "Value": "CurrencyType"
+    },
+    {
+      "Key": "D",
+      "Value": "ControlBaseRate"
+    },
+    {
+      "Key": "E",
+      "Value": "LocationID"
+    },
+    {
+      "Key": "F",
+      "Value": "LocationVariance"
+    },
+    {
+      "Key": "G",
+      "Value": "MarketFluctuation"
+    }
+  ],
+  "NullColumnReference": "A",
+  "DataRowIndex": 3
+}

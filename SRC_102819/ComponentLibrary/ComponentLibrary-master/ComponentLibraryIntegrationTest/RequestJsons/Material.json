@@ -1,0 +1,111 @@
+﻿{
+    "group": "Clay Material",
+    "headers": [
+        {
+            "name": "Classification",
+            "key": "classification",
+            "columns": [
+                {
+                    "key": "material_level_1",
+                    "name": "Material Level 1",
+                    "value": "Primary"
+                },
+                {
+                    "key": "material_level_2",
+                    "name": "Material Level 2",
+                    "value": "Clay Material"
+                }
+            ]
+        },
+        {
+            "name": "General",
+            "key": "general",
+            "columns": [
+                {
+                    "key": "material_name",
+                    "name": "Material Name",
+                    "value": "Test"
+                },
+                {
+                    "key": "short_description",
+                    "name": "Short Description",
+                    "value": "Test Short Description"
+                },
+                {
+                    "key": "hsm_code",
+                    "name": "HSM Code",
+                    "value": "HSM Code"
+                },
+                {
+                    "key": "material_code",
+                    "name": "Material Code",
+                    "value": "TST000001"
+                },
+                {
+                    "key": "image",
+                    "name": "Image",
+                    "value": {
+                        "Id": "id",
+                        "Name": "Test.png"
+                    }
+                },
+                {
+                    "key": "generic",
+                    "name": "Generic",
+                    "value": true
+                },
+                {
+                    "key": "po_lead_time_in_days",
+                    "name": "PO Lead Time In Days",
+                    "value": "10"
+                },
+                {
+                    "key": "last_purchase_rate",
+                    "name": "Last Purchase Rate",
+                    "value": {
+                        "Amount": "123",
+                        "Currency": "INR"
+                    }
+                },
+                {
+                    "key": "length",
+                    "name": "Length",
+                    "value": {
+                        "Type": "mm",
+                        "Value": "12.0"
+                    }
+                },
+                {
+                    "key": "approved_vendors",
+                    "name": "Approved Vendors",
+                    "value": [ "Vendor1", "Vendor2" ]
+                },
+                {
+                    "key": "width",
+                    "name": "Width",
+                    "value": {
+                        "From": "1",
+                        "To": "10",
+                        "Unit": "mm"
+                    }
+                },
+                {
+                    "key": "height",
+                    "name": "Height",
+                    "value": "25"
+                }
+            ]
+        },
+        {
+            "name": "Specifications",
+            "key": "specifications",
+            "columns": [
+                {
+                    "key": "application_area",
+                    "name": "Application Area",
+                    "value": "Topmost Floor"
+                }
+            ]
+        }
+    ]
+}

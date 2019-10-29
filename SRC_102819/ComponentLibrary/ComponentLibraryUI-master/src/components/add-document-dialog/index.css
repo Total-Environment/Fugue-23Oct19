@@ -1,0 +1,347 @@
+:global(.ReactModal__Overlay) {
+  z-index: 100;
+}
+
+.rightButton {
+  flex-basis: 150px;
+  min-width: 150px;
+}
+
+.searchKeywordErr {
+  z-index: 1;
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  padding: 0px 10px;
+  border: 1px solid #ccc;
+  color: #ff5c70;
+  margin-left: auto;
+  bottom: -50px;
+  background: #fff;
+  left: 0;
+}
+
+.dialog {
+  position: absolute;
+  width: 700px;
+  left: 50%;
+  right: auto;
+  margin-left: -300px;
+  height: 600px;
+  top: 50%;
+  bottom: auto;
+  margin-top: -300px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 1rem;
+  overflow: auto;
+}
+
+.icon {
+}
+
+.content {
+  flex: 1;
+}
+
+.button {
+  composes: roundedButton from '../../css-common/forms.css';
+}
+
+.title {
+  margin: 10px 0 5px 0;
+}
+
+.message {
+  margin: 5px 0 10px 0;
+}
+
+.fileInput {
+  position: relative;
+  composes: rightButton;
+}
+
+.input {
+  composes: input from '../../css-common/forms.css';
+}
+
+.fakeFile {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  z-index: 1;
+  padding: .7rem;
+  border: solid 1px #ccc;
+  background: #fff;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.link {
+  composes: primary from "../../css-common/colors.css";
+}
+
+.icon {
+  border: none;
+  background: none;
+  font-size: 24px;
+  vertical-align: middle;
+  fill: #584444;
+  margin-top: 6px;
+  margin-right: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.singleData {
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  word-break: break-all;
+}
+
+.fileName {
+  flex: 0.54;
+  position: relative;
+}
+
+.invalidMessage {
+  flex: 0.54;
+  position: relative;
+  color:#FC511F
+}
+
+.delete {
+  composes: button from '../../css-common/forms.css';
+  margin-left: 5px;
+  border-radius: 9999px;
+  padding: 0;
+  flex-basis: 24px;
+  min-width: 24px;
+  height: 24px;
+  position: relative;
+}
+
+.linkFile {
+  composes: button from '../../css-common/forms.css';
+  border-radius: 9999px;
+  padding: 0;
+  height: 24px;
+  position: relative;
+  width: 60px;
+  float:right;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.ok {
+  padding: .7rem;
+  border: solid 1px #ccc;
+  width: 10rem;
+  background: transparent;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.cancel {
+  padding: .7rem;
+  border: solid 1px #ccc;
+  width: 10rem;
+  background: transparent;
+  margin-left: 1rem;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table td:nth-child(1){
+  width:40%;
+}
+
+.table td:nth-child(3){
+  width:20%;
+}
+
+.table td:nth-child(3){
+  width:40%;
+}
+
+.brand td:nth-child(1) {
+  width: 20%;
+}
+.brand td:nth-child(3) {
+  width: 20%;
+}
+.brand td:nth-child(4) {
+  width: 40%;
+}
+
+
+.tableHeader {
+  display: table-row;
+  padding: 12px;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
+}
+
+.tableHeader th {
+  background: #AA989C;
+  color: #fff;
+  font-weight: normal;
+  border-bottom: solid 1px #ccc;
+  position: relative;
+  padding: 10px 5px;
+}
+
+.tableHeader th:first-child, .tableRow td:first-child {
+  padding-left: 20px;
+}
+
+.tableHeader th:last-child, .tableRow td:last-child {
+  padding-right: 20px;
+}
+
+.tableRow {
+  padding: 5px;
+  position: sticky;
+  border-bottom: 1px solid #CACACC;
+  text-align: left;
+  background: #fdfdfd;
+}
+
+.tableRow td {
+  position: relative;
+  padding: 5px;
+  max-width:150px;
+  min-width:100px;
+}
+
+.tableRow:nth-child(even) {
+  background: #f9f7f8;
+}
+
+.popup {
+  padding: 10px;
+}
+
+.localSystem {
+  background: #f3f3f4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.fileDirectory {
+  background: #f3f3f4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.input {
+  background: transparent;
+  padding: 10px;
+  height: 40px;
+  border: solid 1px transparent;
+  flex: 1;
+}
+.input:focus {
+  box-shadow: none;
+}
+
+.iconContainer {
+  cursor: pointer;
+  float: right;
+  height: 37px;
+  vertical-align: middle;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  background: #fff;
+}
+
+.form {
+  background: #fff;
+  height: 40px;
+  border: solid 1px #ccc;
+  display: flex;
+  flex-basis: 325px;
+  position: relative;
+  min-width: 325px;
+}
+
+.form .icon {
+  background: none;
+  font-size: 24px;
+  vertical-align: middle;
+  fill: #584444;
+  margin-top: 6px;
+  margin-right: 0;
+  height: 24px;
+  width: 24px;
+}
+
+.file {
+  position: relative;
+  text-align: right;
+  -moz-opacity: 0;
+  filter: alpha(opacity:0);
+  opacity: 0;
+  z-index: 2;
+  composes: input;
+}
+
+.searchInput{
+  composes: input;
+  flex: 1;
+}
+
+.action {
+  text-align: right;
+}
+
+.document {
+  margin-bottom: 5px;
+}
+
+.document::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.noResults{
+  text-align: center;
+}
+
+.text {
+  text-align: left;
+}
+
+.ReactModal__Body--open {
+  overflow: hidden;
+}

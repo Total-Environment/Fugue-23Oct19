@@ -1,0 +1,20 @@
+.spo {
+    margin: 100px auto;
+    width: 960px;
+}
+
+.spoHeaderTable {
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 18px;
+    color: white;
+    background: steelblue;
+}
+
+.spoHeaderTable tr td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DiscoveryClientResultsFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <DiscoveryClientResult referenceType="System.Web.Services.Discovery.ContractReference" url="http://180.151.39.226:50100/dir/wsdl?p=sa/f221ce6348ee3ad2bd70b1c75a6c596d" filename="MaterialMaster_Out.wsdl" />
+  </Results>
+</DiscoveryClientResultsFile>

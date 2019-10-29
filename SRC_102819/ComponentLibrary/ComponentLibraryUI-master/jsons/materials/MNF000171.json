@@ -1,0 +1,445 @@
+{
+  "classification": {
+    "material Level 1": {
+      "value": "Secondary",
+      "dataType": {
+        "name": "Constant",
+        "subType": "Secondary"
+      }
+    },
+    "material Level 2": {
+      "value": "Manufactured Board",
+      "dataType": {
+        "name": "Constant",
+        "subType": "Manufactured Board"
+      }
+    },
+    "material Level 3": {
+      "value": "Plywood",
+      "dataType": {
+        "name": "MasterData",
+        "subType": "58885705c40d553970a973ea"
+      }
+    },
+    "material Level 4": {
+      "value": "General Purpose",
+      "dataType": {
+        "name": "MasterData",
+        "subType": "58885705c40d553970a973eb"
+      }
+    },
+    "material Level 5": {
+      "value": "Boiling Water Resistant",
+      "dataType": {
+        "name": "MasterData",
+        "subType": "58885706c40d553970a973ec"
+      }
+    },
+    "material Level 6": {
+      "value": null,
+      "dataType": {
+        "name": "MasterData",
+        "subType": "58885706c40d553970a973ed"
+      }
+    },
+    "material Level 7": {
+      "value": null,
+      "dataType": {
+        "name": "MasterData",
+        "subType": "58885706c40d553970a973ee"
+      }
+    }
+  },
+  "general": {
+    "material Name": {
+      "value": "Plywood-Boiling Water Resistant",
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "material Code": {
+      "dataType": {
+        "name": "String",
+        "subType": null
+      },
+      "value": "MNF000171"
+    },
+    "image": {
+      "value": null,
+      "dataType": {
+        "name": "Array",
+        "subType": "StaticFile"
+      }
+    },
+    "short Description": {
+      "value": "Plywood General Purpose BWR Grade 19 mm AB",
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "shade Number": {
+      "value": "NA",
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "shade Description": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "unit Of Measure": {
+      "value": "m²",
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "hsN Code": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "saP Code": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "part of eBuild Library": {
+      "value": false,
+      "dataType": {
+        "name": "Boolean",
+        "subType": null
+      }
+    },
+    "generic": {
+      "value": true,
+      "dataType": {
+        "name": "Boolean",
+        "subType": null
+      }
+    },
+    "manufactured": {
+      "value": true,
+      "dataType": {
+        "name": "Boolean",
+        "subType": null
+      }
+    },
+    "material Status": {
+      "value": "Approved",
+      "dataType": {
+        "name": "MasterData",
+        "subType": "58885706c40d553970a97404"
+      }
+    }
+  },
+  "purchase": {
+    "quantity Evaluation Method": {
+      "value": null,
+      "dataType": {
+        "name": "StaticFile",
+        "subType": null
+      }
+    },
+    "general PO Terms & Conditions": {
+      "value": null,
+      "dataType": {
+        "name": "CheckList",
+        "subType": null
+      }
+    },
+    "special PO Terms & Conditions": {
+      "value": null,
+      "dataType": {
+        "name": "CheckList",
+        "subType": null
+      }
+    },
+    "last Purchase Rate": {
+      "value": null,
+      "dataType": {
+        "name": "Money",
+        "subType": null
+      }
+    },
+    "weighted Average Purchase Rate": {
+      "value": null,
+      "dataType": {
+        "name": "Money",
+        "subType": null
+      }
+    },
+    "procurement Rate Threshold %": {
+      "value": null,
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    },
+    "associated Brands": {
+      "value": [
+        "BMB00001",
+        "BMB00002",
+        "BMB00003"
+      ],
+      "dataType": {
+        "name": "Array",
+        "subType": "String"
+      }
+    },
+    "approved Vendors": {
+      "value": null,
+      "dataType": {
+        "name": "Array",
+        "subType": "String"
+      }
+    }
+  },
+  "planning": {
+    "pO Lead Time in Days": {
+      "value": null,
+      "dataType": {
+        "name": "Int",
+        "subType": null
+      }
+    },
+    "delivery Lead Time in Days": {
+      "value": null,
+      "dataType": {
+        "name": "Int",
+        "subType": null
+      }
+    },
+    "minimum Order Quantity": {
+      "value": null,
+      "dataType": {
+        "name": "Int",
+        "subType": null
+      }
+    },
+    "maintain Lot": {
+      "value": true,
+      "dataType": {
+        "name": "Boolean",
+        "subType": null
+      }
+    }
+  },
+  "quality": {
+    "governing Standard": {
+      "value": [
+        "IS 303",
+        "IS 848",
+        "IS 1734",
+        "IS 5539",
+        "IS 12049"
+      ],
+      "dataType": {
+        "name": "Array",
+        "subType": "String"
+      }
+    },
+    "storage Method": {
+      "value": null,
+      "dataType": {
+        "name": "StaticFile",
+        "subType": null
+      }
+    },
+    "inspection Checklist": {
+      "value": null,
+      "dataType": {
+        "name": "CheckList",
+        "subType": null
+      }
+    },
+    "sampling Method": {
+      "value": null,
+      "dataType": {
+        "name": "StaticFile",
+        "subType": null
+      }
+    }
+  },
+  "system Logs": {
+    "date Created": {
+      "dataType": {
+        "name": "DateTime",
+        "subType": null
+      },
+      "value": "2017-01-25T07:47:47.076Z"
+    },
+    "created By": {
+      "dataType": {
+        "name": "String",
+        "subType": null
+      },
+      "value": "TE"
+    },
+    "date Last Amended": {
+      "dataType": {
+        "name": "DateTime",
+        "subType": null
+      },
+      "value": "2017-01-25T07:47:47.076Z"
+    },
+    "last Amended By": {
+      "dataType": {
+        "name": "String",
+        "subType": null
+      },
+      "value": "TE"
+    }
+  },
+  "specifications": {
+    "specification Sheet": {
+      "value": null,
+      "dataType": {
+        "name": "CheckList",
+        "subType": null
+      }
+    },
+    "scientific Name": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "finish": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "moisture Content": {
+      "value": {
+        "from": 5,
+        "to": 15,
+        "unit": "%"
+      },
+      "dataType": {
+        "name": "Range",
+        "subType": "%"
+      }
+    },
+    "treatment": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "adhesive Type": {
+      "value": "Urea Formaldehyde - MR Grade",
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "preservative Type": {
+      "value": "Fixed Type",
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "film Adhesive": {
+      "value": "NA",
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "specific Gravity": {
+      "value": null,
+      "dataType": {
+        "name": "Range",
+        "subType": ""
+      }
+    },
+    "density": {
+      "value": null,
+      "dataType": {
+        "name": "Unit",
+        "subType": "kg/m³"
+      }
+    },
+    "number of Veneers": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "face Type": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "core Type": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "shape": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "length": {
+      "value": null,
+      "dataType": {
+        "name": "Unit",
+        "subType": "mm"
+      }
+    },
+    "width": {
+      "value": null,
+      "dataType": {
+        "name": "Unit",
+        "subType": "mm"
+      }
+    },
+    "thickness": {
+      "value": null,
+      "dataType": {
+        "name": "Unit",
+        "subType": "mm"
+      }
+    },
+    "species": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    },
+    "additional Features": {
+      "value": null,
+      "dataType": {
+        "name": "String",
+        "subType": null
+      }
+    }
+  },
+  "id": "MNF000171",
+  "group": "Manufactured Board"
+}

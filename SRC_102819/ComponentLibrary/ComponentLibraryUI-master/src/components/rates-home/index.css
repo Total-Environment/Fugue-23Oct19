@@ -1,0 +1,280 @@
+.ratesHome {
+  margin-top: 30px;
+}
+
+.column {
+}
+
+.icon {
+  display: block;
+  vertical-align: middle;
+  margin: 0 10px;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  padding: 0.05rem;
+}
+
+.filterButton {
+  float: right;
+  margin: 5px 0px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  display: table-row;
+  padding: 12px;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
+}
+
+.tableHeader th {
+  background: #AA989C;
+  color: #fff;
+  font-weight: normal;
+  border-bottom: solid 1px #ccc;
+  position: relative;
+  padding: 10px 5px;
+}
+.tableRow {
+  background: #fdfdfd;
+}
+.tableRow:nth-child(even) {
+  background: #f9f7f8;
+}
+
+.tableHeader th:first-child, .tableRow td:first-child{
+  padding-left:20px;
+}
+
+.tableHeader th:last-child, .tableRow td:last-child{
+  padding-right:20px;
+}
+
+.text {
+  text-align: left;
+}
+
+.number {
+  text-align: right;
+}
+
+.tableRow td {
+  padding: 12px 6px;
+  max-width:150px;
+  min-width:100px;
+}
+
+.back {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+}
+
+.errorMessage {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.title {
+  background:#fff;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+
+.right {
+  text-align: right;
+}
+.left {
+  text-align: left;
+}
+.header {
+}
+
+.errorMessage {
+  margin-left: 20px;
+}
+
+.currencyContainer{
+  display:flex;
+}
+
+.moneyValue{
+  display:block;
+  flex:1;
+  margin-right: 3px;
+}
+
+.moneyCurrency{
+  display:block;
+  flex-basis: 30px;
+  min-width:30px;
+  text-align:left;
+  text-transform: uppercase;
+}
+
+.backToComponent{
+  text-decoration:none;
+  margin:0 0 20px 0;
+  display:inline-block;
+  font-size:1rem;
+}
+
+.backToComponent:hover {
+  text-decoration: underline;
+}
+
+.menuButton {
+  float: right;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+  composes: button from '../../css-common/forms.css';
+}
+
+.menuButton:hover {
+  text-decoration: none;
+}
+
+.menuButton:active {
+  text-decoration: none;
+}
+
+.ratesEdit:hover {
+  text-decoration: none;
+}
+
+.dataGrid {
+  margin-top: 20px;
+}
+
+.dropDown {
+  padding: 4px;
+  margin-left: 10px;
+}
+
+.error {
+  color: red;
+}
+
+.number {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+:global(.react-grid-HeaderCell) {
+  background-color: #AA989C !important;
+  border-collapse: collapse;
+  color: #fff;
+  padding: 3px 8px !important;
+  white-space: pre-wrap !important;
+  text-align: right;
+}
+
+:global(.react-grid-Row--even .react-grid-Cell) {
+  background: #fdfdfd;
+}
+
+:global(.react-grid-Row--odd .react-grid-Cell) {
+  background: #f9f7f8;
+}
+
+/*:global(.react-grid-HeaderRow) {*/
+  /*overflow-x: inherit !important;*/
+/*}*/
+
+:global(.react-grid-Cell) {
+  background-color: transparent;
+}
+
+:global(.react-grid-Grid) {
+  min-height: 560px !important;
+}
+
+.editable :global(.react-grid-Cell:nth-child(1)), .editable :global(.react-grid-Cell:nth-child(2)) {
+  color: #939598;
+  cursor: not-allowed;
+}
+
+.material {
+
+}
+
+.editable .material :global(.react-grid-Cell:nth-child(3)){
+  color: #939598;
+  cursor: not-allowed;
+}
+
+.dataGrid :global(.react-datepicker__input-container input) {
+  border:none;
+  background: transparent;
+  outline: none;
+}
+
+.update {
+  composes: button from '../../css-common/forms.css';
+  margin-top: 20px;
+  float: right;
+}
+
+.button {
+  composes: button from '../../css-common/forms.css';
+  float: right;
+}
+
+.cancel {
+  composes: button from '../../css-common/forms.css';
+  margin-top: 20px;
+  float: right;
+}
+
+:global(.react-grid-Canvas) {
+  overflow-y: auto !important;
+}
+
+:global(.react-grid-Main) {
+  outline: none !important;
+}
+
+:global(.react-grid-Grid) {
+  border: none !important;
+}
+
+:global(.react-grid-Header) {
+  background: transparent !important;
+}
+
+:global(.react-grid-HeaderCell) {
+  text-align: left;
+}
+
+:global(.pull-right) {
+  float: right !important;
+}
+
+.header {
+  display: flex;
+}
+
+.header h2 {
+  margin-top: 0;
+  text-transform: capitalize;
+}
+
+.left, .right {
+  max-width: 50%;
+  flex-basis: 50%;
+}

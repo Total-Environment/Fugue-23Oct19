@@ -1,0 +1,29 @@
+.dialog {
+  position: fixed;
+  width: 600px;
+  left: 50%;
+  margin-left: -300px;
+  top: 100px;
+  border: 1px solid #ccc;
+  background: #fafafa;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+}
+
+.content {
+  flex: 1;
+}
+
+.button {
+  composes: button from '../../css-common/forms.css';
+  border-radius: 9999px;
+  width: 4rem;
+  height: 4rem;
+}

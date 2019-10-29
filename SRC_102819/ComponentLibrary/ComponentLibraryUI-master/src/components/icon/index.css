@@ -1,0 +1,45 @@
+.icon {
+  vertical-align: middle;
+  stroke: transparent;
+  fill: rgba(255,255,255,0.3);
+  margin-right: 1rem;
+  width: 24px;
+  height: 24px;
+}
+
+.squirrel {
+  stroke: transparent;
+  fill: #ff5c70;
+}
+
+.loading {
+  stroke: transparent;
+}
+
+.logout {
+  stroke: transparent;
+  fill:  #ffffff;
+}
+
+.sort, .left, .right {
+  stroke: #404040;
+  stroke-width: 0.5px;
+}
+.noImage {
+  width: 130px;
+  height: 100px;
+  margin: 0 0 25px;
+}
+.noImage text {
+  letter-spacing:1;
+  text-anchor:middle;
+  text-align:center;
+  stroke-opacity:.5;
+  stroke:#000;
+  stroke-width:2;
+  fill:#444;
+  font-size:360px;
+  font-family:Bitstream Vera Sans,Liberation Sans, Arial, sans-serif;
+  line-height:125%;
+  writing-mode:lr-tb;
+}

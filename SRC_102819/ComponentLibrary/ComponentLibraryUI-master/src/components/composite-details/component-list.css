@@ -1,0 +1,120 @@
+
+.imageContainer {
+  position: relative;
+}
+
+.basicInfo {
+  width: 150px;
+  padding: 10px;
+}
+
+.materialImage {
+  width: 100%;
+  height: 100%;
+}
+
+.serviceStatus {
+  margin-top: 10px;
+}
+
+.tabContainer {
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+
+.makePrimary {
+  padding: 5px 5px 5px 0;
+}
+
+.makePrimary input {
+  margin-left: -10px;
+}
+
+.primaryText {
+  display: inline-block;
+  float: right;
+  padding: 2px;
+}
+
+.columnTitle {
+  font-weight: 700;
+  vertical-align: top;
+  margin-bottom: 10px;
+}
+
+.columnValue {
+  margin-left: 0;
+}
+
+.column {
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+  width: 150px;
+}
+
+.materialStatus {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 8px;
+  width: 100%;
+  border-radius: 0;
+}
+
+.materialCode {
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #404040;
+}
+
+.otherDetails {
+  flex: 1;
+}
+
+.selected {
+  padding: 30px 20px;
+}
+
+.loading {
+  width: 100%;
+}
+.chooseButton {
+  float: right;
+}
+.columnsRow {
+  padding: 10px 0;
+  display: flex;
+  background-image: repeating-linear-gradient(90deg, #fdfdfd 150px, #f9f7f8 150px, #f9f7f8 300px, #fdfdfd 300px, #fdfdfd 450px);
+  border-bottom: solid 1px #ddd;
+}
+.flexOne {
+  flex: 1
+}
+.primaryCheck {
+  margin-top: 10px;
+  width: 125px;
+}
+
+.panel {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 300px;
+}
+
+.primaryCheck span {
+  font-weight: 700;
+}
+.uncheckedCheckbox {
+  width: 15px;
+  height: 15px;
+  border: solid 2px #ccc;
+  border-radius: 4px;
+  display: inline-block;
+  box-sizing: content-box;
+}

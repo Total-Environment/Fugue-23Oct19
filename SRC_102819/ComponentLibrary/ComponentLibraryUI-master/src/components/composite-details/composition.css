@@ -1,0 +1,34 @@
+.compositionRow {
+  flex-basis: 14.285%;
+  max-width: 14.285%;
+  padding: 10px 20px;
+}
+
+.compositionBackground {
+  background: #fdfdfd;
+  position: relative;
+}
+
+.compositionDetailsBackground {
+  background-image: linear-gradient(90deg, #f9f7f8 14.285%, #fdfdfd 14.285%, #fdfdfd 28.57%, #f9f7f8 28.57%, #f9f7f8 42.855%, #fdfdfd 42.855%, #fdfdfd 57.14%, #f9f7f8 57.14%, #f9f7f8 71.425%, #fdfdfd 71.425%, #fdfdfd 85.71%, #f9f7f8 85.71%, #f9f7f8 100%);
+}
+
+.compositionRemoveBtn {
+  align-self: center;
+  margin-bottom: 10px;
+}
+.compositionRemoveBtn input {
+  width: 5rem;
+  margin: 0 3rem 0 0;
+}
+
+.removeButton {
+  padding-left: 20px;
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+}
+.compositionDetailsBackground:hover .removeButton {
+  visibility: visible;
+}

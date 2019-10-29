@@ -1,0 +1,211 @@
+﻿[
+  {
+    "Client": { "Name": "POSTMAN" },
+    "Permissions": [
+      { "Name": "View Asset Definition" },
+      { "Name": "Create Asset Definition" },
+      { "Name": "Create Brand Definition" },
+      { "Name": "View Brand Definition" },
+      { "Name": "Get Cdn and Saas Token" },
+      { "Name": "Create classification definition" },
+      { "Name": "Create SFG" },
+      { "Name": "Create Package" },
+      { "Name": "Edit SFG properties" },
+      { "Name": "Edit Package properties" },
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "Search Composite Component" },
+      { "Name": "Update Last Purchase rates for composite component" },
+      { "Name": "Recent Composite Components" },
+      { "Name": "Create Composite Component Definition" },
+      { "Name": "Update Composite Component Definition" },
+      { "Name": "Patch Composite Component Definition" },
+      { "Name": "View Composite Component Definition" },
+      { "Name": "Create Composite Component Mapping" },
+      { "Name": "Setup CRP Version" },
+      { "Name": "View CPR values" },
+      { "Name": "Create CPR Definition" },
+      { "Name": "View CPR Definition" },
+      { "Name": "Get Component Replacements" },
+      { "Name": "Update RFA" },
+      { "Name": "View Component" },
+      { "Name": "View Material properties" },
+      { "Name": "View Material Rate History" },
+      { "Name": "View Service properties" },
+      { "Name": "View Service Rate History" },
+      { "Name": "View current Exchange rate" },
+      { "Name": "Edit Material properties" },
+      { "Name": "Create Material properties" },
+      { "Name": "Create Service properties" },
+      { "Name": "Setup Material Rate versions" },
+      { "Name": "Setup Material Rental Rate versions" },
+      { "Name": "Setup Service Rate versions" },
+      { "Name": "View Rental Rate History" },
+      { "Name": "Edit Service properties" },
+      { "Name": "Setup Exchange Rate version and View Exchange rate history" },
+      { "Name": "Material Bulk Rates View" },
+      { "Name": "Service Bulk Rates View" },
+      { "Name": "Service Bulk Rates Edit" },
+      { "Name": "Material Bulk Rates Edit" },
+      { "Name": "Validate Assembly Code" },
+      { "Name": "Material Search Within Group" },
+      { "Name": "Get Documents for Brands" },
+      { "Name": "Get Documents for Materials" },
+      { "Name": "Recent Materials" },
+      { "Name": "Material SAP Sync" },
+      { "Name": "Search For Group in Material" },
+      { "Name": "View Material Definition" },
+      { "Name": "Patch Material Definition" },
+      { "Name": "Create Material Definition" },
+      { "Name": "Get Material Rate" },
+      { "Name": "Get Project Details" },
+      { "Name": "Create new Project" },
+      { "Name": "Get All Projects details" },
+      { "Name": "Get User Information" },
+      { "Name": "Get List of User Permissions" },
+      { "Name": "Get List of User Groups" },
+      { "Name": "Get Service Rate" },
+      { "Name": "View Service Definition" },
+      { "Name": "Patch Service Definition" },
+      { "Name": "Create Service Definition" },
+      { "Name": "Service SAP Sync" },
+      { "Name": "Get services by parameters" },
+      { "Name": "Old - Create Service properties" },
+      { "Name": "Old - Create Material properties" },
+      { "Name": "Old - View Material properties" },
+      { "Name": "Old - View Service properties" },
+      { "Name": "Old - Get materials by parameters" },
+      { "Name": "Old - Edit Material properties" },
+      { "Name": "Update Last Purchase rates for materials" },
+      { "Name": "Update Last Purchase rates for services" },
+      { "Name": "Create Dependency Definition" },
+      { "Name": "Update Dependency Definition" },
+      { "Name": "Patch Dependency Definition" },
+      { "Name": "View Dependency Definition" },
+      { "Name": "Get Master Data by Id" },
+      { "Name": "Get Master Data by Name" },
+      { "Name": "Create Master Data" },
+      { "Name": "Patch Master Data" }
+    ]
+  },
+  {
+    "Client": { "Name": "MINUET" },
+    "Permissions": [
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "Get Component Replacements" },
+      { "Name": "Update RFA" },
+      { "Name": "View Component" },
+      { "Name": "Validate Assembly Code" }
+    ]
+  },
+  {
+    "Client": { "Name": "EDESIGN_API" },
+    "Permissions": [
+      { "Name": "Get Component Replacements" },
+      { "Name": "Update RFA" },
+      { "Name": "View Component" },
+      { "Name": "Get Price" }
+    ]
+  },
+  {
+    "Client": { "Name": "DEV_EDESIGN_API" },
+    "Permissions": [
+      { "Name": "Get Component Replacements" },
+      { "Name": "Update RFA" },
+      { "Name": "View Component" },
+      { "Name": "Get Price" }
+    ]
+  },
+  {
+    "Client": { "Name": "CODA" },
+    "Permissions": [
+      { "Name": "Get Component Replacements" },
+      { "Name": "Update RFA" },
+      { "Name": "View Component" }
+    ]
+  },
+  {
+    "Client": { "Name": "CL_UI" },
+    "Permissions": [
+      { "Name": "View Asset Definition" },
+      { "Name": "View Brand Definition" },
+      { "Name": "Get Cdn and Saas Token" },
+      { "Name": "Search Composite Component" },
+      { "Name": "Recent Composite Components" },
+      { "Name": "Material Search Within Group" },
+      { "Name": "Get Documents for Brands" },
+      { "Name": "Get Documents for Materials" },
+      { "Name": "Recent Materials" },
+      { "Name": "Material SAP Sync" },
+      { "Name": "Search For Group in Material" },
+      { "Name": "View Material Definition" },
+      { "Name": "Get Project Details" },
+      { "Name": "Get All Projects details" },
+      { "Name": "Get User Information" },
+      { "Name": "Get List of User Permissions" },
+      { "Name": "Get List of User Groups" },
+      { "Name": "Get Material Rate" },
+      { "Name": "Get Service Rate" },
+      { "Name": "View Service Definition" },
+      { "Name": "Service SAP Sync" },
+      { "Name": "Get services by parameters" },
+      { "Name": "Update Last Purchase rates for services" },
+      { "Name": "Update Last Purchase rates for materials" },
+      { "Name": "View Composite Component Definition" },
+      { "Name": "View Dependency Definition" },
+      { "Name": "Get Master Data by Id" },
+      { "Name": "Get Master Data by Name" }
+    ]
+  },
+  {
+    "Client": { "Name": "FUGUE" },
+    "Permissions": [
+      { "Name": "Update Last Purchase rates for composite component" },
+      { "Name": "Update Last Purchase rates for services" },
+      { "Name": "Update Last Purchase rates for materials" }
+    ]
+  },
+  {
+    "Client": { "Name": "DEV_MINUET" },
+    "Permissions": [
+      { "Name": "View SFG properties" },
+      { "Name": "View Package properties" },
+      { "Name": "Get Component Replacements" },
+      { "Name": "Update RFA" },
+      { "Name": "View Component" },
+      { "Name": "Validate Assembly Code" }
+    ]
+  },
+  {
+    "Client": { "Name": "EXCEL_IMPORTER" },
+    "Permissions": [
+      { "Name": "Old - View Material properties" },
+      { "Name": "Old - View Service properties" },
+      { "Name": "Old - Create Service properties" },
+      { "Name": "Old - Create Material properties" },
+      { "Name": "Old - Get materials by parameters" },
+      { "Name": "Old - Edit Material properties" }
+    ]
+  },
+  {
+    "Client": { "Name": "CONDUCTOR" },
+    "Permissions": [
+      { "Name": "Get Component Replacements" },
+      { "Name": "Update RFA" },
+      { "Name": "View Component" },
+      { "Name": "Get Price" },
+      { "Name": "Validate Assembly Code" }
+    ]
+  },
+  {
+    "Client": { "Name": "DEV_CONDUCTOR" },
+    "Permissions": [
+      { "Name": "Get Component Replacements" },
+      { "Name": "Update RFA" },
+      { "Name": "View Component" },
+      { "Name": "Get Price" },
+      { "Name": "Validate Assembly Code" }
+    ]
+  }
+]

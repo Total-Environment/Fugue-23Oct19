@@ -1,0 +1,19 @@
+﻿{
+  "HeaderConfiguration": [
+    {
+      "Key": "A",
+      "Value": "S.No"
+    },
+    {
+      "Key": "B",
+      "Value": "Header"
+    },
+    {
+      "Key": "C",
+      "Value": "Sub Header"
+    }
+  ],
+  "NullColumnReference": "B",
+  "DataRowIndex": 3,
+  "TitleCellReference": "A1"
+}

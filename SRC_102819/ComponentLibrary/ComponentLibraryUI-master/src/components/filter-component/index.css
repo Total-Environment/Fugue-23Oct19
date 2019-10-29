@@ -1,0 +1,57 @@
+.filterDialog {
+  position: absolute;
+  width: 70%;
+  right: 5%;
+  height: 70%;
+  bottom: 25%;
+  margin-top: -300px;
+  border: 1px solid #ccc;
+  background-color: white ;
+  border-radius: 4px;
+  outline: none;
+  padding: 0 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filterDialog :global(#filter-data) {
+  flex: 1;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.close {
+  flex-basis: 24px;
+  position: relative;
+  margin-top: 15px;
+}
+
+.title {
+  flex: 1;
+  position: relative;
+  padding-top: 10px;
+}
+
+.header {
+  display: flex;
+}
+
+.button {
+  border: none;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.apply, .clear{
+  composes: button from '../../css-common/forms.css';
+  position: relative;
+}
+
+.actionItems {
+  padding:20px;
+  text-align: right;
+  border-top: solid 1px #ccc;
+}

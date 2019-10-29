@@ -1,0 +1,1 @@
+﻿<%@ Application Codebehind="Global.asax.cs" Inherits="TE.ComponentLibrary.ComponentLibrary.WebApiApplication" Language="C#" %>

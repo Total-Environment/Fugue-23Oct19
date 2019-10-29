@@ -1,0 +1,19 @@
+cd Projects\TE\ComponentLibrary\ExcelImporter\bin\Debug
+
+--For Loading MasterData in the New MongoDB
+ExcelImporter.exe automate
+
+--Material Import
+ExcelImporter.exe asset "Material" "PhysicalPathforimportingMaterial" "PhysicalPathforDefinationwhithJSON" "PhysicalPathforAssetDefinationwhithJSON"	
+
+--Checklist
+ExcelImporter.exe materialchecklist "C:\temp\checklist.txt"
+
+--Static images
+ExcelImporter.exe materialstaticfiles "C:\temp\Plumbing\static\imageAndStaticFile.txt" "C:\Users\Techuva\Desktop\Plumbing\Images\Images"
+
+--Brand
+ExcelImporter.exe branddata "Brand" "C:\Users\Techuva\Desktop\Latest Materail To Upload\MM - Furniture A01.xlsx" "D:\Projects\TE\ComponentLibrary\ExcelImporter\Data\Brands\Definitions\Brand.json"
+
+--rates import
+ExcelImporter.exe Universalmaterialratemaster "C:\Users\Techuva\Desktop\Rates Final\MM - Artefacts.xlsx"

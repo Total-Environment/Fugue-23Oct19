@@ -1,0 +1,20 @@
+.brand {
+  margin-bottom: 5px;
+}
+
+.addBrand {
+  text-decoration: none;
+  width: auto;
+  margin: 10px -5px;
+  text-decoration: none;
+  color: initial;
+}
+
+.addBrand:hover {
+  text-decoration: none;
+}
+
+.requiredMarker {
+  text-decoration: none !important;
+  color: #e03927;
+}

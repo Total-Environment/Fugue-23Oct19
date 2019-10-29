@@ -1,0 +1,85 @@
+
+.addNewForm:global(.rc-collapse) > :global(.rc-collapse-item) {
+  position: relative;
+}
+.addNewForm:global(.rc-collapse) > :global(.rc-collapse-item) :global(.rc-collapse-content-box) {
+  background: #f9f9f9;
+  border: solid 1px #eee;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+.addNewForm:global(.rc-collapse) > :global(.rc-collapse-item) > :global(.rc-collapse-header) {
+  border:none;
+  background:white;
+  display: inline-block;
+  margin-bottom: 0;
+  float: right;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: -87px;
+}
+
+.addNewButton {
+  composes: addNewButton from '../create-rate/index.css';
+}
+
+
+.column {
+  composes: column from '../create-rate/index.css';
+  flex-basis: 30.285%;
+  max-width: 30.285%;
+}
+
+.columnTitle{
+  composes: columnTitle from '../create-rate/index.css';
+}
+
+.columnValue{
+  composes: columnValue from '../create-rate/index.css';
+}
+
+.columnsRow{
+  composes: columnsRow from '../create-rate/index.css';
+}
+
+.subTitle{
+  composes: subTitle from '../create-rate/index.css';
+}
+
+.inputSumCoefficient{
+  composes: inputSumCoefficient from '../create-rate/index.css';
+}
+
+.error{
+  composes: error from '../create-rate/index.css';
+}
+
+.inputCurrency{
+  composes: inputCurrency from '../create-rate/index.css';
+}
+
+.errorMsg{
+  composes: errorMsg from '../create-rate/index.css';
+}
+
+.input{
+  composes: input from '../create-rate/index.css';
+}
+
+.inputAppliedOn{
+  composes: inputAppliedOn from '../create-rate/index.css';
+}
+
+.calendarNotice{
+  composes: calendarNotice from '../create-rate/index.css';
+}
+
+.buttonContainer{
+  composes: buttonContainer from '../create-rate/index.css';
+}
+
+.button{
+  composes: button from '../create-rate/index.css';
+}

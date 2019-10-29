@@ -1,0 +1,35 @@
+.dropDown {
+  width: 236px;
+  float: right;
+  display: block;
+  text-align: left;
+  border: solid 1px #ccc;
+  box-shadow: 1px 1px 5px #a2a2a2;
+  padding: 0 10px;
+  z-index: 9;
+  background: #fff;
+  position: absolute;
+}
+
+.dropDown .loading {
+  margin: 2rem;
+}
+.groups {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.status {
+  composes: regular from '../../css-common/typography.css';
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.link {
+  composes: primary from '../../css-common/colors.css';
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

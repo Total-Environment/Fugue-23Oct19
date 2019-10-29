@@ -1,0 +1,127 @@
+
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+
+.requiredMarker {
+  text-decoration: none !important;
+  color: #e03927;
+}
+
+.input{
+    composes: input from '../../css-common/forms.css';
+}
+.inputPercentageCoefficient{
+    composes: input from '../../css-common/forms.css';
+    composes: right;
+    width:60%;
+    display: inline-block;
+    margin-right: 5px;
+}
+.inputSumCoefficient{
+    composes: input from '../../css-common/forms.css';
+    composes: right;
+    width:60%;
+    display: inline-block;
+}
+.inputCurrency{
+    composes: input from '../../css-common/forms.css';
+    width:calc(40% - 5px);
+    display: inline-block;
+    margin-left:5px;
+}
+
+.inputAppliedOn{
+    composes: input from '../../css-common/forms.css';
+    width:70%;
+}
+
+.createRateRow{
+    background-color: #e6e6e6;
+}
+
+.column {
+    composes: col-sm-2 from 'flexboxgrid';
+    flex-basis: 14.285%;
+    max-width: 14.285%;
+    padding: 10px 20px;
+}
+
+.columnTitle {
+    composes: bold from "../../css-common/typography.css";
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.columnValue {
+    margin: 0;
+}
+
+.columnsRow {
+    composes: row from 'flexboxgrid';
+    margin: 0 -20px;
+    padding: 10px 0;
+}
+
+.button{
+    composes: button from '../../css-common/forms.css';
+}
+
+.buttonContainer{
+    padding: 20px;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.addNewButton {
+    composes: button from '../../css-common/forms.css';
+    margin-left: 0;
+}
+
+.addNewForm:global(.rc-collapse) > :global(.rc-collapse-item) {
+    position: relative;
+}
+.addNewForm:global(.rc-collapse) > :global(.rc-collapse-item) :global(.rc-collapse-content-box) {
+    background: #f9f9f9;
+    border: solid 1px #eee;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.addNewForm:global(.rc-collapse) > :global(.rc-collapse-item) > :global(.rc-collapse-header) {
+    border:none;
+    background:white;
+    display: inline-block;
+    margin-bottom: 0;
+    float: right;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: -87px;
+}
+
+.subTitle {
+    margin-bottom: 0;
+    text-transform: capitalize;
+    position:sticky;
+    top:0;
+}
+
+.calendarNotice {
+    display: block;
+    text-align: left;
+    font-style: italic;
+}
+
+.errorMsg{
+    composes:danger from '../../css-common/colors.css';
+    composes:light from '../../css-common/typography.css';
+    display:block;
+}
+
+.error{
+    border: 1px solid #dd4b39;
+}

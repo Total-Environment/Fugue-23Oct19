@@ -1,0 +1,69 @@
+﻿{
+  "name": "CostPriceRatioDefinition",
+  "columns": [
+    {
+      "name": "Quality | Execution Risk",
+      "key": "coefficient1",
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    },
+    {
+      "name": "Custom Production",
+      "key": "coefficient2",
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    },
+    {
+      "name": "Profit",
+      "key": "coefficient3",
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    },
+    {
+      "name": "Corporate | Construction OH",
+      "key": "coefficient4",
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    },
+    {
+      "name": "Design Fee",
+      "key": "coefficient5",
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    },
+    {
+      "name": "Transportation",
+      "key": "coefficient6",
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    },
+    {
+      "name": "Rate Increase",
+      "key": "coefficient7",
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    },
+    {
+      "name": "Profit Margin",
+      "key": "coefficient8",
+      "dataType": {
+        "name": "Unit",
+        "subType": "%"
+      }
+    }
+  ]
+}

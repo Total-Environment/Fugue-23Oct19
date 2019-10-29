@@ -1,0 +1,501 @@
+{
+  "headers": [
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "Constant",
+            "subType": "Secondary"
+          },
+          "name": "Material Level 1",
+          "isSearchable": true
+
+        },
+        {
+          "dataType": {
+            "name": "Constant",
+            "subType": "Light and Light Fixture"
+          },
+          "name": "Material Level 2",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_3"
+          },
+          "name": "Material Level 3",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_4"
+          },
+          "name": "Material Level 4",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_5"
+          },
+          "name": "Material Level 5",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_6"
+          },
+          "name": "Material Level 6",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "material_level_7"
+          },
+          "name": "Material Level 7",
+          "isSearchable": true
+        }
+      ],
+      "dependencies": [ "materialClassifications" ],
+      "name": "Classification"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Material Name",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Material Code",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Array",
+            "subType": {
+              "name": "String",
+              "subType": ""
+            }
+          },
+          "name": "Image"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Short Description",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Shade Number",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Shade Description",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Unit Of Measure"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "HSN Code",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "SAP Code"
+        },
+        {
+          "dataType": {
+            "name": "Boolean",
+            "subType": ""
+          },
+          "name": "Part of eBuild Library"
+        },
+        {
+          "dataType": {
+            "name": "Boolean",
+            "subType": ""
+          },
+          "name": "Generic"
+        },
+        {
+          "dataType": {
+            "name": "Boolean",
+            "subType": ""
+          },
+          "name": "Manufactured"
+        },
+        {
+          "dataType": {
+            "name": "MasterData",
+            "subType": "status"
+          },
+          "name": "Material Status"
+        }
+      ],
+      "name": "General"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Quantity Evaluation Method"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "General PO Terms & Conditions"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Special PO Terms & Conditions"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Last Purchase Rate"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Weighted Average Purchase Rate"
+        },
+        {
+          "dataType": {
+            "name": "Decimal",
+            "subType": ""
+          },
+          "name": "Procurement Rate Threshold %"
+        },
+        {
+          "dataType": {
+            "name": "Brand",
+            "subType": "BLF"
+          },
+          "name": "Approved Brands",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Approved Vendors",
+          "isSearchable": true
+        }
+      ],
+      "name": "Purchase"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          },
+          "name": "PO Lead Time in Days"
+        },
+        {
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          },
+          "name": "Delivery Lead Time in Days"
+        },
+        {
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          },
+          "name": "Minimum Order Quantity"
+        },
+        {
+          "dataType": {
+            "name": "Boolean",
+            "subType": ""
+          },
+          "name": "Maintain Lot"
+        }
+      ],
+      "name": "Planning"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Governing Standard"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Storage Method"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Inspection Checklist"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Sampling Method"
+        }
+      ],
+      "name": "Quality"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "Date",
+            "subType": ""
+          },
+          "name": "Date Created"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Created By"
+        },
+        {
+          "dataType": {
+            "name": "Date",
+            "subType": ""
+          },
+          "name": "Date Last Amended"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Last Amended By"
+        }
+      ],
+      "name": "System Logs"
+    },
+    {
+      "columns": [
+        {
+          "dataType": {
+            "name": "CheckList",
+            "subType": ""
+          },
+          "name": "Specification Sheet"
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Finish",
+          "isSearchable": true
+        },
+
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Length",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Width",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Height",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Diameter",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Bulb Type",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Base Material",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Range",
+            "subType": "Hz"
+          },
+          "name": "Rated Input Frequency",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Range",
+            "subType": "V"
+          },
+          "name": "Rated Input Voltage",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Colour Rendering Index",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Int",
+            "subType": ""
+          },
+          "name": "Number of Sockets",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "lm"
+          },
+          "name": "Luminosity",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "K"
+          },
+          "name": "Colour Temperature",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Base Type",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "W"
+          },
+          "name": "Power Consumption",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "kg"
+          },
+          "name": "Weight/UoM",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "Unit",
+            "subType": "mm"
+          },
+          "name": "Thickness",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Protection Class",
+          "isSearchable": true
+        },
+        {
+          "dataType": {
+            "name": "String",
+            "subType": ""
+          },
+          "name": "Additional Features",
+          "isSearchable": true
+        }
+      ],
+      "name": "Specifications"
+    }
+  ],
+  "code": "LGH",
+  "name": "Light and Light Fixture"
+}

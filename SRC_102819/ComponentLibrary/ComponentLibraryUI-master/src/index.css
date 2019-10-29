@@ -1,0 +1,87 @@
+@import 'normalize.css/normalize.css';
+
+@font-face {
+  font-family: "Neue Haas Unica Pro";
+  font-weight: 700;
+  src: url("/static/fonts/1491986/56b738a7-54b9-4e8c-a470-d96972ab3303.eot?#iefix");
+  src: url("/static/fonts/1491986/56b738a7-54b9-4e8c-a470-d96972ab3303.eot?#iefix") format("eot"), url("/static/fonts/1491986/2418a824-3af2-42d7-a62e-f7a77cf487d1.woff2") format("woff2"), url("/static/fonts/1491986/86b76db5-9343-473a-a106-60683cec7626.woff") format("woff"), url("/static/fonts/1491986/2b883332-01dc-4b55-ac6a-d24c84f0e334.ttf") format("truetype");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Neue Haas Unica Pro";
+  src: url("/static/fonts/1491978/001e59a9-197e-4fb1-9e72-cef21b186c03.eot?#iefix");
+  src: url("/static/fonts/1491978/001e59a9-197e-4fb1-9e72-cef21b186c03.eot?#iefix") format("eot"), url("/static/fonts/1491978/e5716290-d41e-4c97-a27c-7a20a46ddf45.woff2") format("woff2"), url("/static/fonts/1491978/b681571f-aab2-4935-a99c-6ee1063ce638.woff") format("woff"), url("/static/fonts/1491978/1d88a9b0-aac0-40df-baf7-a630cd19cc5d.ttf") format("truetype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Neue Haas Unica Pro";
+  src: url("/static/fonts/1491988/0ebd7648-5847-404a-a88a-28a353c0921c.eot?#iefix");
+  src: url("/static/fonts/1491988/0ebd7648-5847-404a-a88a-28a353c0921c.eot?#iefix") format("eot"), url("/static/fonts/1491988/e0d80810-f7e3-4fea-8c57-ef8116f0465d.woff2") format("woff2"), url("/static/fonts/1491988/27645c8a-608b-4abf-a2f1-c4407b576723.woff") format("woff"), url("/static/fonts/1491988/bd3b3439-8eff-445c-80ed-87064138ca7d.ttf") format("truetype");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.3;
+}
+
+:global(.fonts-loaded) {
+    font-family: "Neue Haas Unica Pro", sans-serif;
+}
+
+body
+{
+  animation-duration: 0.1s;
+  animation-name: fontfix;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 0.1s;
+}
+
+@keyframes fontfix {
+  from{ opacity: 1; }
+  to{ opacity: 1; }
+}
+
+input[type=checkbox] {
+  appearance: none;
+  outline: none;
+}
+
+input[type=checkbox]::before {
+  content: "";
+  width: 10px;
+  height: 4px;
+  border-left: solid #eee 2px;
+  border-bottom: solid #eee 2px;
+  display: inline-block;
+  transform: rotate(-45deg);
+  position: relative;
+  left: 16px;
+  bottom: 8px;
+  visibility: hidden;
+}
+
+input[type=checkbox]:checked::before {
+  visibility: visible;
+}
+
+input[type=checkbox]::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border: solid 2px #ccc;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+input[type=checkbox]:checked::after {
+  border-color: #FC511F;
+  background: #FC511F;
+}

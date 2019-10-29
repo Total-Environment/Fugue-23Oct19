@@ -1,0 +1,131 @@
+.exchangeRate {
+  margin-top: 30px;
+}
+
+.column {
+  composes: col-sm-2 from 'flexboxgrid';
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  display: table-row;
+  padding: 12px;
+  position: sticky;
+  -webkit-position: sticky;
+  top: 0;
+}
+
+.tableHeader th {
+  background: #AA989C;
+  color: #fff;
+  font-weight: normal;
+  border-bottom: solid 1px #ccc;
+  position: relative;
+  padding: 10px 5px;
+}
+
+.tableRow {
+  background: #fdfdfd;
+}
+
+.tableRow:nth-child(even) {
+  background: #f9f7f8;
+}
+
+.tableHeader th:first-child, .tableRow td:first-child{
+  padding-left:20px;
+}
+
+.tableHeader th:last-child, .tableRow td:last-child{
+  padding-right:20px;
+}
+
+.text {
+  text-align: left;
+}
+
+.number {
+  text-align: right;
+}
+
+.tableRow td {
+  padding: 12px 6px;
+  max-width:150px;
+  min-width:100px;
+}
+
+.back {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+  composes: primary from '../../css-common/colors.css';
+}
+
+.errorMessage {
+  margin-left: 12px;
+  border: none;
+  text-decoration: none;
+  text-decoration-style: solid;
+}
+
+.back:hover {
+  text-decoration: underline;
+}
+
+.title {
+  background:#fff;
+  composes: title from '../../css-common/typography.css';
+  margin: 0;
+  padding: 0 0 20px 0;
+  composes: col-sm-6 from 'flexboxgrid';
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.currencyContainer{
+  display:flex;
+}
+
+.moneyValue{
+  display:block;
+  flex:1;
+  margin-right: 3px;
+}
+
+.moneyCurrency{
+  display:block;
+  flex-basis: 30px;
+  min-width:30px;
+  text-align:left;
+  text-transform: uppercase;
+}
+
+.goToHistory{
+  text-decoration:none;
+  margin:0 0 20px 0;
+  composes: primary from '../../css-common/colors.css';
+}
+
+.goToHistoryContainer {
+  composes: col-sm-6 from 'flexboxgrid';
+  text-align: right;
+}
+
+.header {
+  composes: row from 'flexboxgrid';
+}
+
+.goToHistory:hover {
+  text-decoration: underline;
+}

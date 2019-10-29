@@ -1,0 +1,62 @@
+﻿{
+  "HeaderConfiguration": [
+    {
+      "Key": "A",
+      "Value": "MaterialID"
+    },
+    {
+      "Key": "B",
+      "Value": "TypeOfPurchase"
+    },
+    {
+      "Key": "C",
+      "Value": "CurrencyType"
+    },
+    {
+      "Key": "D",
+      "Value": "ControlBaseRate"
+    },
+    {
+      "Key": "E",
+      "Value": "LocationID"
+    },
+    {
+      "Key": "F",
+      "Value": "InsuranceCharges"
+    },
+    {
+      "Key": "G",
+      "Value": "BasicCustomsDuty"
+    },
+    {
+      "Key": "H",
+      "Value": "ClearanceCharges"
+    },
+    {
+      "Key": "I",
+      "Value": "FreightCharges"
+    },
+    {
+      "Key": "J",
+      "Value": "CurrencyFluctuation"
+    },
+    {
+      "Key": "K",
+      "Value": "TaxVariance"
+    },
+    {
+      "Key": "L",
+      "Value": "LocationVariance"
+    },
+    {
+      "Key": "M",
+      "Value": "MarketFluctuation"
+    },
+    {
+      "Key": "N",
+      "Value": "LandedRate"
+    }
+  ],
+  "NullColumnReference": "A",
+  "DataRowIndex": 4
+}

@@ -1,0 +1,23 @@
+﻿{
+  "HeaderConfiguration": [
+    {
+      "Key": "A",
+      "Value": "S.No"
+    },
+    {
+      "Key": "B",
+      "Value": "Work Description"
+    },
+    {
+      "Key": "C",
+      "Value": "Checked"
+    },
+    {
+      "Key": "D",
+      "Value": "Remarks"
+    }
+  ],
+  "NullColumnReference": "A",
+  "DataRowIndex": 12,
+  "TitleCellReference":  "C1"
+}
