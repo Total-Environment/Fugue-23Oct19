@@ -48,7 +48,7 @@
     "url": "git@github.com:TotalEnvironmentProj/ComponentLibraryUI.git"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "babel-polyfill": "*",
     "classnames": "*",
     "expose-loader": "*",
